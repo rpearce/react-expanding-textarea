@@ -1,0 +1,32 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+html,
+body {
+  height: 100%;
+  font-size: $fontSize--root;
+}
+body {
+  font-family: $base-fontFamily;
+  line-height: $base-lineHeight;
+  color: $base-color;
+  background-color: $white;
+  margin: 0;
+}
+body,
+input,
+button {
+  -webkit-font-smoothing: antialiased;
+}
+h1 {
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  font-size: $fontSize--h1;
+  line-height: 4rem;
+}
+

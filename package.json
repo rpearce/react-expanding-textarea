@@ -1,0 +1,50 @@
+{
+  "name": "react-expanding-textarea",
+  "version": "0.1.0",
+  "description": "React textarea component to automatically expand and contract your textareas",
+  "main": "lib/index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:sass": "cat example/sass/app.scss | node-sass -rx --include-path example/sass > example/build/app.css",
+    "build:example": "npm run build && npm run build:sass && browserify example/src/browser.js -o example/build/app.js",
+    "build": "babel lib/Textarea.react.js -o lib/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rpearce/react-expanding-textarea.git"
+  },
+  "keywords": [
+    "textarea",
+    "expand",
+    "autosize",
+    "expanding textarea",
+    "autosize textarea"
+  ],
+  "author": "Robert Pearce <me@robertwpearce.com> (http://robertwpearce.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rpearce/react-expanding-textarea/issues"
+  },
+  "homepage": "https://github.com/rpearce/react-expanding-textarea#readme",
+  "devDependencies": {
+    "babel": "^5.8.29",
+    "babelify": "^6.4.0",
+    "browserify": "^12.0.1",
+    "node-sass": "^3.4.1",
+    "watch": "^0.16.0"
+  },
+  "dependencies": {
+    "react": "^0.14.2",
+    "react-dom": "^0.14.2"
+  },
+  "browserify": {
+    "transform": [
+      [
+        "babelify"
+      ]
+    ]
+  }
+}
