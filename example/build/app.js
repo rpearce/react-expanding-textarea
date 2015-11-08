@@ -158,7 +158,11 @@ var ExpandingTextarea = (function (_Component) {
   }, {
     key: '_handleChange',
     value: function _handleChange(e) {
-      this.props.onChange(e);
+      var onChange = this.props.onChange;
+
+      if (onChange) {
+        onChange(e);
+      }
       this._adjustTextarea(e);
     }
   }, {
