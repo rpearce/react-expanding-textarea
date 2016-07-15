@@ -32,7 +32,7 @@ export default App;
 
 ## Contribute
 
-1. Check out the [issues](https://github.com/rpearce/react-static/issues)
+1. Check out the [issues](https://github.com/rpearce/react-expanding-textarea/issues)
 1. Fork this repository
 1. Clone your fork
 1. Check out a feature branch (`$ git checkout -b my-feature`)
