@@ -1,9 +1,12 @@
 # react-expanding-textarea
+![](https://img.shields.io/npm/dm/react-expanding-textarea.svg)
+![](https://img.shields.io/npm/v/react-expanding-textarea.svg)
+
 React textarea component to automatically expand and contract your textareas.
 
 ## Installation
 Install the package via NPM:
-```bash
+```
 $ npm install --save react-expanding-textarea
 ```
 
@@ -11,14 +14,13 @@ $ npm install --save react-expanding-textarea
 Use this exactly like you would a normal `<textarea>`; the only
 difference is that it is doing some simple expanding work behind the scenes for you!
 ```js
-import React from 'react';
-import Textarea from 'react-expanding-textarea';
+import Textarea from 'react-expanding-textarea'
 
 function handleChange(e) {
-  console.log('Changed value to: ', e.target.value);
+  console.log('Changed value to: ', e.target.value)
 }
 
-const App = () =>
+const myComponent = () =>
   <Textarea
     rows="1"
     maxLength="3000"
@@ -26,8 +28,6 @@ const App = () =>
     name="post[notes]"
     placeholder="Notes"
     onChange={ handleChange } />
-
-export default App;
 ```
 
 ## Contribute
@@ -39,3 +39,4 @@ export default App;
 1. Make your changes and push your branch to your GitHub repo
 1. Create a pull request from your branch to this repo's master
 1. When all is merged, pull down the upstream changes to your master
+1. Delete your feature branch
