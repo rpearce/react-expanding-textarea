@@ -9,7 +9,7 @@
   "scripts": {
     "build:sass": "cat example/sass/app.scss | node-sass -rx --include-path example/sass > example/build/app.css",
     "build:example": "npm run build && npm run build:sass && browserify example/src/browser.js -o example/build/app.js -t [ babelify ]",
-    "build": "babel src/ExpandingTextarea.js -o lib/ExpandingTextarea.js"
+    "build": "mkdir -p lib && babel src/ExpandingTextarea.js -o lib/ExpandingTextarea.js"
   },
   "repository": {
     "type": "git",
