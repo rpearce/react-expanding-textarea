@@ -1,6 +1,6 @@
 {
   "name": "react-expanding-textarea",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "React textarea component to automatically expand and contract your textareas",
   "main": "lib/ExpandingTextarea.js",
   "directories": {
