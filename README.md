@@ -4,6 +4,8 @@
 
 React textarea component to automatically expand and contract your textareas.
 
+You can [view the demo here](http://rpearce.github.io/react-expanding-textarea/).
+
 ## Installation
 Install the package via NPM:
 ```
