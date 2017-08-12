@@ -32,8 +32,12 @@ const myComponent = () =>
     onChange={ handleChange } />
 ```
 
-## Contribute
+## Development
+1. Make your changes to `src/ExpandingTextarea.js` and/or `example/src` and/or `example/sass`
+1. Run make to build the JS output as well as the example code
+1. Run `$ open example/index.html` to view the output
 
+## Contribute
 1. Check out the [issues](https://github.com/rpearce/react-expanding-textarea/issues)
 1. Fork this repository
 1. Clone your fork
