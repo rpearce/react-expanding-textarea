@@ -29,6 +29,9 @@
     "url": "https://github.com/rpearce/react-expanding-textarea/issues"
   },
   "homepage": "https://github.com/rpearce/react-expanding-textarea#readme",
+  "dependencies": {
+    "prop-types": "^15.6.0"
+  },
   "devDependencies": {
     "babel-cli": "^6.11.4",
     "babel-preset-es2015": "^6.9.0",
