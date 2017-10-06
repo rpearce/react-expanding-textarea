@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react'
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 
 class ExpandingTextarea extends Component {
   componentDidMount() {
@@ -7,7 +8,13 @@ class ExpandingTextarea extends Component {
 
   render() {
     const { onChange, ...rest } = this.props
-    return <textarea { ...rest } ref="textarea" onChange={ this._handleChange.bind(this) } />
+    return (
+      <textarea
+        { ...rest }
+        ref={x => this.el = x}
+        onChange={ this._handleChange.bind(this) }
+      />
+    )
   }
 
   _handleChange(e) {
@@ -16,7 +23,7 @@ class ExpandingTextarea extends Component {
     this._adjustTextarea(e)
   }
 
-  _adjustTextarea({ target = this.refs.textarea }) {
+  _adjustTextarea({ target = this.el }) {
     target.style.height = 0
     target.style.height = `${target.scrollHeight}px`
   }
