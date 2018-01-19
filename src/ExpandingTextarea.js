@@ -7,7 +7,7 @@ class ExpandingTextarea extends Component {
   }
 
   render() {
-    const { onChange, ...rest } = this.props
+    const { onChange, maxHeight, ...rest } = this.props
     return (
       <textarea
         { ...rest }
@@ -25,12 +25,17 @@ class ExpandingTextarea extends Component {
 
   _adjustTextarea({ target = this.el }) {
     target.style.height = 0
-    target.style.height = `${target.scrollHeight}px`
+    if (this.props.maxHeight) {
+        target.style.height = `${Math.min(target.scrollHeight, this.props.maxHeight)}px`
+    } else {
+        target.style.height = `${target.scrollHeight}px`
+    }
   }
 }
 
 ExpandingTextarea.propTypes = {
-  onChange: PropTypes.func
+  onChange: PropTypes.func,
+  maxHeight: PropTypes.number
 }
 
 export default ExpandingTextarea
