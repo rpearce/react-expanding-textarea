@@ -26,6 +26,7 @@ const myComponent = () =>
   <Textarea
     rows="1"
     maxLength="3000"
+    maxHeight={100}
     className="textarea"
     name="post[notes]"
     placeholder="Notes"
