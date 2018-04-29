@@ -15,9 +15,9 @@ var _ExpandingTextarea2 = _interopRequireDefault(_ExpandingTextarea);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function handleChange(e) {
+var handleChange = function handleChange(e) {
   console.log('Changed value to: ', e.target.value);
-}
+};
 
 var App = function App() {
   return _react2.default.createElement(
@@ -42,7 +42,8 @@ var App = function App() {
       name: 'pet[notes]',
       placeholder: 'Enter additional notes...',
       defaultValue: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-      onChange: handleChange })
+      onChange: handleChange
+    })
   );
 };
 
@@ -145,7 +146,14 @@ var ExpandingTextarea = function (_Component) {
   _createClass(ExpandingTextarea, [{
     key: 'componentDidMount',
     value: function componentDidMount() {
-      this._adjustTextarea({});
+      this._adjustTextarea();
+    }
+  }, {
+    key: 'componentDidUpdate',
+    value: function componentDidUpdate(prevProps) {
+      if (prevProps.value !== this.props.value) {
+        this._adjustTextarea();
+      }
     }
   }, {
     key: 'render',
@@ -168,13 +176,17 @@ var ExpandingTextarea = function (_Component) {
     value: function _handleChange(e) {
       var onChange = this.props.onChange;
 
-      if (onChange) onChange(e);
+      if (onChange) {
+        onChange(e);
+      }
+
       this._adjustTextarea(e);
     }
   }, {
     key: '_adjustTextarea',
-    value: function _adjustTextarea(_ref) {
-      var _ref$target = _ref.target,
+    value: function _adjustTextarea() {
+      var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
+          _ref$target = _ref.target,
           target = _ref$target === undefined ? this.el : _ref$target;
 
       target.style.height = 0;
