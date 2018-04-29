@@ -49,7 +49,7 @@ var App = function App() {
 
 exports.default = App;
 
-},{"../../lib/ExpandingTextarea":3,"react":191}],2:[function(require,module,exports){
+},{"../../lib/ExpandingTextarea":3,"react":195}],2:[function(require,module,exports){
 'use strict';
 
 var _react = require('react');
@@ -69,7 +69,7 @@ document.body.appendChild(container);
 
 (0, _reactDom.render)(_react2.default.createElement(_App2.default, null), container);
 
-},{"./App.react":1,"react":191,"react-dom":39}],3:[function(require,module,exports){
+},{"./App.react":1,"react":195,"react-dom":35}],3:[function(require,module,exports){
 'use strict';
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
@@ -203,15 +203,13 @@ ExpandingTextarea.propTypes = {
 
 exports.default = ExpandingTextarea;
 
-},{"prop-types":34,"react":191}],4:[function(require,module,exports){
+},{"prop-types":33,"react":195}],4:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -1085,11 +1083,9 @@ module.exports = factory;
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * @typechecks
  */
@@ -1161,11 +1157,9 @@ module.exports = EventListener;
 },{"./emptyFunction":12,"_process":29}],6:[function(require,module,exports){
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -1199,11 +1193,9 @@ module.exports = ExecutionEnvironment;
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * @typechecks
  */
@@ -1229,11 +1221,9 @@ module.exports = camelize;
 },{}],8:[function(require,module,exports){
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * @typechecks
  */
@@ -1271,11 +1261,9 @@ module.exports = camelizeStyleName;
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -1312,11 +1300,9 @@ module.exports = containsNode;
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * @typechecks
  */
@@ -1441,11 +1427,9 @@ module.exports = createArrayFromMixed;
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * @typechecks
  */
@@ -1526,11 +1510,9 @@ module.exports = createNodesFromMarkup;
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -1564,11 +1546,9 @@ module.exports = emptyFunction;
 (function (process){
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -1585,11 +1565,9 @@ module.exports = emptyObject;
 },{"_process":29}],14:[function(require,module,exports){
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -1614,11 +1592,9 @@ module.exports = focusNode;
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * @typechecks
  */
@@ -1654,11 +1630,9 @@ module.exports = getActiveElement;
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -1748,11 +1722,9 @@ module.exports = getMarkupWrap;
 },{"./ExecutionEnvironment":6,"./invariant":20,"_process":29}],17:[function(require,module,exports){
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * @typechecks
  */
@@ -1789,11 +1761,9 @@ module.exports = getUnboundedScrollPosition;
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * @typechecks
  */
@@ -1820,11 +1790,9 @@ module.exports = hyphenate;
 },{}],19:[function(require,module,exports){
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * @typechecks
  */
@@ -1860,11 +1828,9 @@ module.exports = hyphenateStyleName;
 (function (process){
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -1919,11 +1885,9 @@ module.exports = invariant;
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * @typechecks
  */
@@ -1944,11 +1908,9 @@ module.exports = isNode;
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * @typechecks
  */
@@ -1967,11 +1929,9 @@ module.exports = isTextNode;
 },{"./isNode":21}],23:[function(require,module,exports){
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  * @typechecks static-only
@@ -1997,11 +1957,9 @@ module.exports = memoizeStringOnly;
 },{}],24:[function(require,module,exports){
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * @typechecks
  */
@@ -2022,11 +1980,9 @@ module.exports = performance || {};
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * @typechecks
  */
@@ -2054,11 +2010,9 @@ module.exports = performanceNow;
 },{"./performance":24}],26:[function(require,module,exports){
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * @typechecks
  * 
@@ -2122,12 +2076,10 @@ module.exports = shallowEqual;
 },{}],27:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2014-2015, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2014-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -2527,28 +2479,7 @@ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
 module.exports = checkPropTypes;
 
 }).call(this,require('_process'))
-},{"./lib/ReactPropTypesSecret":35,"_process":29,"fbjs/lib/invariant":37,"fbjs/lib/warning":38}],31:[function(require,module,exports){
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-'use strict';
-
-// React 15.5 references this module, and assumes PropTypes are still callable in production.
-// Therefore we re-export development-only version with all the PropTypes checks here.
-// However if one is migrating to the `prop-types` npm library, they will go through the
-// `index.js` entry point, and it will branch depending on the environment.
-var factory = require('./factoryWithTypeCheckers');
-module.exports = function(isValidElement) {
-  // It is still allowed in 15.5.
-  var throwOnDirectAccess = false;
-  return factory(isValidElement, throwOnDirectAccess);
-};
-
-},{"./factoryWithTypeCheckers":33}],32:[function(require,module,exports){
+},{"./lib/ReactPropTypesSecret":34,"_process":29,"fbjs/lib/invariant":20,"fbjs/lib/warning":27}],31:[function(require,module,exports){
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2608,7 +2539,7 @@ module.exports = function() {
   return ReactPropTypes;
 };
 
-},{"./lib/ReactPropTypesSecret":35,"fbjs/lib/emptyFunction":36,"fbjs/lib/invariant":37}],33:[function(require,module,exports){
+},{"./lib/ReactPropTypesSecret":34,"fbjs/lib/emptyFunction":12,"fbjs/lib/invariant":20}],32:[function(require,module,exports){
 (function (process){
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
@@ -3154,7 +3085,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 };
 
 }).call(this,require('_process'))
-},{"./checkPropTypes":30,"./lib/ReactPropTypesSecret":35,"_process":29,"fbjs/lib/emptyFunction":36,"fbjs/lib/invariant":37,"fbjs/lib/warning":38,"object-assign":28}],34:[function(require,module,exports){
+},{"./checkPropTypes":30,"./lib/ReactPropTypesSecret":34,"_process":29,"fbjs/lib/emptyFunction":12,"fbjs/lib/invariant":20,"fbjs/lib/warning":27,"object-assign":28}],33:[function(require,module,exports){
 (function (process){
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
@@ -3186,7 +3117,7 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 }).call(this,require('_process'))
-},{"./factoryWithThrowingShims":32,"./factoryWithTypeCheckers":33,"_process":29}],35:[function(require,module,exports){
+},{"./factoryWithThrowingShims":31,"./factoryWithTypeCheckers":32,"_process":29}],34:[function(require,module,exports){
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -3200,177 +3131,17 @@ var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 
 module.exports = ReactPropTypesSecret;
 
-},{}],36:[function(require,module,exports){
-"use strict";
-
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *
- * 
- */
-
-function makeEmptyFunction(arg) {
-  return function () {
-    return arg;
-  };
-}
-
-/**
- * This function accepts and discards inputs; it has no side effects. This is
- * primarily useful idiomatically for overridable function endpoints which
- * always need to be callable, since JS lacks a null-call idiom ala Cocoa.
- */
-var emptyFunction = function emptyFunction() {};
-
-emptyFunction.thatReturns = makeEmptyFunction;
-emptyFunction.thatReturnsFalse = makeEmptyFunction(false);
-emptyFunction.thatReturnsTrue = makeEmptyFunction(true);
-emptyFunction.thatReturnsNull = makeEmptyFunction(null);
-emptyFunction.thatReturnsThis = function () {
-  return this;
-};
-emptyFunction.thatReturnsArgument = function (arg) {
-  return arg;
-};
-
-module.exports = emptyFunction;
-},{}],37:[function(require,module,exports){
-(function (process){
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *
- */
-
-'use strict';
-
-/**
- * Use invariant() to assert state which your program assumes to be true.
- *
- * Provide sprintf-style format (only %s is supported) and arguments
- * to provide information about what broke and what you were
- * expecting.
- *
- * The invariant message will be stripped in production, but the invariant
- * will remain to ensure logic does not differ in production.
- */
-
-var validateFormat = function validateFormat(format) {};
-
-if (process.env.NODE_ENV !== 'production') {
-  validateFormat = function validateFormat(format) {
-    if (format === undefined) {
-      throw new Error('invariant requires an error message argument');
-    }
-  };
-}
-
-function invariant(condition, format, a, b, c, d, e, f) {
-  validateFormat(format);
-
-  if (!condition) {
-    var error;
-    if (format === undefined) {
-      error = new Error('Minified exception occurred; use the non-minified dev environment ' + 'for the full error message and additional helpful warnings.');
-    } else {
-      var args = [a, b, c, d, e, f];
-      var argIndex = 0;
-      error = new Error(format.replace(/%s/g, function () {
-        return args[argIndex++];
-      }));
-      error.name = 'Invariant Violation';
-    }
-
-    error.framesToPop = 1; // we don't care about invariant's own frame
-    throw error;
-  }
-}
-
-module.exports = invariant;
-}).call(this,require('_process'))
-},{"_process":29}],38:[function(require,module,exports){
-(function (process){
-/**
- * Copyright (c) 2014-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *
- */
-
-'use strict';
-
-var emptyFunction = require('./emptyFunction');
-
-/**
- * Similar to invariant but only logs a warning if the condition is not met.
- * This can be used to log issues in development environments in critical
- * paths. Removing the logging code for production environments will keep the
- * same logic and follow the same code paths.
- */
-
-var warning = emptyFunction;
-
-if (process.env.NODE_ENV !== 'production') {
-  var printWarning = function printWarning(format) {
-    for (var _len = arguments.length, args = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-      args[_key - 1] = arguments[_key];
-    }
-
-    var argIndex = 0;
-    var message = 'Warning: ' + format.replace(/%s/g, function () {
-      return args[argIndex++];
-    });
-    if (typeof console !== 'undefined') {
-      console.error(message);
-    }
-    try {
-      // --- Welcome to debugging React ---
-      // This error was thrown as a convenience so that you can use this stack
-      // to find the callsite that caused this warning to fire.
-      throw new Error(message);
-    } catch (x) {}
-  };
-
-  warning = function warning(condition, format) {
-    if (format === undefined) {
-      throw new Error('`warning(condition, format, ...args)` requires a warning ' + 'message argument');
-    }
-
-    if (format.indexOf('Failed Composite propType: ') === 0) {
-      return; // Ignore CompositeComponent proptype check.
-    }
-
-    if (!condition) {
-      for (var _len2 = arguments.length, args = Array(_len2 > 2 ? _len2 - 2 : 0), _key2 = 2; _key2 < _len2; _key2++) {
-        args[_key2 - 2] = arguments[_key2];
-      }
-
-      printWarning.apply(undefined, [format].concat(args));
-    }
-  };
-}
-
-module.exports = warning;
-}).call(this,require('_process'))
-},{"./emptyFunction":36,"_process":29}],39:[function(require,module,exports){
+},{}],35:[function(require,module,exports){
 'use strict';
 
 module.exports = require('./lib/ReactDOM');
 
-},{"./lib/ReactDOM":69}],40:[function(require,module,exports){
+},{"./lib/ReactDOM":65}],36:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -3437,14 +3208,12 @@ var ARIADOMPropertyConfig = {
 };
 
 module.exports = ARIADOMPropertyConfig;
-},{}],41:[function(require,module,exports){
+},{}],37:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -3461,14 +3230,12 @@ var AutoFocusUtils = {
 };
 
 module.exports = AutoFocusUtils;
-},{"./ReactDOMComponentTree":72,"fbjs/lib/focusNode":14}],42:[function(require,module,exports){
+},{"./ReactDOMComponentTree":68,"fbjs/lib/focusNode":14}],38:[function(require,module,exports){
 /**
- * Copyright 2013-present Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -3845,14 +3612,12 @@ var BeforeInputEventPlugin = {
 };
 
 module.exports = BeforeInputEventPlugin;
-},{"./EventPropagators":58,"./FallbackCompositionState":59,"./SyntheticCompositionEvent":123,"./SyntheticInputEvent":127,"fbjs/lib/ExecutionEnvironment":6}],43:[function(require,module,exports){
+},{"./EventPropagators":54,"./FallbackCompositionState":55,"./SyntheticCompositionEvent":119,"./SyntheticInputEvent":123,"fbjs/lib/ExecutionEnvironment":6}],39:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -3871,6 +3636,7 @@ var isUnitlessNumber = {
   boxFlexGroup: true,
   boxOrdinalGroup: true,
   columnCount: true,
+  columns: true,
   flex: true,
   flexGrow: true,
   flexPositive: true,
@@ -3999,15 +3765,13 @@ var CSSProperty = {
 };
 
 module.exports = CSSProperty;
-},{}],44:[function(require,module,exports){
+},{}],40:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -4216,15 +3980,13 @@ var CSSPropertyOperations = {
 
 module.exports = CSSPropertyOperations;
 }).call(this,require('_process'))
-},{"./CSSProperty":43,"./ReactInstrumentation":101,"./dangerousStyleValue":140,"_process":29,"fbjs/lib/ExecutionEnvironment":6,"fbjs/lib/camelizeStyleName":8,"fbjs/lib/hyphenateStyleName":19,"fbjs/lib/memoizeStringOnly":23,"fbjs/lib/warning":27}],45:[function(require,module,exports){
+},{"./CSSProperty":39,"./ReactInstrumentation":97,"./dangerousStyleValue":136,"_process":29,"fbjs/lib/ExecutionEnvironment":6,"fbjs/lib/camelizeStyleName":8,"fbjs/lib/hyphenateStyleName":19,"fbjs/lib/memoizeStringOnly":23,"fbjs/lib/warning":27}],41:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -4337,14 +4099,12 @@ var CallbackQueue = function () {
 
 module.exports = PooledClass.addPoolingTo(CallbackQueue);
 }).call(this,require('_process'))
-},{"./PooledClass":63,"./reactProdInvariant":159,"_process":29,"fbjs/lib/invariant":20}],46:[function(require,module,exports){
+},{"./PooledClass":59,"./reactProdInvariant":155,"_process":29,"fbjs/lib/invariant":20}],42:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -4469,7 +4229,7 @@ if (ExecutionEnvironment.canUseDOM) {
   // IE9 claims to support the input event but fails to trigger it when
   // deleting text, so we ignore its input events.
 
-  isInputEventSupported = isEventSupported('input') && (!('documentMode' in document) || document.documentMode > 9);
+  isInputEventSupported = isEventSupported('input') && (!document.documentMode || document.documentMode > 9);
 }
 
 /**
@@ -4649,15 +4409,13 @@ var ChangeEventPlugin = {
 };
 
 module.exports = ChangeEventPlugin;
-},{"./EventPluginHub":55,"./EventPropagators":58,"./ReactDOMComponentTree":72,"./ReactUpdates":116,"./SyntheticEvent":125,"./getEventTarget":148,"./inputValueTracking":154,"./isEventSupported":156,"./isTextInputElement":157,"fbjs/lib/ExecutionEnvironment":6}],47:[function(require,module,exports){
+},{"./EventPluginHub":51,"./EventPropagators":54,"./ReactDOMComponentTree":68,"./ReactUpdates":112,"./SyntheticEvent":121,"./getEventTarget":144,"./inputValueTracking":150,"./isEventSupported":152,"./isTextInputElement":153,"fbjs/lib/ExecutionEnvironment":6}],43:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -4877,14 +4635,12 @@ var DOMChildrenOperations = {
 
 module.exports = DOMChildrenOperations;
 }).call(this,require('_process'))
-},{"./DOMLazyTree":48,"./Danger":52,"./ReactDOMComponentTree":72,"./ReactInstrumentation":101,"./createMicrosoftUnsafeLocalFunction":139,"./setInnerHTML":161,"./setTextContent":162,"_process":29}],48:[function(require,module,exports){
+},{"./DOMLazyTree":44,"./Danger":48,"./ReactDOMComponentTree":68,"./ReactInstrumentation":97,"./createMicrosoftUnsafeLocalFunction":135,"./setInnerHTML":157,"./setTextContent":158,"_process":29}],44:[function(require,module,exports){
 /**
- * Copyright 2015-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2015-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -4995,14 +4751,12 @@ DOMLazyTree.queueHTML = queueHTML;
 DOMLazyTree.queueText = queueText;
 
 module.exports = DOMLazyTree;
-},{"./DOMNamespaces":49,"./createMicrosoftUnsafeLocalFunction":139,"./setInnerHTML":161,"./setTextContent":162}],49:[function(require,module,exports){
+},{"./DOMNamespaces":45,"./createMicrosoftUnsafeLocalFunction":135,"./setInnerHTML":157,"./setTextContent":158}],45:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -5015,15 +4769,13 @@ var DOMNamespaces = {
 };
 
 module.exports = DOMNamespaces;
-},{}],50:[function(require,module,exports){
+},{}],46:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -5226,15 +4978,13 @@ var DOMProperty = {
 
 module.exports = DOMProperty;
 }).call(this,require('_process'))
-},{"./reactProdInvariant":159,"_process":29,"fbjs/lib/invariant":20}],51:[function(require,module,exports){
+},{"./reactProdInvariant":155,"_process":29,"fbjs/lib/invariant":20}],47:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -5463,15 +5213,13 @@ var DOMPropertyOperations = {
 
 module.exports = DOMPropertyOperations;
 }).call(this,require('_process'))
-},{"./DOMProperty":50,"./ReactDOMComponentTree":72,"./ReactInstrumentation":101,"./quoteAttributeValueForBrowser":158,"_process":29,"fbjs/lib/warning":27}],52:[function(require,module,exports){
+},{"./DOMProperty":46,"./ReactDOMComponentTree":68,"./ReactInstrumentation":97,"./quoteAttributeValueForBrowser":154,"_process":29,"fbjs/lib/warning":27}],48:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -5511,14 +5259,12 @@ var Danger = {
 
 module.exports = Danger;
 }).call(this,require('_process'))
-},{"./DOMLazyTree":48,"./reactProdInvariant":159,"_process":29,"fbjs/lib/ExecutionEnvironment":6,"fbjs/lib/createNodesFromMarkup":11,"fbjs/lib/emptyFunction":12,"fbjs/lib/invariant":20}],53:[function(require,module,exports){
+},{"./DOMLazyTree":44,"./reactProdInvariant":155,"_process":29,"fbjs/lib/ExecutionEnvironment":6,"fbjs/lib/createNodesFromMarkup":11,"fbjs/lib/emptyFunction":12,"fbjs/lib/invariant":20}],49:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -5537,14 +5283,12 @@ module.exports = Danger;
 var DefaultEventPluginOrder = ['ResponderEventPlugin', 'SimpleEventPlugin', 'TapEventPlugin', 'EnterLeaveEventPlugin', 'ChangeEventPlugin', 'SelectEventPlugin', 'BeforeInputEventPlugin'];
 
 module.exports = DefaultEventPluginOrder;
-},{}],54:[function(require,module,exports){
+},{}],50:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -5635,15 +5379,13 @@ var EnterLeaveEventPlugin = {
 };
 
 module.exports = EnterLeaveEventPlugin;
-},{"./EventPropagators":58,"./ReactDOMComponentTree":72,"./SyntheticMouseEvent":129}],55:[function(require,module,exports){
+},{"./EventPropagators":54,"./ReactDOMComponentTree":68,"./SyntheticMouseEvent":125}],51:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -5911,15 +5653,13 @@ var EventPluginHub = {
 
 module.exports = EventPluginHub;
 }).call(this,require('_process'))
-},{"./EventPluginRegistry":56,"./EventPluginUtils":57,"./ReactErrorUtils":92,"./accumulateInto":136,"./forEachAccumulated":144,"./reactProdInvariant":159,"_process":29,"fbjs/lib/invariant":20}],56:[function(require,module,exports){
+},{"./EventPluginRegistry":52,"./EventPluginUtils":53,"./ReactErrorUtils":88,"./accumulateInto":132,"./forEachAccumulated":140,"./reactProdInvariant":155,"_process":29,"fbjs/lib/invariant":20}],52:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -6166,15 +5906,13 @@ var EventPluginRegistry = {
 
 module.exports = EventPluginRegistry;
 }).call(this,require('_process'))
-},{"./reactProdInvariant":159,"_process":29,"fbjs/lib/invariant":20}],57:[function(require,module,exports){
+},{"./reactProdInvariant":155,"_process":29,"fbjs/lib/invariant":20}],53:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -6394,15 +6132,13 @@ var EventPluginUtils = {
 
 module.exports = EventPluginUtils;
 }).call(this,require('_process'))
-},{"./ReactErrorUtils":92,"./reactProdInvariant":159,"_process":29,"fbjs/lib/invariant":20,"fbjs/lib/warning":27}],58:[function(require,module,exports){
+},{"./ReactErrorUtils":88,"./reactProdInvariant":155,"_process":29,"fbjs/lib/invariant":20,"fbjs/lib/warning":27}],54:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -6530,14 +6266,12 @@ var EventPropagators = {
 
 module.exports = EventPropagators;
 }).call(this,require('_process'))
-},{"./EventPluginHub":55,"./EventPluginUtils":57,"./accumulateInto":136,"./forEachAccumulated":144,"_process":29,"fbjs/lib/warning":27}],59:[function(require,module,exports){
+},{"./EventPluginHub":51,"./EventPluginUtils":53,"./accumulateInto":132,"./forEachAccumulated":140,"_process":29,"fbjs/lib/warning":27}],55:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -6625,14 +6359,12 @@ _assign(FallbackCompositionState.prototype, {
 PooledClass.addPoolingTo(FallbackCompositionState);
 
 module.exports = FallbackCompositionState;
-},{"./PooledClass":63,"./getTextContentAccessor":152,"object-assign":28}],60:[function(require,module,exports){
+},{"./PooledClass":59,"./getTextContentAccessor":148,"object-assign":28}],56:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -6681,6 +6413,7 @@ var HTMLDOMPropertyConfig = {
     contentEditable: 0,
     contextMenu: 0,
     controls: HAS_BOOLEAN_VALUE,
+    controlsList: 0,
     coords: 0,
     crossOrigin: 0,
     data: 0, // For `<object />` acts as `src`.
@@ -6861,14 +6594,12 @@ var HTMLDOMPropertyConfig = {
 };
 
 module.exports = HTMLDOMPropertyConfig;
-},{"./DOMProperty":50}],61:[function(require,module,exports){
+},{"./DOMProperty":46}],57:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -6920,15 +6651,13 @@ var KeyEscapeUtils = {
 };
 
 module.exports = KeyEscapeUtils;
-},{}],62:[function(require,module,exports){
+},{}],58:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -7060,15 +6789,13 @@ var LinkedValueUtils = {
 
 module.exports = LinkedValueUtils;
 }).call(this,require('_process'))
-},{"./ReactPropTypesSecret":109,"./reactProdInvariant":159,"_process":29,"fbjs/lib/invariant":20,"fbjs/lib/warning":27,"prop-types/factory":31,"react/lib/React":168}],63:[function(require,module,exports){
+},{"./ReactPropTypesSecret":105,"./reactProdInvariant":155,"_process":29,"fbjs/lib/invariant":20,"fbjs/lib/warning":27,"prop-types/factory":163,"react/lib/React":168}],59:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -7174,14 +6901,12 @@ var PooledClass = {
 
 module.exports = PooledClass;
 }).call(this,require('_process'))
-},{"./reactProdInvariant":159,"_process":29,"fbjs/lib/invariant":20}],64:[function(require,module,exports){
+},{"./reactProdInvariant":155,"_process":29,"fbjs/lib/invariant":20}],60:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -7498,15 +7223,13 @@ var ReactBrowserEventEmitter = _assign({}, ReactEventEmitterMixin, {
 });
 
 module.exports = ReactBrowserEventEmitter;
-},{"./EventPluginRegistry":56,"./ReactEventEmitterMixin":93,"./ViewportMetrics":135,"./getVendorPrefixedEventName":153,"./isEventSupported":156,"object-assign":28}],65:[function(require,module,exports){
+},{"./EventPluginRegistry":52,"./ReactEventEmitterMixin":89,"./ViewportMetrics":131,"./getVendorPrefixedEventName":149,"./isEventSupported":152,"object-assign":28}],61:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2014-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2014-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -7653,14 +7376,12 @@ var ReactChildReconciler = {
 
 module.exports = ReactChildReconciler;
 }).call(this,require('_process'))
-},{"./KeyEscapeUtils":61,"./ReactReconciler":111,"./instantiateReactComponent":155,"./shouldUpdateReactComponent":163,"./traverseAllChildren":164,"_process":29,"fbjs/lib/warning":27,"react/lib/ReactComponentTreeHook":171}],66:[function(require,module,exports){
+},{"./KeyEscapeUtils":57,"./ReactReconciler":107,"./instantiateReactComponent":151,"./shouldUpdateReactComponent":159,"./traverseAllChildren":160,"_process":29,"fbjs/lib/warning":27,"react/lib/ReactComponentTreeHook":171}],62:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -7681,15 +7402,13 @@ var ReactComponentBrowserEnvironment = {
 };
 
 module.exports = ReactComponentBrowserEnvironment;
-},{"./DOMChildrenOperations":47,"./ReactDOMIDOperations":76}],67:[function(require,module,exports){
+},{"./DOMChildrenOperations":43,"./ReactDOMIDOperations":72}],63:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2014-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2014-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -7727,15 +7446,13 @@ var ReactComponentEnvironment = {
 
 module.exports = ReactComponentEnvironment;
 }).call(this,require('_process'))
-},{"./reactProdInvariant":159,"_process":29,"fbjs/lib/invariant":20}],68:[function(require,module,exports){
+},{"./reactProdInvariant":155,"_process":29,"fbjs/lib/invariant":20}],64:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -8004,7 +7721,7 @@ var ReactCompositeComponent = {
   },
 
   _constructComponent: function (doConstruct, publicProps, publicContext, updateQueue) {
-    if (process.env.NODE_ENV !== 'production') {
+    if (process.env.NODE_ENV !== 'production' && !doConstruct) {
       ReactCurrentOwner.current = this;
       try {
         return this._constructComponentWithoutOwner(doConstruct, publicProps, publicContext, updateQueue);
@@ -8629,15 +8346,13 @@ var ReactCompositeComponent = {
 
 module.exports = ReactCompositeComponent;
 }).call(this,require('_process'))
-},{"./ReactComponentEnvironment":67,"./ReactErrorUtils":92,"./ReactInstanceMap":100,"./ReactInstrumentation":101,"./ReactNodeTypes":106,"./ReactReconciler":111,"./checkReactTypeSpec":138,"./reactProdInvariant":159,"./shouldUpdateReactComponent":163,"_process":29,"fbjs/lib/emptyObject":13,"fbjs/lib/invariant":20,"fbjs/lib/shallowEqual":26,"fbjs/lib/warning":27,"object-assign":28,"react/lib/React":168,"react/lib/ReactCurrentOwner":172}],69:[function(require,module,exports){
+},{"./ReactComponentEnvironment":63,"./ReactErrorUtils":88,"./ReactInstanceMap":96,"./ReactInstrumentation":97,"./ReactNodeTypes":102,"./ReactReconciler":107,"./checkReactTypeSpec":134,"./reactProdInvariant":155,"./shouldUpdateReactComponent":159,"_process":29,"fbjs/lib/emptyObject":13,"fbjs/lib/invariant":20,"fbjs/lib/shallowEqual":26,"fbjs/lib/warning":27,"object-assign":28,"react/lib/React":168,"react/lib/ReactCurrentOwner":172}],65:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -8742,15 +8457,13 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = ReactDOM;
 }).call(this,require('_process'))
-},{"./ReactDOMComponentTree":72,"./ReactDOMInvalidARIAHook":78,"./ReactDOMNullInputValuePropHook":79,"./ReactDOMUnknownPropertyHook":86,"./ReactDefaultInjection":89,"./ReactInstrumentation":101,"./ReactMount":104,"./ReactReconciler":111,"./ReactUpdates":116,"./ReactVersion":117,"./findDOMNode":142,"./getHostComponentFromComposite":149,"./renderSubtreeIntoContainer":160,"_process":29,"fbjs/lib/ExecutionEnvironment":6,"fbjs/lib/warning":27}],70:[function(require,module,exports){
+},{"./ReactDOMComponentTree":68,"./ReactDOMInvalidARIAHook":74,"./ReactDOMNullInputValuePropHook":75,"./ReactDOMUnknownPropertyHook":82,"./ReactDefaultInjection":85,"./ReactInstrumentation":97,"./ReactMount":100,"./ReactReconciler":107,"./ReactUpdates":112,"./ReactVersion":113,"./findDOMNode":138,"./getHostComponentFromComposite":145,"./renderSubtreeIntoContainer":156,"_process":29,"fbjs/lib/ExecutionEnvironment":6,"fbjs/lib/warning":27}],66:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -9511,6 +9224,10 @@ ReactDOMComponent.Mixin = {
         // happen after `_updateDOMProperties`. Otherwise HTML5 input validations
         // raise warnings and prevent the new value from being assigned.
         ReactDOMInput.updateWrapper(this);
+
+        // We also check that we haven't missed a value update, such as a
+        // Radio group shifting the checked value to another named radio input.
+        inputValueTracking.updateValueIfChanged(this);
         break;
       case 'textarea':
         ReactDOMTextarea.updateWrapper(this);
@@ -9754,14 +9471,12 @@ _assign(ReactDOMComponent.prototype, ReactDOMComponent.Mixin, ReactMultiChild.Mi
 
 module.exports = ReactDOMComponent;
 }).call(this,require('_process'))
-},{"./AutoFocusUtils":41,"./CSSPropertyOperations":44,"./DOMLazyTree":48,"./DOMNamespaces":49,"./DOMProperty":50,"./DOMPropertyOperations":51,"./EventPluginHub":55,"./EventPluginRegistry":56,"./ReactBrowserEventEmitter":64,"./ReactDOMComponentFlags":71,"./ReactDOMComponentTree":72,"./ReactDOMInput":77,"./ReactDOMOption":80,"./ReactDOMSelect":81,"./ReactDOMTextarea":84,"./ReactInstrumentation":101,"./ReactMultiChild":105,"./ReactServerRenderingTransaction":113,"./escapeTextContentForBrowser":141,"./inputValueTracking":154,"./isEventSupported":156,"./reactProdInvariant":159,"./validateDOMNesting":165,"_process":29,"fbjs/lib/emptyFunction":12,"fbjs/lib/invariant":20,"fbjs/lib/shallowEqual":26,"fbjs/lib/warning":27,"object-assign":28}],71:[function(require,module,exports){
+},{"./AutoFocusUtils":37,"./CSSPropertyOperations":40,"./DOMLazyTree":44,"./DOMNamespaces":45,"./DOMProperty":46,"./DOMPropertyOperations":47,"./EventPluginHub":51,"./EventPluginRegistry":52,"./ReactBrowserEventEmitter":60,"./ReactDOMComponentFlags":67,"./ReactDOMComponentTree":68,"./ReactDOMInput":73,"./ReactDOMOption":76,"./ReactDOMSelect":77,"./ReactDOMTextarea":80,"./ReactInstrumentation":97,"./ReactMultiChild":101,"./ReactServerRenderingTransaction":109,"./escapeTextContentForBrowser":137,"./inputValueTracking":150,"./isEventSupported":152,"./reactProdInvariant":155,"./validateDOMNesting":161,"_process":29,"fbjs/lib/emptyFunction":12,"fbjs/lib/invariant":20,"fbjs/lib/shallowEqual":26,"fbjs/lib/warning":27,"object-assign":28}],67:[function(require,module,exports){
 /**
- * Copyright 2015-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2015-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -9772,15 +9487,13 @@ var ReactDOMComponentFlags = {
 };
 
 module.exports = ReactDOMComponentFlags;
-},{}],72:[function(require,module,exports){
+},{}],68:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -9969,15 +9682,13 @@ var ReactDOMComponentTree = {
 
 module.exports = ReactDOMComponentTree;
 }).call(this,require('_process'))
-},{"./DOMProperty":50,"./ReactDOMComponentFlags":71,"./reactProdInvariant":159,"_process":29,"fbjs/lib/invariant":20}],73:[function(require,module,exports){
+},{"./DOMProperty":46,"./ReactDOMComponentFlags":67,"./reactProdInvariant":155,"_process":29,"fbjs/lib/invariant":20}],69:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -10004,14 +9715,12 @@ function ReactDOMContainerInfo(topLevelWrapper, node) {
 
 module.exports = ReactDOMContainerInfo;
 }).call(this,require('_process'))
-},{"./validateDOMNesting":165,"_process":29}],74:[function(require,module,exports){
+},{"./validateDOMNesting":161,"_process":29}],70:[function(require,module,exports){
 /**
- * Copyright 2014-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2014-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -10064,14 +9773,12 @@ _assign(ReactDOMEmptyComponent.prototype, {
 });
 
 module.exports = ReactDOMEmptyComponent;
-},{"./DOMLazyTree":48,"./ReactDOMComponentTree":72,"object-assign":28}],75:[function(require,module,exports){
+},{"./DOMLazyTree":44,"./ReactDOMComponentTree":68,"object-assign":28}],71:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -10083,14 +9790,12 @@ var ReactDOMFeatureFlags = {
 };
 
 module.exports = ReactDOMFeatureFlags;
-},{}],76:[function(require,module,exports){
+},{}],72:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -10116,15 +9821,13 @@ var ReactDOMIDOperations = {
 };
 
 module.exports = ReactDOMIDOperations;
-},{"./DOMChildrenOperations":47,"./ReactDOMComponentTree":72}],77:[function(require,module,exports){
+},{"./DOMChildrenOperations":43,"./ReactDOMComponentTree":68}],73:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -10405,15 +10108,13 @@ function _handleChange(event) {
 
 module.exports = ReactDOMInput;
 }).call(this,require('_process'))
-},{"./DOMPropertyOperations":51,"./LinkedValueUtils":62,"./ReactDOMComponentTree":72,"./ReactUpdates":116,"./reactProdInvariant":159,"_process":29,"fbjs/lib/invariant":20,"fbjs/lib/warning":27,"object-assign":28}],78:[function(require,module,exports){
+},{"./DOMPropertyOperations":47,"./LinkedValueUtils":58,"./ReactDOMComponentTree":68,"./ReactUpdates":112,"./reactProdInvariant":155,"_process":29,"fbjs/lib/invariant":20,"fbjs/lib/warning":27,"object-assign":28}],74:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -10500,15 +10201,13 @@ var ReactDOMInvalidARIAHook = {
 
 module.exports = ReactDOMInvalidARIAHook;
 }).call(this,require('_process'))
-},{"./DOMProperty":50,"_process":29,"fbjs/lib/warning":27,"react/lib/ReactComponentTreeHook":171}],79:[function(require,module,exports){
+},{"./DOMProperty":46,"_process":29,"fbjs/lib/warning":27,"react/lib/ReactComponentTreeHook":171}],75:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -10545,15 +10244,13 @@ var ReactDOMNullInputValuePropHook = {
 
 module.exports = ReactDOMNullInputValuePropHook;
 }).call(this,require('_process'))
-},{"_process":29,"fbjs/lib/warning":27,"react/lib/ReactComponentTreeHook":171}],80:[function(require,module,exports){
+},{"_process":29,"fbjs/lib/warning":27,"react/lib/ReactComponentTreeHook":171}],76:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -10669,15 +10366,13 @@ var ReactDOMOption = {
 
 module.exports = ReactDOMOption;
 }).call(this,require('_process'))
-},{"./ReactDOMComponentTree":72,"./ReactDOMSelect":81,"_process":29,"fbjs/lib/warning":27,"object-assign":28,"react/lib/React":168}],81:[function(require,module,exports){
+},{"./ReactDOMComponentTree":68,"./ReactDOMSelect":77,"_process":29,"fbjs/lib/warning":27,"object-assign":28,"react/lib/React":168}],77:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -10871,14 +10566,12 @@ function _handleChange(event) {
 
 module.exports = ReactDOMSelect;
 }).call(this,require('_process'))
-},{"./LinkedValueUtils":62,"./ReactDOMComponentTree":72,"./ReactUpdates":116,"_process":29,"fbjs/lib/warning":27,"object-assign":28}],82:[function(require,module,exports){
+},{"./LinkedValueUtils":58,"./ReactDOMComponentTree":68,"./ReactUpdates":112,"_process":29,"fbjs/lib/warning":27,"object-assign":28}],78:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -11083,15 +10776,13 @@ var ReactDOMSelection = {
 };
 
 module.exports = ReactDOMSelection;
-},{"./getNodeForCharacterOffset":151,"./getTextContentAccessor":152,"fbjs/lib/ExecutionEnvironment":6}],83:[function(require,module,exports){
+},{"./getNodeForCharacterOffset":147,"./getTextContentAccessor":148,"fbjs/lib/ExecutionEnvironment":6}],79:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -11247,15 +10938,13 @@ _assign(ReactDOMTextComponent.prototype, {
 
 module.exports = ReactDOMTextComponent;
 }).call(this,require('_process'))
-},{"./DOMChildrenOperations":47,"./DOMLazyTree":48,"./ReactDOMComponentTree":72,"./escapeTextContentForBrowser":141,"./reactProdInvariant":159,"./validateDOMNesting":165,"_process":29,"fbjs/lib/invariant":20,"object-assign":28}],84:[function(require,module,exports){
+},{"./DOMChildrenOperations":43,"./DOMLazyTree":44,"./ReactDOMComponentTree":68,"./escapeTextContentForBrowser":137,"./reactProdInvariant":155,"./validateDOMNesting":161,"_process":29,"fbjs/lib/invariant":20,"object-assign":28}],80:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -11409,15 +11098,13 @@ function _handleChange(event) {
 
 module.exports = ReactDOMTextarea;
 }).call(this,require('_process'))
-},{"./LinkedValueUtils":62,"./ReactDOMComponentTree":72,"./ReactUpdates":116,"./reactProdInvariant":159,"_process":29,"fbjs/lib/invariant":20,"fbjs/lib/warning":27,"object-assign":28}],85:[function(require,module,exports){
+},{"./LinkedValueUtils":58,"./ReactDOMComponentTree":68,"./ReactUpdates":112,"./reactProdInvariant":155,"_process":29,"fbjs/lib/invariant":20,"fbjs/lib/warning":27,"object-assign":28}],81:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2015-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2015-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -11547,15 +11234,13 @@ module.exports = {
   traverseEnterLeave: traverseEnterLeave
 };
 }).call(this,require('_process'))
-},{"./reactProdInvariant":159,"_process":29,"fbjs/lib/invariant":20}],86:[function(require,module,exports){
+},{"./reactProdInvariant":155,"_process":29,"fbjs/lib/invariant":20}],82:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -11661,15 +11346,13 @@ var ReactDOMUnknownPropertyHook = {
 
 module.exports = ReactDOMUnknownPropertyHook;
 }).call(this,require('_process'))
-},{"./DOMProperty":50,"./EventPluginRegistry":56,"_process":29,"fbjs/lib/warning":27,"react/lib/ReactComponentTreeHook":171}],87:[function(require,module,exports){
+},{"./DOMProperty":46,"./EventPluginRegistry":52,"_process":29,"fbjs/lib/warning":27,"react/lib/ReactComponentTreeHook":171}],83:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2016-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2016-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -12024,14 +11707,12 @@ if (/[?&]react_perf\b/.test(url)) {
 
 module.exports = ReactDebugTool;
 }).call(this,require('_process'))
-},{"./ReactHostOperationHistoryHook":97,"./ReactInvalidSetStateWarningHook":102,"_process":29,"fbjs/lib/ExecutionEnvironment":6,"fbjs/lib/performanceNow":25,"fbjs/lib/warning":27,"react/lib/ReactComponentTreeHook":171}],88:[function(require,module,exports){
+},{"./ReactHostOperationHistoryHook":93,"./ReactInvalidSetStateWarningHook":98,"_process":29,"fbjs/lib/ExecutionEnvironment":6,"fbjs/lib/performanceNow":25,"fbjs/lib/warning":27,"react/lib/ReactComponentTreeHook":171}],84:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -12092,14 +11773,12 @@ var ReactDefaultBatchingStrategy = {
 };
 
 module.exports = ReactDefaultBatchingStrategy;
-},{"./ReactUpdates":116,"./Transaction":134,"fbjs/lib/emptyFunction":12,"object-assign":28}],89:[function(require,module,exports){
+},{"./ReactUpdates":112,"./Transaction":130,"fbjs/lib/emptyFunction":12,"object-assign":28}],85:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -12178,14 +11857,12 @@ function inject() {
 module.exports = {
   inject: inject
 };
-},{"./ARIADOMPropertyConfig":40,"./BeforeInputEventPlugin":42,"./ChangeEventPlugin":46,"./DefaultEventPluginOrder":53,"./EnterLeaveEventPlugin":54,"./HTMLDOMPropertyConfig":60,"./ReactComponentBrowserEnvironment":66,"./ReactDOMComponent":70,"./ReactDOMComponentTree":72,"./ReactDOMEmptyComponent":74,"./ReactDOMTextComponent":83,"./ReactDOMTreeTraversal":85,"./ReactDefaultBatchingStrategy":88,"./ReactEventListener":94,"./ReactInjection":98,"./ReactReconcileTransaction":110,"./SVGDOMPropertyConfig":118,"./SelectEventPlugin":119,"./SimpleEventPlugin":120}],90:[function(require,module,exports){
+},{"./ARIADOMPropertyConfig":36,"./BeforeInputEventPlugin":38,"./ChangeEventPlugin":42,"./DefaultEventPluginOrder":49,"./EnterLeaveEventPlugin":50,"./HTMLDOMPropertyConfig":56,"./ReactComponentBrowserEnvironment":62,"./ReactDOMComponent":66,"./ReactDOMComponentTree":68,"./ReactDOMEmptyComponent":70,"./ReactDOMTextComponent":79,"./ReactDOMTreeTraversal":81,"./ReactDefaultBatchingStrategy":84,"./ReactEventListener":90,"./ReactInjection":94,"./ReactReconcileTransaction":106,"./SVGDOMPropertyConfig":114,"./SelectEventPlugin":115,"./SimpleEventPlugin":116}],86:[function(require,module,exports){
 /**
- * Copyright 2014-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2014-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -12198,14 +11875,12 @@ module.exports = {
 var REACT_ELEMENT_TYPE = typeof Symbol === 'function' && Symbol['for'] && Symbol['for']('react.element') || 0xeac7;
 
 module.exports = REACT_ELEMENT_TYPE;
-},{}],91:[function(require,module,exports){
+},{}],87:[function(require,module,exports){
 /**
- * Copyright 2014-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2014-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -12228,15 +11903,13 @@ var ReactEmptyComponent = {
 ReactEmptyComponent.injection = ReactEmptyComponentInjection;
 
 module.exports = ReactEmptyComponent;
-},{}],92:[function(require,module,exports){
+},{}],88:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -12293,7 +11966,9 @@ if (process.env.NODE_ENV !== 'production') {
   if (typeof window !== 'undefined' && typeof window.dispatchEvent === 'function' && typeof document !== 'undefined' && typeof document.createEvent === 'function') {
     var fakeNode = document.createElement('react');
     ReactErrorUtils.invokeGuardedCallback = function (name, func, a) {
-      var boundFunc = func.bind(null, a);
+      var boundFunc = function () {
+        func(a);
+      };
       var evtType = 'react-' + name;
       fakeNode.addEventListener(evtType, boundFunc, false);
       var evt = document.createEvent('Event');
@@ -12306,14 +11981,12 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = ReactErrorUtils;
 }).call(this,require('_process'))
-},{"_process":29}],93:[function(require,module,exports){
+},{"_process":29}],89:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -12338,14 +12011,12 @@ var ReactEventEmitterMixin = {
 };
 
 module.exports = ReactEventEmitterMixin;
-},{"./EventPluginHub":55}],94:[function(require,module,exports){
+},{"./EventPluginHub":51}],90:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -12493,14 +12164,12 @@ var ReactEventListener = {
 };
 
 module.exports = ReactEventListener;
-},{"./PooledClass":63,"./ReactDOMComponentTree":72,"./ReactUpdates":116,"./getEventTarget":148,"fbjs/lib/EventListener":5,"fbjs/lib/ExecutionEnvironment":6,"fbjs/lib/getUnboundedScrollPosition":17,"object-assign":28}],95:[function(require,module,exports){
+},{"./PooledClass":59,"./ReactDOMComponentTree":68,"./ReactUpdates":112,"./getEventTarget":144,"fbjs/lib/EventListener":5,"fbjs/lib/ExecutionEnvironment":6,"fbjs/lib/getUnboundedScrollPosition":17,"object-assign":28}],91:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -12515,15 +12184,13 @@ var ReactFeatureFlags = {
 };
 
 module.exports = ReactFeatureFlags;
-},{}],96:[function(require,module,exports){
+},{}],92:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2014-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2014-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -12585,14 +12252,12 @@ var ReactHostComponent = {
 
 module.exports = ReactHostComponent;
 }).call(this,require('_process'))
-},{"./reactProdInvariant":159,"_process":29,"fbjs/lib/invariant":20}],97:[function(require,module,exports){
+},{"./reactProdInvariant":155,"_process":29,"fbjs/lib/invariant":20}],93:[function(require,module,exports){
 /**
- * Copyright 2016-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2016-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -12619,14 +12284,12 @@ var ReactHostOperationHistoryHook = {
 };
 
 module.exports = ReactHostOperationHistoryHook;
-},{}],98:[function(require,module,exports){
+},{}],94:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -12653,14 +12316,12 @@ var ReactInjection = {
 };
 
 module.exports = ReactInjection;
-},{"./DOMProperty":50,"./EventPluginHub":55,"./EventPluginUtils":57,"./ReactBrowserEventEmitter":64,"./ReactComponentEnvironment":67,"./ReactEmptyComponent":91,"./ReactHostComponent":96,"./ReactUpdates":116}],99:[function(require,module,exports){
+},{"./DOMProperty":46,"./EventPluginHub":51,"./EventPluginUtils":53,"./ReactBrowserEventEmitter":60,"./ReactComponentEnvironment":63,"./ReactEmptyComponent":87,"./ReactHostComponent":92,"./ReactUpdates":112}],95:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -12776,14 +12437,12 @@ var ReactInputSelection = {
 };
 
 module.exports = ReactInputSelection;
-},{"./ReactDOMSelection":82,"fbjs/lib/containsNode":9,"fbjs/lib/focusNode":14,"fbjs/lib/getActiveElement":15}],100:[function(require,module,exports){
+},{"./ReactDOMSelection":78,"fbjs/lib/containsNode":9,"fbjs/lib/focusNode":14,"fbjs/lib/getActiveElement":15}],96:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -12822,15 +12481,13 @@ var ReactInstanceMap = {
 };
 
 module.exports = ReactInstanceMap;
-},{}],101:[function(require,module,exports){
+},{}],97:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2016-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2016-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -12848,15 +12505,13 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = { debugTool: debugTool };
 }).call(this,require('_process'))
-},{"./ReactDebugTool":87,"_process":29}],102:[function(require,module,exports){
+},{"./ReactDebugTool":83,"_process":29}],98:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2016-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2016-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -12887,14 +12542,12 @@ var ReactInvalidSetStateWarningHook = {
 
 module.exports = ReactInvalidSetStateWarningHook;
 }).call(this,require('_process'))
-},{"_process":29,"fbjs/lib/warning":27}],103:[function(require,module,exports){
+},{"_process":29,"fbjs/lib/warning":27}],99:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -12937,15 +12590,13 @@ var ReactMarkupChecksum = {
 };
 
 module.exports = ReactMarkupChecksum;
-},{"./adler32":137}],104:[function(require,module,exports){
+},{"./adler32":133}],100:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -13477,15 +13128,13 @@ var ReactMount = {
 
 module.exports = ReactMount;
 }).call(this,require('_process'))
-},{"./DOMLazyTree":48,"./DOMProperty":50,"./ReactBrowserEventEmitter":64,"./ReactDOMComponentTree":72,"./ReactDOMContainerInfo":73,"./ReactDOMFeatureFlags":75,"./ReactFeatureFlags":95,"./ReactInstanceMap":100,"./ReactInstrumentation":101,"./ReactMarkupChecksum":103,"./ReactReconciler":111,"./ReactUpdateQueue":115,"./ReactUpdates":116,"./instantiateReactComponent":155,"./reactProdInvariant":159,"./setInnerHTML":161,"./shouldUpdateReactComponent":163,"_process":29,"fbjs/lib/emptyObject":13,"fbjs/lib/invariant":20,"fbjs/lib/warning":27,"react/lib/React":168,"react/lib/ReactCurrentOwner":172}],105:[function(require,module,exports){
+},{"./DOMLazyTree":44,"./DOMProperty":46,"./ReactBrowserEventEmitter":60,"./ReactDOMComponentTree":68,"./ReactDOMContainerInfo":69,"./ReactDOMFeatureFlags":71,"./ReactFeatureFlags":91,"./ReactInstanceMap":96,"./ReactInstrumentation":97,"./ReactMarkupChecksum":99,"./ReactReconciler":107,"./ReactUpdateQueue":111,"./ReactUpdates":112,"./instantiateReactComponent":151,"./reactProdInvariant":155,"./setInnerHTML":157,"./shouldUpdateReactComponent":159,"_process":29,"fbjs/lib/emptyObject":13,"fbjs/lib/invariant":20,"fbjs/lib/warning":27,"react/lib/React":168,"react/lib/ReactCurrentOwner":172}],101:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -13925,15 +13574,13 @@ var ReactMultiChild = {
 
 module.exports = ReactMultiChild;
 }).call(this,require('_process'))
-},{"./ReactChildReconciler":65,"./ReactComponentEnvironment":67,"./ReactInstanceMap":100,"./ReactInstrumentation":101,"./ReactReconciler":111,"./flattenChildren":143,"./reactProdInvariant":159,"_process":29,"fbjs/lib/emptyFunction":12,"fbjs/lib/invariant":20,"react/lib/ReactCurrentOwner":172}],106:[function(require,module,exports){
+},{"./ReactChildReconciler":61,"./ReactComponentEnvironment":63,"./ReactInstanceMap":96,"./ReactInstrumentation":97,"./ReactReconciler":107,"./flattenChildren":139,"./reactProdInvariant":155,"_process":29,"fbjs/lib/emptyFunction":12,"fbjs/lib/invariant":20,"react/lib/ReactCurrentOwner":172}],102:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -13967,15 +13614,13 @@ var ReactNodeTypes = {
 
 module.exports = ReactNodeTypes;
 }).call(this,require('_process'))
-},{"./reactProdInvariant":159,"_process":29,"fbjs/lib/invariant":20,"react/lib/React":168}],107:[function(require,module,exports){
+},{"./reactProdInvariant":155,"_process":29,"fbjs/lib/invariant":20,"react/lib/React":168}],103:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -14062,15 +13707,13 @@ var ReactOwner = {
 
 module.exports = ReactOwner;
 }).call(this,require('_process'))
-},{"./reactProdInvariant":159,"_process":29,"fbjs/lib/invariant":20}],108:[function(require,module,exports){
+},{"./reactProdInvariant":155,"_process":29,"fbjs/lib/invariant":20}],104:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -14089,14 +13732,12 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = ReactPropTypeLocationNames;
 }).call(this,require('_process'))
-},{"_process":29}],109:[function(require,module,exports){
+},{"_process":29}],105:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -14106,15 +13747,13 @@ module.exports = ReactPropTypeLocationNames;
 var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 
 module.exports = ReactPropTypesSecret;
-},{}],110:[function(require,module,exports){
+},{}],106:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -14286,15 +13925,13 @@ PooledClass.addPoolingTo(ReactReconcileTransaction);
 
 module.exports = ReactReconcileTransaction;
 }).call(this,require('_process'))
-},{"./CallbackQueue":45,"./PooledClass":63,"./ReactBrowserEventEmitter":64,"./ReactInputSelection":99,"./ReactInstrumentation":101,"./ReactUpdateQueue":115,"./Transaction":134,"_process":29,"object-assign":28}],111:[function(require,module,exports){
+},{"./CallbackQueue":41,"./PooledClass":59,"./ReactBrowserEventEmitter":60,"./ReactInputSelection":95,"./ReactInstrumentation":97,"./ReactUpdateQueue":111,"./Transaction":130,"_process":29,"object-assign":28}],107:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -14454,14 +14091,12 @@ var ReactReconciler = {
 
 module.exports = ReactReconciler;
 }).call(this,require('_process'))
-},{"./ReactInstrumentation":101,"./ReactRef":112,"_process":29,"fbjs/lib/warning":27}],112:[function(require,module,exports){
+},{"./ReactInstrumentation":97,"./ReactRef":108,"_process":29,"fbjs/lib/warning":27}],108:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -14543,15 +14178,13 @@ ReactRef.detachRefs = function (instance, element) {
 };
 
 module.exports = ReactRef;
-},{"./ReactOwner":107}],113:[function(require,module,exports){
+},{"./ReactOwner":103}],109:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2014-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2014-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -14635,15 +14268,13 @@ PooledClass.addPoolingTo(ReactServerRenderingTransaction);
 
 module.exports = ReactServerRenderingTransaction;
 }).call(this,require('_process'))
-},{"./PooledClass":63,"./ReactInstrumentation":101,"./ReactServerUpdateQueue":114,"./Transaction":134,"_process":29,"object-assign":28}],114:[function(require,module,exports){
+},{"./PooledClass":59,"./ReactInstrumentation":97,"./ReactServerUpdateQueue":110,"./Transaction":130,"_process":29,"object-assign":28}],110:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2015-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2015-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -14776,15 +14407,13 @@ var ReactServerUpdateQueue = function () {
 
 module.exports = ReactServerUpdateQueue;
 }).call(this,require('_process'))
-},{"./ReactUpdateQueue":115,"_process":29,"fbjs/lib/warning":27}],115:[function(require,module,exports){
+},{"./ReactUpdateQueue":111,"_process":29,"fbjs/lib/warning":27}],111:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2015-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2015-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -15012,15 +14641,13 @@ var ReactUpdateQueue = {
 
 module.exports = ReactUpdateQueue;
 }).call(this,require('_process'))
-},{"./ReactInstanceMap":100,"./ReactInstrumentation":101,"./ReactUpdates":116,"./reactProdInvariant":159,"_process":29,"fbjs/lib/invariant":20,"fbjs/lib/warning":27,"react/lib/ReactCurrentOwner":172}],116:[function(require,module,exports){
+},{"./ReactInstanceMap":96,"./ReactInstrumentation":97,"./ReactUpdates":112,"./reactProdInvariant":155,"_process":29,"fbjs/lib/invariant":20,"fbjs/lib/warning":27,"react/lib/ReactCurrentOwner":172}],112:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -15228,7 +14855,7 @@ function enqueueUpdate(component) {
  * if no updates are currently being performed.
  */
 function asap(callback, context) {
-  !batchingStrategy.isBatchingUpdates ? process.env.NODE_ENV !== 'production' ? invariant(false, 'ReactUpdates.asap: Can\'t enqueue an asap callback in a context whereupdates are not being batched.') : _prodInvariant('125') : void 0;
+  invariant(batchingStrategy.isBatchingUpdates, "ReactUpdates.asap: Can't enqueue an asap callback in a context where" + 'updates are not being batched.');
   asapCallbackQueue.enqueue(callback, context);
   asapEnqueued = true;
 }
@@ -15265,28 +14892,24 @@ var ReactUpdates = {
 
 module.exports = ReactUpdates;
 }).call(this,require('_process'))
-},{"./CallbackQueue":45,"./PooledClass":63,"./ReactFeatureFlags":95,"./ReactReconciler":111,"./Transaction":134,"./reactProdInvariant":159,"_process":29,"fbjs/lib/invariant":20,"object-assign":28}],117:[function(require,module,exports){
+},{"./CallbackQueue":41,"./PooledClass":59,"./ReactFeatureFlags":91,"./ReactReconciler":107,"./Transaction":130,"./reactProdInvariant":155,"_process":29,"fbjs/lib/invariant":20,"object-assign":28}],113:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
 'use strict';
 
-module.exports = '15.6.1';
-},{}],118:[function(require,module,exports){
+module.exports = '15.6.2';
+},{}],114:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -15581,14 +15204,12 @@ Object.keys(ATTRS).forEach(function (key) {
 });
 
 module.exports = SVGDOMPropertyConfig;
-},{}],119:[function(require,module,exports){
+},{}],115:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -15769,15 +15390,13 @@ var SelectEventPlugin = {
 };
 
 module.exports = SelectEventPlugin;
-},{"./EventPropagators":58,"./ReactDOMComponentTree":72,"./ReactInputSelection":99,"./SyntheticEvent":125,"./isTextInputElement":157,"fbjs/lib/ExecutionEnvironment":6,"fbjs/lib/getActiveElement":15,"fbjs/lib/shallowEqual":26}],120:[function(require,module,exports){
+},{"./EventPropagators":54,"./ReactDOMComponentTree":68,"./ReactInputSelection":95,"./SyntheticEvent":121,"./isTextInputElement":153,"fbjs/lib/ExecutionEnvironment":6,"fbjs/lib/getActiveElement":15,"fbjs/lib/shallowEqual":26}],116:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -15997,14 +15616,12 @@ var SimpleEventPlugin = {
 
 module.exports = SimpleEventPlugin;
 }).call(this,require('_process'))
-},{"./EventPropagators":58,"./ReactDOMComponentTree":72,"./SyntheticAnimationEvent":121,"./SyntheticClipboardEvent":122,"./SyntheticDragEvent":124,"./SyntheticEvent":125,"./SyntheticFocusEvent":126,"./SyntheticKeyboardEvent":128,"./SyntheticMouseEvent":129,"./SyntheticTouchEvent":130,"./SyntheticTransitionEvent":131,"./SyntheticUIEvent":132,"./SyntheticWheelEvent":133,"./getEventCharCode":145,"./reactProdInvariant":159,"_process":29,"fbjs/lib/EventListener":5,"fbjs/lib/emptyFunction":12,"fbjs/lib/invariant":20}],121:[function(require,module,exports){
+},{"./EventPropagators":54,"./ReactDOMComponentTree":68,"./SyntheticAnimationEvent":117,"./SyntheticClipboardEvent":118,"./SyntheticDragEvent":120,"./SyntheticEvent":121,"./SyntheticFocusEvent":122,"./SyntheticKeyboardEvent":124,"./SyntheticMouseEvent":125,"./SyntheticTouchEvent":126,"./SyntheticTransitionEvent":127,"./SyntheticUIEvent":128,"./SyntheticWheelEvent":129,"./getEventCharCode":141,"./reactProdInvariant":155,"_process":29,"fbjs/lib/EventListener":5,"fbjs/lib/emptyFunction":12,"fbjs/lib/invariant":20}],117:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -16036,14 +15653,12 @@ function SyntheticAnimationEvent(dispatchConfig, dispatchMarker, nativeEvent, na
 SyntheticEvent.augmentClass(SyntheticAnimationEvent, AnimationEventInterface);
 
 module.exports = SyntheticAnimationEvent;
-},{"./SyntheticEvent":125}],122:[function(require,module,exports){
+},{"./SyntheticEvent":121}],118:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -16074,14 +15689,12 @@ function SyntheticClipboardEvent(dispatchConfig, dispatchMarker, nativeEvent, na
 SyntheticEvent.augmentClass(SyntheticClipboardEvent, ClipboardEventInterface);
 
 module.exports = SyntheticClipboardEvent;
-},{"./SyntheticEvent":125}],123:[function(require,module,exports){
+},{"./SyntheticEvent":121}],119:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -16110,14 +15723,12 @@ function SyntheticCompositionEvent(dispatchConfig, dispatchMarker, nativeEvent, 
 SyntheticEvent.augmentClass(SyntheticCompositionEvent, CompositionEventInterface);
 
 module.exports = SyntheticCompositionEvent;
-},{"./SyntheticEvent":125}],124:[function(require,module,exports){
+},{"./SyntheticEvent":121}],120:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -16146,15 +15757,13 @@ function SyntheticDragEvent(dispatchConfig, dispatchMarker, nativeEvent, nativeE
 SyntheticMouseEvent.augmentClass(SyntheticDragEvent, DragEventInterface);
 
 module.exports = SyntheticDragEvent;
-},{"./SyntheticMouseEvent":129}],125:[function(require,module,exports){
+},{"./SyntheticMouseEvent":125}],121:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -16330,6 +15939,33 @@ _assign(SyntheticEvent.prototype, {
 
 SyntheticEvent.Interface = EventInterface;
 
+/**
+ * Helper to reduce boilerplate when creating subclasses.
+ *
+ * @param {function} Class
+ * @param {?object} Interface
+ */
+SyntheticEvent.augmentClass = function (Class, Interface) {
+  var Super = this;
+
+  var E = function () {};
+  E.prototype = Super.prototype;
+  var prototype = new E();
+
+  _assign(prototype, Class.prototype);
+  Class.prototype = prototype;
+  Class.prototype.constructor = Class;
+
+  Class.Interface = _assign({}, Super.Interface, Interface);
+  Class.augmentClass = Super.augmentClass;
+
+  PooledClass.addPoolingTo(Class, PooledClass.fourArgumentPooler);
+};
+
+/** Proxying after everything set on SyntheticEvent
+  * to resolve Proxy issue on some WebKit browsers
+  * in which some Event properties are set to undefined (GH#10010)
+  */
 if (process.env.NODE_ENV !== 'production') {
   if (isProxySupported) {
     /*eslint-disable no-func-assign */
@@ -16353,28 +15989,6 @@ if (process.env.NODE_ENV !== 'production') {
     /*eslint-enable no-func-assign */
   }
 }
-/**
- * Helper to reduce boilerplate when creating subclasses.
- *
- * @param {function} Class
- * @param {?object} Interface
- */
-SyntheticEvent.augmentClass = function (Class, Interface) {
-  var Super = this;
-
-  var E = function () {};
-  E.prototype = Super.prototype;
-  var prototype = new E();
-
-  _assign(prototype, Class.prototype);
-  Class.prototype = prototype;
-  Class.prototype.constructor = Class;
-
-  Class.Interface = _assign({}, Super.Interface, Interface);
-  Class.augmentClass = Super.augmentClass;
-
-  PooledClass.addPoolingTo(Class, PooledClass.fourArgumentPooler);
-};
 
 PooledClass.addPoolingTo(SyntheticEvent, PooledClass.fourArgumentPooler);
 
@@ -16414,14 +16028,12 @@ function getPooledWarningPropertyDefinition(propName, getVal) {
   }
 }
 }).call(this,require('_process'))
-},{"./PooledClass":63,"_process":29,"fbjs/lib/emptyFunction":12,"fbjs/lib/warning":27,"object-assign":28}],126:[function(require,module,exports){
+},{"./PooledClass":59,"_process":29,"fbjs/lib/emptyFunction":12,"fbjs/lib/warning":27,"object-assign":28}],122:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -16450,14 +16062,12 @@ function SyntheticFocusEvent(dispatchConfig, dispatchMarker, nativeEvent, native
 SyntheticUIEvent.augmentClass(SyntheticFocusEvent, FocusEventInterface);
 
 module.exports = SyntheticFocusEvent;
-},{"./SyntheticUIEvent":132}],127:[function(require,module,exports){
+},{"./SyntheticUIEvent":128}],123:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -16487,14 +16097,12 @@ function SyntheticInputEvent(dispatchConfig, dispatchMarker, nativeEvent, native
 SyntheticEvent.augmentClass(SyntheticInputEvent, InputEventInterface);
 
 module.exports = SyntheticInputEvent;
-},{"./SyntheticEvent":125}],128:[function(require,module,exports){
+},{"./SyntheticEvent":121}],124:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -16571,14 +16179,12 @@ function SyntheticKeyboardEvent(dispatchConfig, dispatchMarker, nativeEvent, nat
 SyntheticUIEvent.augmentClass(SyntheticKeyboardEvent, KeyboardEventInterface);
 
 module.exports = SyntheticKeyboardEvent;
-},{"./SyntheticUIEvent":132,"./getEventCharCode":145,"./getEventKey":146,"./getEventModifierState":147}],129:[function(require,module,exports){
+},{"./SyntheticUIEvent":128,"./getEventCharCode":141,"./getEventKey":142,"./getEventModifierState":143}],125:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -16643,14 +16249,12 @@ function SyntheticMouseEvent(dispatchConfig, dispatchMarker, nativeEvent, native
 SyntheticUIEvent.augmentClass(SyntheticMouseEvent, MouseEventInterface);
 
 module.exports = SyntheticMouseEvent;
-},{"./SyntheticUIEvent":132,"./ViewportMetrics":135,"./getEventModifierState":147}],130:[function(require,module,exports){
+},{"./SyntheticUIEvent":128,"./ViewportMetrics":131,"./getEventModifierState":143}],126:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -16688,14 +16292,12 @@ function SyntheticTouchEvent(dispatchConfig, dispatchMarker, nativeEvent, native
 SyntheticUIEvent.augmentClass(SyntheticTouchEvent, TouchEventInterface);
 
 module.exports = SyntheticTouchEvent;
-},{"./SyntheticUIEvent":132,"./getEventModifierState":147}],131:[function(require,module,exports){
+},{"./SyntheticUIEvent":128,"./getEventModifierState":143}],127:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -16727,14 +16329,12 @@ function SyntheticTransitionEvent(dispatchConfig, dispatchMarker, nativeEvent, n
 SyntheticEvent.augmentClass(SyntheticTransitionEvent, TransitionEventInterface);
 
 module.exports = SyntheticTransitionEvent;
-},{"./SyntheticEvent":125}],132:[function(require,module,exports){
+},{"./SyntheticEvent":121}],128:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -16786,14 +16386,12 @@ function SyntheticUIEvent(dispatchConfig, dispatchMarker, nativeEvent, nativeEve
 SyntheticEvent.augmentClass(SyntheticUIEvent, UIEventInterface);
 
 module.exports = SyntheticUIEvent;
-},{"./SyntheticEvent":125,"./getEventTarget":148}],133:[function(require,module,exports){
+},{"./SyntheticEvent":121,"./getEventTarget":144}],129:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -16837,15 +16435,13 @@ function SyntheticWheelEvent(dispatchConfig, dispatchMarker, nativeEvent, native
 SyntheticMouseEvent.augmentClass(SyntheticWheelEvent, WheelEventInterface);
 
 module.exports = SyntheticWheelEvent;
-},{"./SyntheticMouseEvent":129}],134:[function(require,module,exports){
+},{"./SyntheticMouseEvent":125}],130:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -17067,14 +16663,12 @@ var TransactionImpl = {
 
 module.exports = TransactionImpl;
 }).call(this,require('_process'))
-},{"./reactProdInvariant":159,"_process":29,"fbjs/lib/invariant":20}],135:[function(require,module,exports){
+},{"./reactProdInvariant":155,"_process":29,"fbjs/lib/invariant":20}],131:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -17092,15 +16686,13 @@ var ViewportMetrics = {
 };
 
 module.exports = ViewportMetrics;
-},{}],136:[function(require,module,exports){
+},{}],132:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2014-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2014-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -17152,14 +16744,12 @@ function accumulateInto(current, next) {
 
 module.exports = accumulateInto;
 }).call(this,require('_process'))
-},{"./reactProdInvariant":159,"_process":29,"fbjs/lib/invariant":20}],137:[function(require,module,exports){
+},{"./reactProdInvariant":155,"_process":29,"fbjs/lib/invariant":20}],133:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -17196,15 +16786,13 @@ function adler32(data) {
 }
 
 module.exports = adler32;
-},{}],138:[function(require,module,exports){
+},{}],134:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -17285,14 +16873,12 @@ function checkReactTypeSpec(typeSpecs, values, location, componentName, element,
 
 module.exports = checkReactTypeSpec;
 }).call(this,require('_process'))
-},{"./ReactPropTypeLocationNames":108,"./ReactPropTypesSecret":109,"./reactProdInvariant":159,"_process":29,"fbjs/lib/invariant":20,"fbjs/lib/warning":27,"react/lib/ReactComponentTreeHook":171}],139:[function(require,module,exports){
+},{"./ReactPropTypeLocationNames":104,"./ReactPropTypesSecret":105,"./reactProdInvariant":155,"_process":29,"fbjs/lib/invariant":20,"fbjs/lib/warning":27,"react/lib/ReactComponentTreeHook":171}],135:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -17317,15 +16903,13 @@ var createMicrosoftUnsafeLocalFunction = function (func) {
 };
 
 module.exports = createMicrosoftUnsafeLocalFunction;
-},{}],140:[function(require,module,exports){
+},{}],136:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -17398,14 +16982,12 @@ function dangerousStyleValue(name, value, component, isCustomProperty) {
 
 module.exports = dangerousStyleValue;
 }).call(this,require('_process'))
-},{"./CSSProperty":43,"_process":29,"fbjs/lib/warning":27}],141:[function(require,module,exports){
+},{"./CSSProperty":39,"_process":29,"fbjs/lib/warning":27}],137:[function(require,module,exports){
 /**
- * Copyright 2016-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2016-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * Based on the escape-html library, which is used under the MIT License below:
  *
@@ -17520,15 +17102,13 @@ function escapeTextContentForBrowser(text) {
 }
 
 module.exports = escapeTextContentForBrowser;
-},{}],142:[function(require,module,exports){
+},{}],138:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -17582,15 +17162,13 @@ function findDOMNode(componentOrElement) {
 
 module.exports = findDOMNode;
 }).call(this,require('_process'))
-},{"./ReactDOMComponentTree":72,"./ReactInstanceMap":100,"./getHostComponentFromComposite":149,"./reactProdInvariant":159,"_process":29,"fbjs/lib/invariant":20,"fbjs/lib/warning":27,"react/lib/ReactCurrentOwner":172}],143:[function(require,module,exports){
+},{"./ReactDOMComponentTree":68,"./ReactInstanceMap":96,"./getHostComponentFromComposite":145,"./reactProdInvariant":155,"_process":29,"fbjs/lib/invariant":20,"fbjs/lib/warning":27,"react/lib/ReactCurrentOwner":172}],139:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -17660,14 +17238,12 @@ function flattenChildren(children, selfDebugID) {
 
 module.exports = flattenChildren;
 }).call(this,require('_process'))
-},{"./KeyEscapeUtils":61,"./traverseAllChildren":164,"_process":29,"fbjs/lib/warning":27,"react/lib/ReactComponentTreeHook":171}],144:[function(require,module,exports){
+},{"./KeyEscapeUtils":57,"./traverseAllChildren":160,"_process":29,"fbjs/lib/warning":27,"react/lib/ReactComponentTreeHook":171}],140:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -17691,14 +17267,12 @@ function forEachAccumulated(arr, cb, scope) {
 }
 
 module.exports = forEachAccumulated;
-},{}],145:[function(require,module,exports){
+},{}],141:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -17741,14 +17315,12 @@ function getEventCharCode(nativeEvent) {
 }
 
 module.exports = getEventCharCode;
-},{}],146:[function(require,module,exports){
+},{}],142:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -17853,14 +17425,12 @@ function getEventKey(nativeEvent) {
 }
 
 module.exports = getEventKey;
-},{"./getEventCharCode":145}],147:[function(require,module,exports){
+},{"./getEventCharCode":141}],143:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -17896,14 +17466,12 @@ function getEventModifierState(nativeEvent) {
 }
 
 module.exports = getEventModifierState;
-},{}],148:[function(require,module,exports){
+},{}],144:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -17931,14 +17499,12 @@ function getEventTarget(nativeEvent) {
 }
 
 module.exports = getEventTarget;
-},{}],149:[function(require,module,exports){
+},{}],145:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -17961,14 +17527,12 @@ function getHostComponentFromComposite(inst) {
 }
 
 module.exports = getHostComponentFromComposite;
-},{"./ReactNodeTypes":106}],150:[function(require,module,exports){
+},{"./ReactNodeTypes":102}],146:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -18002,14 +17566,12 @@ function getIteratorFn(maybeIterable) {
 }
 
 module.exports = getIteratorFn;
-},{}],151:[function(require,module,exports){
+},{}],147:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -18076,14 +17638,12 @@ function getNodeForCharacterOffset(root, offset) {
 }
 
 module.exports = getNodeForCharacterOffset;
-},{}],152:[function(require,module,exports){
+},{}],148:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -18109,14 +17669,12 @@ function getTextContentAccessor() {
 }
 
 module.exports = getTextContentAccessor;
-},{"fbjs/lib/ExecutionEnvironment":6}],153:[function(require,module,exports){
+},{"fbjs/lib/ExecutionEnvironment":6}],149:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -18210,14 +17768,12 @@ function getVendorPrefixedEventName(eventName) {
 }
 
 module.exports = getVendorPrefixedEventName;
-},{"fbjs/lib/ExecutionEnvironment":6}],154:[function(require,module,exports){
+},{"fbjs/lib/ExecutionEnvironment":6}],150:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -18240,7 +17796,7 @@ function attachTracker(inst, tracker) {
 }
 
 function detachTracker(inst) {
-  delete inst._wrapperState.valueTracker;
+  inst._wrapperState.valueTracker = null;
 }
 
 function getValueFromNode(node) {
@@ -18333,15 +17889,13 @@ var inputValueTracking = {
 };
 
 module.exports = inputValueTracking;
-},{"./ReactDOMComponentTree":72}],155:[function(require,module,exports){
+},{"./ReactDOMComponentTree":68}],151:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -18464,14 +18018,12 @@ _assign(ReactCompositeComponentWrapper.prototype, ReactCompositeComponent, {
 
 module.exports = instantiateReactComponent;
 }).call(this,require('_process'))
-},{"./ReactCompositeComponent":68,"./ReactEmptyComponent":91,"./ReactHostComponent":96,"./reactProdInvariant":159,"_process":29,"fbjs/lib/invariant":20,"fbjs/lib/warning":27,"object-assign":28,"react/lib/getNextDebugID":186}],156:[function(require,module,exports){
+},{"./ReactCompositeComponent":64,"./ReactEmptyComponent":87,"./ReactHostComponent":92,"./reactProdInvariant":155,"_process":29,"fbjs/lib/invariant":20,"fbjs/lib/warning":27,"object-assign":28,"react/lib/getNextDebugID":186}],152:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -18524,14 +18076,12 @@ function isEventSupported(eventNameSuffix, capture) {
 }
 
 module.exports = isEventSupported;
-},{"fbjs/lib/ExecutionEnvironment":6}],157:[function(require,module,exports){
+},{"fbjs/lib/ExecutionEnvironment":6}],153:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -18575,14 +18125,12 @@ function isTextInputElement(elem) {
 }
 
 module.exports = isTextInputElement;
-},{}],158:[function(require,module,exports){
+},{}],154:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -18601,14 +18149,12 @@ function quoteAttributeValueForBrowser(value) {
 }
 
 module.exports = quoteAttributeValueForBrowser;
-},{"./escapeTextContentForBrowser":141}],159:[function(require,module,exports){
+},{"./escapeTextContentForBrowser":137}],155:[function(require,module,exports){
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -18640,14 +18186,12 @@ function reactProdInvariant(code) {
 }
 
 module.exports = reactProdInvariant;
-},{}],160:[function(require,module,exports){
+},{}],156:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -18656,14 +18200,12 @@ module.exports = reactProdInvariant;
 var ReactMount = require('./ReactMount');
 
 module.exports = ReactMount.renderSubtreeIntoContainer;
-},{"./ReactMount":104}],161:[function(require,module,exports){
+},{"./ReactMount":100}],157:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -18754,14 +18296,12 @@ if (ExecutionEnvironment.canUseDOM) {
 }
 
 module.exports = setInnerHTML;
-},{"./DOMNamespaces":49,"./createMicrosoftUnsafeLocalFunction":139,"fbjs/lib/ExecutionEnvironment":6}],162:[function(require,module,exports){
+},{"./DOMNamespaces":45,"./createMicrosoftUnsafeLocalFunction":135,"fbjs/lib/ExecutionEnvironment":6}],158:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -18806,14 +18346,12 @@ if (ExecutionEnvironment.canUseDOM) {
 }
 
 module.exports = setTextContent;
-},{"./escapeTextContentForBrowser":141,"./setInnerHTML":161,"fbjs/lib/ExecutionEnvironment":6}],163:[function(require,module,exports){
+},{"./escapeTextContentForBrowser":137,"./setInnerHTML":157,"fbjs/lib/ExecutionEnvironment":6}],159:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -18848,15 +18386,13 @@ function shouldUpdateReactComponent(prevElement, nextElement) {
 }
 
 module.exports = shouldUpdateReactComponent;
-},{}],164:[function(require,module,exports){
+},{}],160:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -19026,15 +18562,13 @@ function traverseAllChildren(children, callback, traverseContext) {
 
 module.exports = traverseAllChildren;
 }).call(this,require('_process'))
-},{"./KeyEscapeUtils":61,"./ReactElementSymbol":90,"./getIteratorFn":150,"./reactProdInvariant":159,"_process":29,"fbjs/lib/invariant":20,"fbjs/lib/warning":27,"react/lib/ReactCurrentOwner":172}],165:[function(require,module,exports){
+},{"./KeyEscapeUtils":57,"./ReactElementSymbol":86,"./getIteratorFn":146,"./reactProdInvariant":155,"_process":29,"fbjs/lib/invariant":20,"fbjs/lib/warning":27,"react/lib/ReactCurrentOwner":172}],161:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2015-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2015-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -19399,19 +18933,44 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = validateDOMNesting;
 }).call(this,require('_process'))
-},{"_process":29,"fbjs/lib/emptyFunction":12,"fbjs/lib/warning":27,"object-assign":28}],166:[function(require,module,exports){
-arguments[4][61][0].apply(exports,arguments)
-},{"dup":61}],167:[function(require,module,exports){
-arguments[4][63][0].apply(exports,arguments)
-},{"./reactProdInvariant":189,"_process":29,"dup":63,"fbjs/lib/invariant":20}],168:[function(require,module,exports){
+},{"_process":29,"fbjs/lib/emptyFunction":12,"fbjs/lib/warning":27,"object-assign":28}],162:[function(require,module,exports){
+arguments[4][30][0].apply(exports,arguments)
+},{"./lib/ReactPropTypesSecret":165,"_process":29,"dup":30,"fbjs/lib/invariant":20,"fbjs/lib/warning":27}],163:[function(require,module,exports){
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+'use strict';
+
+// React 15.5 references this module, and assumes PropTypes are still callable in production.
+// Therefore we re-export development-only version with all the PropTypes checks here.
+// However if one is migrating to the `prop-types` npm library, they will go through the
+// `index.js` entry point, and it will branch depending on the environment.
+var factory = require('./factoryWithTypeCheckers');
+module.exports = function(isValidElement) {
+  // It is still allowed in 15.5.
+  var throwOnDirectAccess = false;
+  return factory(isValidElement, throwOnDirectAccess);
+};
+
+},{"./factoryWithTypeCheckers":164}],164:[function(require,module,exports){
+arguments[4][32][0].apply(exports,arguments)
+},{"./checkPropTypes":162,"./lib/ReactPropTypesSecret":165,"_process":29,"dup":32,"fbjs/lib/emptyFunction":12,"fbjs/lib/invariant":20,"fbjs/lib/warning":27,"object-assign":28}],165:[function(require,module,exports){
+arguments[4][34][0].apply(exports,arguments)
+},{"dup":34}],166:[function(require,module,exports){
+arguments[4][57][0].apply(exports,arguments)
+},{"dup":57}],167:[function(require,module,exports){
+arguments[4][59][0].apply(exports,arguments)
+},{"./reactProdInvariant":189,"_process":29,"dup":59,"fbjs/lib/invariant":20}],168:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -19540,12 +19099,10 @@ module.exports = React;
 },{"./ReactBaseClasses":169,"./ReactChildren":170,"./ReactDOMFactories":173,"./ReactElement":174,"./ReactElementValidator":176,"./ReactPropTypes":179,"./ReactVersion":181,"./canDefineProperty":182,"./createClass":184,"./lowPriorityWarning":187,"./onlyChild":188,"_process":29,"object-assign":28}],169:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -19684,12 +19241,10 @@ module.exports = {
 }).call(this,require('_process'))
 },{"./ReactNoopUpdateQueue":177,"./canDefineProperty":182,"./lowPriorityWarning":187,"./reactProdInvariant":189,"_process":29,"fbjs/lib/emptyObject":13,"fbjs/lib/invariant":20,"object-assign":28}],170:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -19876,12 +19431,10 @@ module.exports = ReactChildren;
 },{"./PooledClass":167,"./ReactElement":174,"./traverseAllChildren":190,"fbjs/lib/emptyFunction":12}],171:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2016-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2016-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -20256,12 +19809,10 @@ module.exports = ReactComponentTreeHook;
 }).call(this,require('_process'))
 },{"./ReactCurrentOwner":172,"./reactProdInvariant":189,"_process":29,"fbjs/lib/invariant":20,"fbjs/lib/warning":27}],172:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -20286,12 +19837,10 @@ module.exports = ReactCurrentOwner;
 },{}],173:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -20457,12 +20006,10 @@ module.exports = ReactDOMFactories;
 },{"./ReactElement":174,"./ReactElementValidator":176,"_process":29}],174:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2014-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2014-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -20798,16 +20345,14 @@ ReactElement.isValidElement = function (object) {
 module.exports = ReactElement;
 }).call(this,require('_process'))
 },{"./ReactCurrentOwner":172,"./ReactElementSymbol":175,"./canDefineProperty":182,"_process":29,"fbjs/lib/warning":27,"object-assign":28}],175:[function(require,module,exports){
-arguments[4][90][0].apply(exports,arguments)
-},{"dup":90}],176:[function(require,module,exports){
+arguments[4][86][0].apply(exports,arguments)
+},{"dup":86}],176:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2014-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2014-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -21059,12 +20604,10 @@ module.exports = ReactElementValidator;
 },{"./ReactComponentTreeHook":171,"./ReactCurrentOwner":172,"./ReactElement":174,"./canDefineProperty":182,"./checkReactTypeSpec":183,"./getIteratorFn":185,"./lowPriorityWarning":187,"_process":29,"fbjs/lib/warning":27}],177:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2015-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2015-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -21154,15 +20697,13 @@ var ReactNoopUpdateQueue = {
 module.exports = ReactNoopUpdateQueue;
 }).call(this,require('_process'))
 },{"_process":29,"fbjs/lib/warning":27}],178:[function(require,module,exports){
-arguments[4][108][0].apply(exports,arguments)
-},{"_process":29,"dup":108}],179:[function(require,module,exports){
+arguments[4][104][0].apply(exports,arguments)
+},{"_process":29,"dup":104}],179:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -21174,19 +20715,17 @@ var _require = require('./ReactElement'),
 var factory = require('prop-types/factory');
 
 module.exports = factory(isValidElement);
-},{"./ReactElement":174,"prop-types/factory":31}],180:[function(require,module,exports){
-arguments[4][109][0].apply(exports,arguments)
-},{"dup":109}],181:[function(require,module,exports){
-arguments[4][117][0].apply(exports,arguments)
-},{"dup":117}],182:[function(require,module,exports){
+},{"./ReactElement":174,"prop-types/factory":192}],180:[function(require,module,exports){
+arguments[4][105][0].apply(exports,arguments)
+},{"dup":105}],181:[function(require,module,exports){
+arguments[4][113][0].apply(exports,arguments)
+},{"dup":113}],182:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -21209,12 +20748,10 @@ module.exports = canDefineProperty;
 },{"_process":29}],183:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -21297,12 +20834,10 @@ module.exports = checkReactTypeSpec;
 }).call(this,require('_process'))
 },{"./ReactComponentTreeHook":171,"./ReactPropTypeLocationNames":178,"./ReactPropTypesSecret":180,"./reactProdInvariant":189,"_process":29,"fbjs/lib/invariant":20,"fbjs/lib/warning":27}],184:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -21319,15 +20854,13 @@ var factory = require('create-react-class/factory');
 
 module.exports = factory(Component, isValidElement, ReactNoopUpdateQueue);
 },{"./ReactBaseClasses":169,"./ReactElement":174,"./ReactNoopUpdateQueue":177,"create-react-class/factory":4}],185:[function(require,module,exports){
-arguments[4][150][0].apply(exports,arguments)
-},{"dup":150}],186:[function(require,module,exports){
+arguments[4][146][0].apply(exports,arguments)
+},{"dup":146}],186:[function(require,module,exports){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -21344,12 +20877,10 @@ module.exports = getNextDebugID;
 },{}],187:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2014-2015, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2014-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -21411,12 +20942,10 @@ module.exports = lowPriorityWarning;
 },{"_process":29}],188:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 'use strict';
@@ -21449,16 +20978,14 @@ function onlyChild(children) {
 module.exports = onlyChild;
 }).call(this,require('_process'))
 },{"./ReactElement":174,"./reactProdInvariant":189,"_process":29,"fbjs/lib/invariant":20}],189:[function(require,module,exports){
-arguments[4][159][0].apply(exports,arguments)
-},{"dup":159}],190:[function(require,module,exports){
+arguments[4][155][0].apply(exports,arguments)
+},{"dup":155}],190:[function(require,module,exports){
 (function (process){
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -21629,6 +21156,14 @@ function traverseAllChildren(children, callback, traverseContext) {
 module.exports = traverseAllChildren;
 }).call(this,require('_process'))
 },{"./KeyEscapeUtils":166,"./ReactCurrentOwner":172,"./ReactElementSymbol":175,"./getIteratorFn":185,"./reactProdInvariant":189,"_process":29,"fbjs/lib/invariant":20,"fbjs/lib/warning":27}],191:[function(require,module,exports){
+arguments[4][30][0].apply(exports,arguments)
+},{"./lib/ReactPropTypesSecret":194,"_process":29,"dup":30,"fbjs/lib/invariant":20,"fbjs/lib/warning":27}],192:[function(require,module,exports){
+arguments[4][163][0].apply(exports,arguments)
+},{"./factoryWithTypeCheckers":193,"dup":163}],193:[function(require,module,exports){
+arguments[4][32][0].apply(exports,arguments)
+},{"./checkPropTypes":191,"./lib/ReactPropTypesSecret":194,"_process":29,"dup":32,"fbjs/lib/emptyFunction":12,"fbjs/lib/invariant":20,"fbjs/lib/warning":27,"object-assign":28}],194:[function(require,module,exports){
+arguments[4][34][0].apply(exports,arguments)
+},{"dup":34}],195:[function(require,module,exports){
 'use strict';
 
 module.exports = require('./lib/React');
