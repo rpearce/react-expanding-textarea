@@ -18,19 +18,23 @@ difference is that it is doing some simple expanding work behind the scenes for 
 ```js
 import Textarea from 'react-expanding-textarea'
 
-function handleChange(e) {
+const handleChange = (e) => {
   console.log('Changed value to: ', e.target.value)
 }
 
 const myComponent = () =>
   <Textarea
-    rows="1"
     maxLength="3000"
     className="textarea"
     name="post[notes]"
     placeholder="Notes"
     onChange={ handleChange } />
 ```
+
+### `rows`
+If you pass a `rows` prop, then this component will perform a calculation based
+on computed `lineHeight`, `paddingTop` and `paddingBottom` to deduce what the
+minimum height-in-rows the component should be.
 
 ## Development
 1. Make your changes to `src/ExpandingTextarea.js` and/or `example/src` and/or `example/sass`

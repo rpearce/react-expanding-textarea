@@ -36,13 +36,12 @@ var App = function App() {
     _react2.default.createElement('br', null),
     _react2.default.createElement('br', null),
     _react2.default.createElement(_ExpandingTextarea2.default, {
-      rows: '1',
-      maxLength: '3000',
       className: 'textarea',
-      name: 'pet[notes]',
-      placeholder: 'Enter additional notes...',
       defaultValue: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-      onChange: handleChange
+      maxLength: '3000',
+      name: 'pet[notes]',
+      onChange: handleChange,
+      placeholder: 'Enter additional notes...'
     })
   );
 };
@@ -176,9 +175,7 @@ var ExpandingTextarea = function (_Component) {
   }, {
     key: '_handleChange',
     value: function _handleChange(e) {
-      var onChange = this.props.onChange;
-
-      onChange(e);
+      this.props.onChange(e);
       this._adjustTextarea(e.target);
     }
   }, {
@@ -186,7 +183,7 @@ var ExpandingTextarea = function (_Component) {
     value: function _adjustTextarea(node) {
       if (node) {
         node.style.height = 0;
-        node.style.height = node.scrollHeight + 'px';
+        node.style.height = (0, _helpers.getHeight)(node, this.props.rows) + 'px';
       }
     }
   }]);
@@ -214,6 +211,23 @@ var omit = exports.omit = function omit(keys, obj) {
     }
     return acc;
   }, {});
+};
+
+var getComputedRowHeight = exports.getComputedRowHeight = function getComputedRowHeight(node, rows) {
+  if (!rows) {
+    return 0;
+  }
+
+  var _window$getComputedSt = window.getComputedStyle(node),
+      lineHeight = _window$getComputedSt.lineHeight,
+      paddingBottom = _window$getComputedSt.paddingBottom,
+      paddingTop = _window$getComputedSt.paddingTop;
+
+  return parseInt(lineHeight) * parseInt(rows) + parseInt(paddingBottom) + parseInt(paddingTop);
+};
+
+var getHeight = exports.getHeight = function getHeight(node, rows) {
+  return Math.max(getComputedRowHeight(node, rows), node.scrollHeight);
 };
 
 },{}],5:[function(require,module,exports){

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { omit } from './helpers'
+import { getHeight, omit } from './helpers'
 
 export default class ExpandingTextarea extends Component {
   constructor(...params) {
@@ -31,15 +31,14 @@ export default class ExpandingTextarea extends Component {
   }
 
   _handleChange(e) {
-    const { onChange } = this.props
-    onChange(e)
+    this.props.onChange(e)
     this._adjustTextarea(e.target)
   }
 
   _adjustTextarea(node) {
     if (node) {
       node.style.height = 0
-      node.style.height = `${node.scrollHeight}px`
+      node.style.height = `${getHeight(node, this.props.rows)}px`
     }
   }
 }
