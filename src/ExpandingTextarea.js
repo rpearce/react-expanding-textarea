@@ -1,23 +1,31 @@
 import React, { Component } from 'react'
+import { omit } from './helpers'
 
-class ExpandingTextarea extends Component {
+export default class ExpandingTextarea extends Component {
+  constructor(...params) {
+    super(...params)
+    this._handleChange = this._handleChange.bind(this)
+  }
+
   componentDidMount() {
-    this._adjustTextarea()
+    this._adjustTextarea(this.el)
   }
 
   componentDidUpdate(prevProps) {
     if (prevProps.value !== this.props.value) {
-      this._adjustTextarea()
+      this._adjustTextarea(this.el)
     }
   }
 
   render() {
-    const { onChange, ...rest } = this.props
+    const { props, _handleChange } = this
+    const rest = omit([ 'onChange' ], props)
+
     return (
       <textarea
-        { ...rest }
+        {...rest}
         ref={x => this.el = x}
-        onChange={ this._handleChange.bind(this) }
+        onChange={_handleChange}
       />
     )
   }
@@ -25,17 +33,17 @@ class ExpandingTextarea extends Component {
   _handleChange(e) {
     const { onChange } = this.props
     onChange(e)
-    this._adjustTextarea(e)
+    this._adjustTextarea(e.target)
   }
 
-  _adjustTextarea({ target = this.el } = {}) {
-    target.style.height = 0
-    target.style.height = `${target.scrollHeight}px`
+  _adjustTextarea(node) {
+    if (node) {
+      node.style.height = 0
+      node.style.height = `${node.scrollHeight}px`
+    }
   }
 }
 
 ExpandingTextarea.defaultProps = {
   onChange: Function.prototype
 }
-
-export default ExpandingTextarea
