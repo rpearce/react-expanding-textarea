@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
 
 class ExpandingTextarea extends Component {
   componentDidMount() {
@@ -25,11 +24,7 @@ class ExpandingTextarea extends Component {
 
   _handleChange(e) {
     const { onChange } = this.props
-
-    if (onChange) {
-      onChange(e)
-    }
-
+    onChange(e)
     this._adjustTextarea(e)
   }
 
@@ -39,8 +34,8 @@ class ExpandingTextarea extends Component {
   }
 }
 
-ExpandingTextarea.propTypes = {
-  onChange: PropTypes.func
+ExpandingTextarea.defaultProps = {
+  onChange: Function.prototype
 }
 
 export default ExpandingTextarea
