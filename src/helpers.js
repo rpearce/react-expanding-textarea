@@ -6,3 +6,22 @@ export const omit = (keys, obj) =>
     }
     return acc
   }, {})
+
+export const getComputedRowHeight = (node, rows) => {
+  if (!rows) {
+    return 0
+  }
+
+  const { lineHeight, paddingBottom, paddingTop } = window.getComputedStyle(node)
+
+  return parseInt(lineHeight) *
+    parseInt(rows) +
+    parseInt(paddingBottom) +
+    parseInt(paddingTop)
+}
+
+export const getHeight = (node, rows) =>
+  Math.max(
+    getComputedRowHeight(node, rows),
+    node.scrollHeight
+  )
