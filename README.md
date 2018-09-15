@@ -1,6 +1,5 @@
 # react-expanding-textarea
-![](https://img.shields.io/npm/dm/react-expanding-textarea.svg)
-![](https://img.shields.io/npm/v/react-expanding-textarea.svg)
+[![npm version](https://img.shields.io/npm/v/react-expanding-textarea.svg)](https://www.npmjs.com/package/react-expanding-textarea) [![npm downloads](https://img.shields.io/npm/dt/react-expanding-textarea.svg)](https://www.npmjs.com/package/react-expanding-textarea)
 
 React textarea component to automatically expand and contract your textareas.
 
