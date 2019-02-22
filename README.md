@@ -1,51 +1,26 @@
 # react-expanding-textarea
-[![npm version](https://img.shields.io/npm/v/react-expanding-textarea.svg)](https://www.npmjs.com/package/react-expanding-textarea) [![npm downloads](https://img.shields.io/npm/dt/react-expanding-textarea.svg)](https://www.npmjs.com/package/react-expanding-textarea)
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
+[![npm version](https://img.shields.io/npm/v/react-expanding-textarea.svg)](https://www.npmjs.com/package/react-expanding-textarea) [![npm downloads](https://img.shields.io/npm/dt/react-expanding-textarea.svg)](https://www.npmjs.com/package/react-expanding-textarea) [![Build Status](https://travis-ci.org/rpearce/react-expanding-textarea.svg?branch=master)](https://travis-ci.org/rpearce/react-expanding-textarea) [![Coverage Status](https://coveralls.io/repos/github/rpearce/react-expanding-textarea/badge.svg?branch=master)](https://coveralls.io/github/rpearce/react-expanding-textarea?branch=master) [![Maintainability](https://api.codeclimate.com/v1/badges/f1395be9796a63b3d9a2/maintainability)](https://codeclimate.com/github/rpearce/react-expanding-textarea/maintainability)
 
 React textarea component to automatically expand and contract your textareas.
 
 You can [view the demo here](http://rpearce.github.io/react-expanding-textarea/).
 
-## Installation
-Install the package via NPM:
-```
-$ npm install --save react-expanding-textarea
-```
+## Links
+* [`API Documentation`](./API.md)
+* [`Authors`](./AUTHORS)
+* [`Changelog`](./CHANGELOG.md)
+* [`Contributing`](./CONTRIBUTING.md)
+* [`Code of Conduct`](./CODE_OF_CONDUCT.md)
 
-## Usage
-Use this exactly like you would a normal `<textarea>`; the only
-difference is that it is doing some simple expanding work behind the scenes for you!
-```js
-import Textarea from 'react-expanding-textarea'
+## Contributors
 
-const handleChange = (e) => {
-  console.log('Changed value to: ', e.target.value)
-}
+Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
 
-const myComponent = () =>
-  <Textarea
-    maxLength="3000"
-    className="textarea"
-    name="post[notes]"
-    placeholder="Notes"
-    onChange={ handleChange } />
-```
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+| [<img src="https://avatars2.githubusercontent.com/u/592876?v=4" width="100px;"/><br /><sub><b>Robert Pearce</b></sub>](https://robertwpearce.com)<br />[💻](https://github.com/rpearce/react-expanding-textarea/commits?author=rpearce "Code") [📖](https://github.com/rpearce/react-expanding-textarea/commits?author=rpearce "Documentation") [💡](#example-rpearce "Examples") [🤔](#ideas-rpearce "Ideas, Planning, & Feedback") [⚠️](https://github.com/rpearce/react-expanding-textarea/commits?author=rpearce "Tests") |
+| :---: |
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 
-### `rows`
-If you pass a `rows` prop, then this component will perform a calculation based
-on computed `lineHeight`, `paddingTop` and `paddingBottom` to deduce what the
-minimum height-in-rows the component should be.
-
-## Development
-1. Make your changes to `src/ExpandingTextarea.js` and/or `example/src` and/or `example/sass`
-1. Run make to build the JS output as well as the example code
-1. Run `$ open example/index.html` to view the output
-
-## Contribute
-1. Check out the [issues](https://github.com/rpearce/react-expanding-textarea/issues)
-1. Fork this repository
-1. Clone your fork
-1. Check out a feature branch (`$ git checkout -b my-feature`)
-1. Make your changes and push your branch to your GitHub repo
-1. Create a pull request from your branch to this repo's master
-1. When all is merged, pull down the upstream changes to your master
-1. Delete your feature branch
+This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!

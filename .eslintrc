@@ -1,0 +1,64 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "react-hooks"
+  ],
+  "rules": {
+    "array-bracket-spacing": [ "error", "always" ],
+    "arrow-spacing": [ "error" ],
+    "block-spacing": [ "error" ],
+    "camelcase": [ "error" ],
+    "comma-dangle": [ "error", "never" ],
+    "computed-property-spacing": [ "error", "never" ],
+    "curly": [ "error", "all" ],
+    "eol-last": [ "error", "always" ],
+    "eqeqeq": [ "error", "always", { "null": "ignore" } ],
+    "func-call-spacing": [ "error", "never" ],
+    "indent": [ "error", 2 ],
+    "linebreak-style": [ "error", "unix" ],
+    "no-console": "off",
+    "no-else-return": [ "error" ],
+    "no-empty-function": [ "error" ],
+    "no-extra-parens": [ "error" ],
+    "no-lone-blocks": [ "error" ],
+    "no-multi-assign": [ "error" ],
+    "no-multiple-empty-lines": [2, { "max": 1, "maxEOF": 1 }],
+    "no-new": [ "error" ],
+    "no-new-func": [ "error" ],
+    "no-param-reassign": [ "error" ],
+    "no-return-assign": [ "error" ],
+    "no-sequences": [ "error" ],
+    "no-trailing-spaces": [ "error" ],
+    "no-useless-return": [ "error" ],
+    "no-void": [ "error" ],
+    "no-with": [ "error" ],
+    "object-curly-spacing": [ "error", "always" ],
+    "quotes": [ "error", "single" ],
+    "react-hooks/rules-of-hooks": "error",
+    "react/jsx-no-undef": "error",
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
+    "react/prop-types": 0,
+    "semi": [ "error", "never" ],
+    "yoda": [ "error" ]
+  },
+  "settings": {
+    "react": {
+      "version": "16"
+    }
+  }
+}
