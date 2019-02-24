@@ -57,6 +57,16 @@
       "contributions": [
         "ideas"
       ]
+    },
+    {
+      "login": "thomassnielsen",
+      "name": "Thomas Sunde Nielsen",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/626954?v=4",
+      "profile": "http://blogg.leieting.no/om-oss",
+      "contributions": [
+        "bug",
+        "ideas"
+      ]
     }
   ]
 }
