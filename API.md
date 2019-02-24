@@ -27,5 +27,6 @@ const myComponent = () =>
 
 ### `rows`
 If you pass a `rows` prop, then this component will perform a calculation based
-on computed `lineHeight`, `paddingTop` and `paddingBottom` to deduce what the
-minimum height-in-rows the component should be.
+on computed `lineHeight`, `borderTopWidth`, `borderBottomWidth`, `paddingTop`
+and `paddingBottom` to deduce what the minimum height-in-rows the component
+should be.
