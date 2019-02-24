@@ -1,6 +1,6 @@
 {
   "name": "react-expanding-textarea",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "React textarea component to automatically expand and contract your textareas",
   "main": "index.js",
   "repository": {
@@ -9,20 +9,12 @@
   },
   "homepage": "https://github.com/rpearce/react-expanding-textarea",
   "bugs": "https://github.com/rpearce/react-expanding-textarea/issues",
-  "author": "Robert Pearce <me@robertwpearce.com>",
+  "author": "Robert Pearce <me@robertwpearce.com> (http://robertwpearce.com)",
   "contributors": [
     "Robert Pearce <me@robertwpearce.com> (https://robertwpearce.com)"
   ],
   "license": "ISC",
-  "keywords": [
-    "textarea",
-    "expand",
-    "autosize",
-    "expanding-textarea",
-    "autosize-textarea",
-    "react",
-    "react-component"
-  ],
+  "keywords": [],
   "tags": [
     "textarea",
     "expand",
@@ -50,9 +42,6 @@
     "prepublishOnly": "npm run lint && npm run build",
     "test": "npm run lint && npm run build && jest --coverage"
   },
-  "keywords": [
-  ],
-  "author": "Robert Pearce <me@robertwpearce.com> (http://robertwpearce.com)",
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.3.3",
