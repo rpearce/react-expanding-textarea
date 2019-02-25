@@ -14,9 +14,23 @@
     "Robert Pearce <me@robertwpearce.com> (https://robertwpearce.com)"
   ],
   "license": "ISC",
-  "keywords": [],
+  "keywords": [
+    "textarea",
+    "textarea-component",
+    "textarea-autoresize",
+    "text-resize",
+    "expand",
+    "autosize",
+    "expanding-textarea",
+    "autosize-textarea",
+    "react",
+    "react-component"
+  ],
   "tags": [
     "textarea",
+    "textarea-component",
+    "textarea-autoresize",
+    "text-resize",
     "expand",
     "autosize",
     "expanding-textarea",
