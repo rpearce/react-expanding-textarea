@@ -1,4 +1,5 @@
 import React, { useCallback, useEffect, useRef } from 'react'
+import types from 'prop-types'
 
 // getHeight :: (Integer, Element) -> Integer
 export const getHeight = (rows, el) => {
@@ -10,16 +11,17 @@ export const getHeight = (rows, el) => {
     paddingTop
   } = window.getComputedStyle(el)
 
-  const rowHeight = rows == null ? 0 : parseFloat(lineHeight) *
-    parseInt(rows, 10) +
-    parseFloat(borderBottomWidth) +
-    parseFloat(borderTopWidth) +
-    parseFloat(paddingBottom) +
-    parseFloat(paddingTop)
+  const rowHeight =
+    rows == null
+      ? 0
+      : parseFloat(lineHeight) * parseInt(rows, 10) +
+        parseFloat(borderBottomWidth) +
+        parseFloat(borderTopWidth) +
+        parseFloat(paddingBottom) +
+        parseFloat(paddingTop)
 
-  const scrollHeight = el.scrollHeight +
-    parseFloat(borderBottomWidth) +
-    parseFloat(borderTopWidth)
+  const scrollHeight =
+    el.scrollHeight + parseFloat(borderBottomWidth) + parseFloat(borderTopWidth)
 
   return Math.max(rowHeight, scrollHeight)
 }
@@ -36,12 +38,9 @@ export const resize = (rows, el) => {
 const ExpandingTextarea = props => {
   const ref = useRef(null)
 
-  useEffect(
-    () => {
-      resize(props.rows, ref.current)
-    },
-    [ props.rows, props.value ]
-  )
+  useEffect(() => {
+    resize(props.rows, ref.current)
+  }, [props.rows, props.value])
 
   const handleInput = useCallback(
     e => {
@@ -49,16 +48,17 @@ const ExpandingTextarea = props => {
       props.onInput(e)
       resize(props.rows, ref.current)
     },
-    [ props.rows, props.onChange, props.onInput ]
+    [props]
   )
 
-  return (
-    <textarea
-      {...props}
-      onInput={handleInput}
-      ref={ref}
-    />
-  )
+  return <textarea {...props} onInput={handleInput} ref={ref} />
+}
+
+ExpandingTextarea.propTypes = {
+  onChange: types.func,
+  onInput: types.func,
+  rows: types.oneOfType([types.number, types.string]),
+  value: types.string
 }
 
 ExpandingTextarea.defaultProps = {

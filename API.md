@@ -12,17 +12,28 @@ difference is that it is doing some simple expanding work behind the scenes for 
 ```js
 import Textarea from 'react-expanding-textarea'
 
-const handleChange = (e) => {
-  console.log('Changed value to: ', e.target.value)
-}
+const MyTextarea = () => {
+  const handleChange = useCallback(e => {
+    console.log('Changed value to: ', e.target.value)
+  }, [])
 
-const myComponent = () =>
-  <Textarea
-    maxLength="3000"
-    className="textarea"
-    name="post[notes]"
-    placeholder="Notes"
-    onChange={ handleChange } />
+  return (
+    <>
+      <label for="my-textarea">
+        Please Enter Some Details:
+      </label>
+      <Textarea
+        className="textarea"
+        defaultValue="Lorem ipsum dolor sit amet, ..."
+        id="my-textarea"
+        maxLength="3000"
+        name="pet[notes]"
+        onChange={handleChange}
+        placeholder="Enter additional notes..."
+      />
+    </>
+  )
+}
 ```
 
 ### `rows`

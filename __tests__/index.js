@@ -1,6 +1,6 @@
 import React from 'react'
-import { fireEvent, render } from 'react-testing-library'
-import 'jest-dom/extend-expect'
+import { fireEvent, render } from '@testing-library/react'
+import '@testing-library/jest-dom/extend-expect'
 
 import ExpandingTextarea, { getHeight, resize } from '../source'
 
@@ -22,8 +22,7 @@ test('renders with a minimum number of rows', () => {
         defaultValue="Some text"
         rows="3"
         style={textareaStyles}
-      >
-      </ExpandingTextarea>
+      />
     </div>
   )
 
@@ -38,8 +37,7 @@ test('calls onChange & onInput when text changes', () => {
       onChange={onChange}
       onInput={onInput}
       value="Some text"
-    >
-    </ExpandingTextarea>
+    />
   )
 
   fireEvent.input(getByText('Some text'), {
