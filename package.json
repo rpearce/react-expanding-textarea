@@ -42,8 +42,7 @@
   "files": [
     "AUTHORS",
     "README.md",
-    "dist/",
-    "source/"
+    "dist/"
   ],
   "sideEffects": false,
   "scripts": {
