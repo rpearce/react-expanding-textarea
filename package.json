@@ -54,7 +54,7 @@
     "contributors:add": "all-contributors add",
     "contributors:generate": "all-contributors generate",
     "coverage": "jest --coverage --coverageReporters=text-lcov | coveralls",
-    "lint": "eslint --ext .js .",
+    "lint": "eslint .",
     "prepublishOnly": "run-p lint test && npm run build",
     "test": "jest"
   },
