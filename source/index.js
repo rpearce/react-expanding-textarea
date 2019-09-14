@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useRef } from 'react'
-import types from 'prop-types'
+import { func, number, oneOfType, string } from 'prop-types'
 
 // getHeight :: (Integer, Element) -> Integer
 export const getHeight = (rows, el) => {
@@ -55,10 +55,10 @@ const ExpandingTextarea = props => {
 }
 
 ExpandingTextarea.propTypes = {
-  onChange: types.func,
-  onInput: types.func,
-  rows: types.oneOfType([types.number, types.string]),
-  value: types.string
+  onChange: func,
+  onInput: func,
+  rows: oneOfType([number, string]),
+  value: string
 }
 
 ExpandingTextarea.defaultProps = {
