@@ -52,7 +52,9 @@ var getHeight = function getHeight(rows, el) {
 var resize = function resize(rows, el) {
   if (el) {
     el.style.height = '0';
+    el.style.overflowY = 'hidden';
     el.style.height = "".concat(getHeight(rows, el), "px");
+    el.style.overflowY = 'auto';
   }
 }; // ExpandingTextarea :: Props -> <textarea />
 
