@@ -86,6 +86,17 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "raunofreiberg",
+      "name": "Rauno Freiberg",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/23662329?v=4",
+      "profile": "https://raunofreiberg.com",
+      "contributions": [
+        "bug",
+        "code"
+      ]
     }
-  ]
+  ],
+  "commitConvention": "none"
 }
