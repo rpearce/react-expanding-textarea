@@ -1,6 +1,6 @@
 import React, { useCallback } from 'react'
 import ReactDOM from 'react-dom'
-import Textarea from '../dist/index.cjs'
+import Textarea from '../dist/cjs'
 
 const App = () => {
   const handleChange = useCallback(e => {
