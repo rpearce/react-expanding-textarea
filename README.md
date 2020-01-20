@@ -7,11 +7,66 @@ React textarea component to automatically expand and contract your textareas.
 You can [view the demo here](http://rpearce.github.io/react-expanding-textarea/).
 
 ## Links
-* [`API Documentation`](./API.md)
-* [`Authors`](./AUTHORS)
-* [`Changelog`](./CHANGELOG.md)
-* [`Contributing`](./CONTRIBUTING.md)
-* [`Code of Conduct`](./CODE_OF_CONDUCT.md)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Using The `rows` Prop](#using-the-rows-prop)
+* [Changelog](./CHANGELOG.md)
+* [Contributing](./CONTRIBUTING.md)
+* [Code of Conduct](./CODE_OF_CONDUCT.md)
+
+## Installation
+Install the package:
+```
+$ npm i react-expanding-textarea
+```
+or
+```
+$ yarn add react-expanding-textarea
+```
+
+## Usage
+Use this exactly like you would a normal `<textarea>`; the only
+difference is that it is doing some simple expanding work behind the scenes for you!
+```js
+import React, { useCallback, useEffect, useRef } from 'react'
+import Textarea from 'react-expanding-textarea'
+
+const MyTextarea = () => {
+  const textareaRef = useRef(null)
+
+  const handleChange = useCallback(e => {
+    console.log('Changed value to: ', e.target.value)
+  }, [])
+
+  useEffect(() => {
+    textareaRef.current.focus()
+  }, [])
+
+  return (
+    <>
+      <label for="my-textarea">
+        Please Enter Some Details:
+      </label>
+      <Textarea
+        className="textarea"
+        defaultValue="Lorem ipsum dolor sit amet, ..."
+        id="my-textarea"
+        maxLength="3000"
+        name="pet[notes]"
+        onChange={handleChange}
+        placeholder="Enter additional notes..."
+        ref={textareaRef}
+      />
+    </>
+  )
+}
+```
+
+### Using The `rows` Prop
+If you pass a `rows` prop, then this component will perform a calculation based
+on computed `lineHeight`, `borderTopWidth`, `borderBottomWidth`, `paddingTop`
+and `paddingBottom` to deduce what the minimum height-in-rows the component
+should be.
 
 ## Contributors
 
