@@ -1,10 +1,16 @@
-import React, { useCallback } from 'react'
+import React, { useCallback, useEffect, useRef } from 'react'
 import ReactDOM from 'react-dom'
 import Textarea from '../dist/cjs'
 
 const App = () => {
+  const textareaRef = useRef(null)
+
   const handleChange = useCallback(e => {
     console.log(e.target.value)
+  }, [])
+
+  useEffect(() => {
+    textareaRef.current.focus()
   }, [])
 
   return (
@@ -18,6 +24,7 @@ const App = () => {
         name="pet[notes]"
         onChange={handleChange}
         placeholder="Enter details here..."
+        ref={textareaRef}
       />
     </>
   )

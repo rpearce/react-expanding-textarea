@@ -40,7 +40,8 @@ const umd = {
   globals: {
     react: 'React',
     'react-dom': 'reactDom',
-    'prop-types': 'propTypes'
+    'prop-types': 'propTypes',
+    'react-with-forwarded-ref': 'withForwardedRef'
   },
   name: 'ree-umd',
   sourcemap: true
