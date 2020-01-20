@@ -1,5 +1,6 @@
-import React, { useCallback, useEffect, useRef } from 'react'
-import { func, number, oneOfType, string } from 'prop-types'
+import React, { createRef, useCallback, useEffect } from 'react'
+import { func, number, object, oneOfType, string } from 'prop-types'
+import withForwardedRef from 'react-with-forwarded-ref'
 
 // getHeight :: (Integer, Element) -> Integer
 export const getHeight = (rows, el) => {
@@ -37,20 +38,21 @@ export const resize = (rows, el) => {
 }
 
 // ExpandingTextarea :: Props -> <textarea />
-const ExpandingTextarea = props => {
-  const ref = useRef(null)
+const ExpandingTextarea = ({ forwardedRef, ...props }) => {
+  const ref = forwardedRef || createRef(null)
+  const { onChange, onInput, rows, value } = props
 
   useEffect(() => {
-    resize(props.rows, ref.current)
-  }, [props.rows, props.value])
+    resize(rows, ref.current)
+  }, [rows, value, ref])
 
   const handleInput = useCallback(
     e => {
-      props.onChange(e)
-      props.onInput(e)
-      resize(props.rows, ref.current)
+      onChange(e)
+      onInput(e)
+      resize(rows, ref.current)
     },
-    [props]
+    [ref, onChange, onInput, rows]
   )
 
   return <textarea {...props} onInput={handleInput} ref={ref} />
@@ -59,6 +61,7 @@ const ExpandingTextarea = props => {
 ExpandingTextarea.propTypes = {
   onChange: func,
   onInput: func,
+  forwardedRef: object,
   rows: oneOfType([number, string]),
   value: string
 }
@@ -68,4 +71,4 @@ ExpandingTextarea.defaultProps = {
   onInput: Function.prototype
 }
 
-export default ExpandingTextarea
+export default withForwardedRef(ExpandingTextarea)

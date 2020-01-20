@@ -96,6 +96,15 @@
         "bug",
         "code"
       ]
+    },
+    {
+      "login": "tknuts",
+      "name": "Thomas Kristiansen",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/3716280?v=4",
+      "profile": "https://github.com/tknuts",
+      "contributions": [
+        "ideas"
+      ]
     }
   ],
   "commitConvention": "none"

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { createRef } from 'react'
 import { fireEvent, render } from '@testing-library/react'
 import '@testing-library/jest-dom/extend-expect'
 
@@ -105,4 +105,10 @@ test('resize: sets style height when present', () => {
   resize(undefined, el)
 
   expect(el.style.height).toEqual('137px')
+})
+
+test('accepts ref', () => {
+  const ref = createRef(null)
+  render(<ExpandingTextarea defaultValue="Some text" ref={ref} />)
+  expect(ref.current.tagName).toEqual('TEXTAREA')
 })

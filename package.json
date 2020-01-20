@@ -1,6 +1,6 @@
 {
   "name": "react-expanding-textarea",
-  "version": "2.0.4",
+  "version": "2.1.0",
   "description": "React textarea component to automatically expand and contract your textareas",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -60,36 +60,37 @@
     "test": "jest"
   },
   "devDependencies": {
-    "@babel/cli": "^7.7.7",
-    "@babel/core": "^7.7.7",
-    "@babel/polyfill": "^7.7.0",
-    "@babel/preset-env": "^7.7.7",
-    "@babel/preset-react": "^7.7.4",
+    "@babel/cli": "^7.8.3",
+    "@babel/core": "^7.8.3",
+    "@babel/polyfill": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@babel/preset-react": "^7.8.3",
     "@rollup/plugin-commonjs": "^11.0.1",
-    "@rollup/plugin-node-resolve": "^6.1.0",
-    "@testing-library/jest-dom": "^4.2.4",
+    "@rollup/plugin-node-resolve": "^7.0.0",
+    "@testing-library/jest-dom": "^5.0.0",
     "@testing-library/react": "^9.4.0",
-    "all-contributors-cli": "^6.12.0",
+    "all-contributors-cli": "^6.13.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^24.9.0",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "babelify": "^10.0.0",
     "browserify": "^16.5.0",
     "coveralls": "^3.0.9",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.9.0",
-    "eslint-plugin-jest": "^23.3.0",
+    "eslint-plugin-jest": "^23.6.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-prettier": "^3.1.2",
-    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-react": "^7.18.0",
     "eslint-plugin-react-hooks": "^2.3.0",
-    "husky": "^3.1.0",
+    "husky": "^4.0.10",
     "jest": "^24.9.0",
-    "lint-staged": "^9.5.0",
+    "lint-staged": "^10.0.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^1.19.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "rollup": "^1.28.0",
+    "rollup": "^1.29.0",
     "rollup-plugin-auto-external": "^3.0.0-alpha.0",
     "rollup-plugin-babel": "^4.3.3"
   },
@@ -97,6 +98,7 @@
     "react": ">= 16.8.0"
   },
   "dependencies": {
-    "prop-types": "^15.7.2"
+    "prop-types": "^15.7.2",
+    "react-with-forwarded-ref": "^0.3.0"
   }
 }
