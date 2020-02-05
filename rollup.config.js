@@ -1,14 +1,18 @@
 import { dirname } from 'path'
 import babel from 'rollup-plugin-babel'
 import commonjs from '@rollup/plugin-commonjs'
-import external from 'rollup-plugin-auto-external'
 import resolve from '@rollup/plugin-node-resolve'
+import { terser } from 'rollup-plugin-terser'
 import pkg from './package.json'
 
 const plugins = [
   resolve(),
-  external(),
-  commonjs({ include: /node_modules/ }),
+  commonjs({
+    include: /node_modules/,
+    namedExports: {
+      'prop-types': ['func', 'number', 'object', 'oneOfType', 'string']
+    }
+  }),
   babel({
     configFile: './babel.config.js',
     only: ['./source'],
@@ -17,42 +21,81 @@ const plugins = [
   })
 ]
 
-const esm = {
-  dir: dirname(pkg.module),
-  exports: 'named',
-  format: 'esm',
-  name: 'ree-esm',
-  sourcemap: true
-}
+const isExternal = id => !id.startsWith('.')
+const input = './source/index.js'
 
-const cjs = {
-  dir: dirname(pkg.main),
-  exports: 'named',
-  format: 'cjs',
-  name: 'ree-cjs',
-  sourcemap: true
-}
-
-const umd = {
-  file: pkg.browser,
-  exports: 'named',
-  format: 'umd',
-  globals: {
-    react: 'React',
-    'react-dom': 'reactDom',
-    'prop-types': 'propTypes',
-    'react-with-forwarded-ref': 'withForwardedRef'
-  },
-  name: 'ree-umd',
-  sourcemap: true
-}
-
-const config = [
+const esm = [
   {
-    input: './source/index.js',
-    output: [esm, cjs, umd],
+    input,
+    output: {
+      dir: dirname(pkg.module),
+      exports: 'named',
+      format: 'esm',
+      name: 'ret-esm',
+      sourcemap: true
+    },
+    external: isExternal,
     plugins
   }
 ]
+
+const cjs = [
+  {
+    input,
+    output: {
+      dir: dirname(pkg.main),
+      exports: 'named',
+      format: 'cjs',
+      name: 'ret-cjs',
+      sourcemap: true
+    },
+    external: isExternal,
+    plugins
+  },
+  {
+    input,
+    output: {
+      file: `${dirname(pkg.main)}/${pkg.name}.min.js`,
+      exports: 'named',
+      format: 'cjs',
+      name: 'ret-cjs-min',
+      sourcemap: true
+    },
+    external: isExternal,
+    plugins: plugins.concat(terser())
+  }
+]
+
+const umd = [
+  {
+    input,
+    output: {
+      file: pkg.browser,
+      exports: 'named',
+      format: 'umd',
+      globals: { react: 'React' },
+      name: 'ret-umd',
+      sourcemap: true
+    },
+    external: ['react'],
+    plugins: plugins.concat(terser())
+  }
+]
+
+let config
+
+switch (process.env.BUILD_ENV) {
+  case 'cjs':
+    config = cjs
+    break
+  case 'esm':
+    config = esm
+    break
+  case 'umd':
+    config = umd
+    break
+  default:
+    config = cjs.concat(esm).concat(umd)
+}
 
 export default config
