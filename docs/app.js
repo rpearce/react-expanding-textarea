@@ -2,7 +2,7 @@
 (function (process){
 "use strict";
 
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 (function (global, factory) {
   (typeof exports === "undefined" ? "undefined" : _typeof(exports)) === 'object' && typeof module !== 'undefined' ? factory(exports, require('react'), require('prop-types'), require('react-with-forwarded-ref')) : typeof define === 'function' && define.amd ? define(['exports', 'react', 'prop-types', 'react-with-forwarded-ref'], factory) : (global = global || self, factory(global['ree-umd'] = {}, global.React, global.propTypes, global.withForwardedRef));
@@ -85,7 +85,6 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
       el.style.height = '0';
       el.style.overflowY = 'hidden';
       el.style.height = "".concat(getHeight(rows, el), "px");
-      el.style.overflowY = 'auto';
     }
   }; // ExpandingTextarea :: Props -> <textarea />
 
@@ -137,7 +136,7 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
 },{"_process":4,"prop-types":8,"react":19,"react-with-forwarded-ref":16}],2:[function(require,module,exports){
 "use strict";
 
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 var _react = _interopRequireWildcard(require("react"));
 
