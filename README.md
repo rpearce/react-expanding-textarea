@@ -89,6 +89,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
     <td align="center"><a href="https://brettsmith.me"><img src="https://avatars2.githubusercontent.com/u/6562559?v=4" width="100px;" alt=""/><br /><sub><b>Brett Smith</b></sub></a><br /><a href="https://github.com/rpearce/react-expanding-textarea/issues?q=author%3Ajbsmith731" title="Bug reports">🐛</a></td>
     <td align="center"><a href="https://raunofreiberg.com"><img src="https://avatars1.githubusercontent.com/u/23662329?v=4" width="100px;" alt=""/><br /><sub><b>Rauno Freiberg</b></sub></a><br /><a href="https://github.com/rpearce/react-expanding-textarea/issues?q=author%3Araunofreiberg" title="Bug reports">🐛</a> <a href="https://github.com/rpearce/react-expanding-textarea/commits?author=raunofreiberg" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/tknuts"><img src="https://avatars3.githubusercontent.com/u/3716280?v=4" width="100px;" alt=""/><br /><sub><b>Thomas Kristiansen</b></sub></a><br /><a href="#ideas-tknuts" title="Ideas, Planning, & Feedback">🤔</a></td>
+    <td align="center"><a href="https://github.com/Puspendert"><img src="https://avatars0.githubusercontent.com/u/16055344?v=4" width="100px;" alt=""/><br /><sub><b>Puspender</b></sub></a><br /><a href="https://github.com/rpearce/react-expanding-textarea/issues?q=author%3APuspendert" title="Bug reports">🐛</a></td>
   </tr>
 </table>
 

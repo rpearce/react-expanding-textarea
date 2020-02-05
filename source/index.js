@@ -33,7 +33,6 @@ export const resize = (rows, el) => {
     el.style.height = '0'
     el.style.overflowY = 'hidden'
     el.style.height = `${getHeight(rows, el)}px`
-    el.style.overflowY = 'auto'
   }
 }
 
