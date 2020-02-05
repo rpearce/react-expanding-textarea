@@ -4,6 +4,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [2.1.2] - 2020-02-04
+
+### Added
+* Commonjs `react-expanding-textarea.min.js` build
+* UMD `react-expanding-textarea.min.js` build
+
+### Fixed
+* auto-adjusting issue in firefox (#33)
+
+### Changed
+* changed `browser` field value in package.json to point to
+  `dist/umd/react-expanding-textarea.min.js` suffix
+
 ## [2.1.1] - 2020-01-19
 
 ### Fixed
