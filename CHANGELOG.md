@@ -4,6 +4,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [2.2.0] - 2020-03-14
+
+### Added
+* typescript support
+
+### Changed
+* license from ISC to BSD-3
+
+### Fixed
+* issue where `line-height` is `normal` and calculation breaks by falling back
+  to `fontSize * 1.2`
+* upgrades to fix vulnerabilities
+
 ## [2.1.2] - 2020-02-04
 
 ### Added

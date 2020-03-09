@@ -1,0 +1,37 @@
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+html,
+body {
+  min-height: 100%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 2em;
+  font-size: 1rem;
+  font-family: monospace;
+  color: #333;
+}
+body,
+input,
+button {
+  -webkit-font-smoothing: antialiased;
+}
+.textarea {
+  width: 100%;
+  outline: 0;
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #FFF;
+  border-left: 4px solid #005C9A;
+  resize: none;
+  font: inherit;
+}
