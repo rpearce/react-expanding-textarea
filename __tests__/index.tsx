@@ -48,8 +48,6 @@ test('calls onChange & onInput when text changes', () => {
 })
 
 test('continues to work if no onChange and no onInput', () => {
-  const onChange = jest.fn()
-  const onInput = jest.fn()
   const { asFragment, getByText } = render(
     <ExpandingTextarea value="Some text" />
   )
