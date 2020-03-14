@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`continues to work if no onChange and no onInput 1`] = `
+<DocumentFragment>
+  <textarea
+    style="height: 2px; overflow-y: hidden;"
+  >
+    Some text
+  </textarea>
+</DocumentFragment>
+`;

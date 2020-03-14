@@ -47,6 +47,20 @@ test('calls onChange & onInput when text changes', () => {
   expect(onInput).toBeCalled()
 })
 
+test('continues to work if no onChange and no onInput', () => {
+  const onChange = jest.fn()
+  const onInput = jest.fn()
+  const { asFragment, getByText } = render(
+    <ExpandingTextarea value="Some text" />
+  )
+
+  fireEvent.input(getByText('Some text'), {
+    target: { value: 'Some text is here' }
+  })
+
+  expect(asFragment()).toMatchSnapshot()
+})
+
 test('getHeight: returns scroll height when no rows', () => {
   window.getComputedStyle = jest.fn().mockImplementation(() => ({
     borderBottomWidth: '4px',
