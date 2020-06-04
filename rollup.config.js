@@ -1,5 +1,3 @@
-import React from 'react'
-import reactDom from 'react-dom'
 import commonjs from '@rollup/plugin-commonjs'
 import resolve from '@rollup/plugin-node-resolve'
 import typescript from 'rollup-plugin-typescript2'
@@ -7,15 +5,9 @@ import { dirname } from 'path'
 import { terser } from 'rollup-plugin-terser'
 import pkg from './package.json'
 
-const cjsConfig = {
-  include: /node_modules/,
-  namedExports: {
-    react: Object.keys(React),
-    'react-dom': Object.keys(reactDom)
-  }
-}
+const cjsConfig = { include: /node_modules/ }
 
-const isExternal = id => !id.startsWith('.') && !id.startsWith('/')
+const isExternal = (id) => !id.startsWith('.') && !id.startsWith('/')
 
 const esm = [
   // ESModules (esm) build
@@ -26,11 +18,11 @@ const esm = [
       exports: 'named',
       format: 'esm',
       name: 'ret-esm',
-      sourcemap: false
+      sourcemap: false,
     },
     external: isExternal,
-    plugins: [resolve(), typescript({ tsconfig: './tsconfig.build.json' })]
-  }
+    plugins: [resolve(), typescript({ tsconfig: './tsconfig.build.json' })],
+  },
 ]
 
 const cjs = [
@@ -41,36 +33,36 @@ const cjs = [
       dir: dirname(pkg.main),
       exports: 'named',
       format: 'cjs',
-      globals: { react: 'React', 'react-dom': 'ReactDOM' },
+      globals: { react: 'React' },
       name: 'ret-cjs',
-      sourcemap: false
-    },
-    external: isExternal,
-    plugins: [
-      resolve(),
-      commonjs(cjsConfig),
-      typescript({ tsconfig: './tsconfig.build.json' })
-    ]
-  },
-
-  // Minified cjs build
-  {
-    input: './source/index.tsx',
-    output: {
-      file: `${dirname(pkg.main)}/${pkg.name}.min.js`,
-      exports: 'named',
-      format: 'cjs',
-      name: 'ret-cjs-min',
-      sourcemap: false
+      sourcemap: false,
     },
     external: isExternal,
     plugins: [
       resolve(),
       commonjs(cjsConfig),
       typescript({ tsconfig: './tsconfig.build.json' }),
-      terser()
-    ]
-  }
+    ],
+  },
+
+  // Minified cjs build
+  {
+    input: './source/index.tsx',
+    output: {
+      file: `${dirname(pkg.main)}/react-expanding-textarea.min.js`,
+      exports: 'named',
+      format: 'cjs',
+      name: 'ret-cjs-min',
+      sourcemap: false,
+    },
+    external: isExternal,
+    plugins: [
+      resolve(),
+      commonjs(cjsConfig),
+      typescript({ tsconfig: './tsconfig.build.json' }),
+      terser(),
+    ],
+  },
 ]
 
 const umd = [
@@ -81,16 +73,16 @@ const umd = [
       file: './dist/umd/react-expanding-textarea.js',
       exports: 'named',
       format: 'umd',
-      globals: { react: 'React', 'react-dom': 'ReactDOM' },
+      globals: { react: 'React' },
       name: 'ret-umd',
-      sourcemap: false
+      sourcemap: false,
     },
-    external: ['react', 'react-dom'],
+    external: ['react'],
     plugins: [
       resolve(),
       commonjs(cjsConfig),
-      typescript({ tsconfig: './tsconfig.build.json' })
-    ]
+      typescript({ tsconfig: './tsconfig.build.json' }),
+    ],
   },
 
   // Minified (UMD) build
@@ -100,18 +92,18 @@ const umd = [
       file: './dist/umd/react-expanding-textarea.min.js',
       exports: 'named',
       format: 'umd',
-      globals: { react: 'react', 'react-dom': 'reactdom' },
+      globals: { react: 'React' },
       name: 'ret-umd',
-      sourcemap: false
+      sourcemap: false,
     },
-    external: ['react', 'react-dom'],
+    external: ['react'],
     plugins: [
       resolve(),
       commonjs(cjsConfig),
       typescript({ tsconfig: './tsconfig.build.json' }),
-      terser()
-    ]
-  }
+      terser(),
+    ],
+  },
 ]
 
 let config

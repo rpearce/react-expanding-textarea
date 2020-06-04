@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import React, {
   FC,
   FormEvent,
@@ -5,7 +6,7 @@ import React, {
   TextareaHTMLAttributes,
   createRef,
   useCallback,
-  useEffect
+  useEffect,
 } from 'react'
 import withForwardedRef from 'react-with-forwarded-ref'
 
@@ -16,7 +17,7 @@ export const getHeight = (rows: number, el: HTMLTextAreaElement): number => {
     fontSize,
     lineHeight,
     paddingBottom,
-    paddingTop
+    paddingTop,
   } = window.getComputedStyle(el)
 
   const lh =
@@ -69,7 +70,7 @@ const ExpandingTextarea: FC<TextareaProps> = ({
   }, [ref, rows])
 
   const handleInput = useCallback(
-    e => {
+    (e) => {
       if (onChange) {
         onChange(e)
       }

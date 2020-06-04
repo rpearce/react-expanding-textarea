@@ -1,19 +1,21 @@
 import React, { CSSProperties, createRef } from 'react'
 import { fireEvent, render } from '@testing-library/react'
 import '@testing-library/jest-dom/extend-expect'
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import ExpandingTextarea, { getHeight, resize } from '../source'
 
 test('renders with a minimum number of rows', () => {
   const wrapStyles: React.CSSProperties = {
     boxSizing: 'border-box',
-    maxWidth: '500px'
+    maxWidth: '500px',
   }
   const textareaStyles = {
     borderBottom: '4px solid',
     borderTop: '4px solid',
     lineHeight: '27.2px',
     padding: '10px',
-    width: '100%'
+    width: '100%',
   }
   const { getByText } = render(
     <div style={wrapStyles}>
@@ -40,7 +42,7 @@ test('calls onChange & onInput when text changes', () => {
   )
 
   fireEvent.input(getByText('Some text'), {
-    target: { value: 'Some text is here' }
+    target: { value: 'Some text is here' },
   })
 
   expect(onChange).toBeCalled()
@@ -53,7 +55,7 @@ test('continues to work if no onChange and no onInput', () => {
   )
 
   fireEvent.input(getByText('Some text'), {
-    target: { value: 'Some text is here' }
+    target: { value: 'Some text is here' },
   })
 
   expect(asFragment()).toMatchSnapshot()
@@ -65,7 +67,7 @@ test('getHeight: returns scroll height when no rows', () => {
     borderTopWidth: '4px',
     lineHeight: '27.2px',
     paddingBottom: '10px',
-    paddingTop: '10px'
+    paddingTop: '10px',
   }))
   const el = document.createElement('textarea')
   jest.spyOn(el, 'scrollHeight', 'get').mockImplementation(() => 129)
@@ -79,7 +81,7 @@ test('getHeight: returns scroll height when larger than row height', () => {
     borderTopWidth: '4px',
     lineHeight: '27.2px',
     paddingBottom: '10px',
-    paddingTop: '10px'
+    paddingTop: '10px',
   }))
   const el = document.createElement('textarea')
   jest.spyOn(el, 'scrollHeight', 'get').mockImplementation(() => 129)
@@ -93,7 +95,7 @@ test('getHeight: returns row height when larger than scroll height', () => {
     borderTopWidth: '4px',
     lineHeight: '27.2px',
     paddingBottom: '10px',
-    paddingTop: '10px'
+    paddingTop: '10px',
   }))
   const el = document.createElement('textarea')
   jest.spyOn(el, 'scrollHeight', 'get').mockImplementation(() => 129)
@@ -107,7 +109,7 @@ test('resize: sets style height when present', () => {
     borderTopWidth: '4px',
     lineHeight: '27.2px',
     paddingBottom: '10px',
-    paddingTop: '10px'
+    paddingTop: '10px',
   }))
 
   const el = document.createElement('textarea')
