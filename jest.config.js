@@ -1,10 +1,10 @@
 module.exports = {
   clearMocks: true,
   collectCoverage: true,
-  collectCoverageFrom: ['<rootDir>/source/**/*.{ts,tsx}'],
+  collectCoverageFrom: ['<rootDir>/source/index.tsx'],
   coveragePathIgnorePatterns: ['/node_modules/'],
   moduleNameMapper: {},
   preset: 'ts-jest',
   setupFilesAfterEnv: [],
-  verbose: true
+  verbose: true,
 }
