@@ -48,10 +48,10 @@
   "sideEffects": false,
   "scripts": {
     "build": "run-s clean build:js build:docs",
+    "build:ci": "run-p lint build test",
     "build:docs": "mkdir -p docs && build-storybook -o docs",
     "build:js": "rollup -c rollup.config.js",
     "build:js:watch": "yarn build:js -- -w",
-    "ci": "run-p lint build test",
     "clean": "rm -rf dist/",
     "contributors:add": "all-contributors add",
     "contributors:generate": "all-contributors generate",
