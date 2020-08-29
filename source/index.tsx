@@ -1,4 +1,3 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import React, {
   FC,
   FormEvent,
@@ -48,7 +47,7 @@ export const resize = (rows: number, el: HTMLTextAreaElement | null): void => {
   }
 }
 
-interface TextareaProps
+export interface TextareaProps
   extends Omit<TextareaHTMLAttributes<HTMLTextAreaElement>, 'rows'> {
   forwardedRef?: RefObject<HTMLTextAreaElement>
   onChange?: (evt: FormEvent<HTMLTextAreaElement>) => void
