@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [2.2.2] - 2020-08-28
 
+### Fixed
+* textareas with `maxHeight` not having a scrollbar (#43)
+
+## [2.2.2] - 2020-08-28
+
 ### Changed
 * README update
 

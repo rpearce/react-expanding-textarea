@@ -90,6 +90,11 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
     <td align="center"><a href="https://github.com/tknuts"><img src="https://avatars3.githubusercontent.com/u/3716280?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Thomas Kristiansen</b></sub></a><br /><a href="#ideas-tknuts" title="Ideas, Planning, & Feedback">🤔</a></td>
     <td align="center"><a href="https://github.com/Puspendert"><img src="https://avatars0.githubusercontent.com/u/16055344?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Puspender</b></sub></a><br /><a href="https://github.com/rpearce/react-expanding-textarea/issues?q=author%3APuspendert" title="Bug reports">🐛</a></td>
     <td align="center"><a href="https://github.com/markathomas"><img src="https://avatars3.githubusercontent.com/u/488472?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Mark Thomas</b></sub></a><br /><a href="https://github.com/rpearce/react-expanding-textarea/issues?q=author%3Amarkathomas" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="https://github.com/1v"><img src="https://avatars0.githubusercontent.com/u/6566370?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Artem</b></sub></a><br /><a href="https://github.com/rpearce/react-expanding-textarea/issues?q=author%3A1v" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="https://twitter.com/EvaRaymie"><img src="https://avatars3.githubusercontent.com/u/25673419?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Eva Raymond</b></sub></a><br /><a href="https://github.com/rpearce/react-expanding-textarea/issues?q=author%3Aelitenoire" title="Bug reports">🐛</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/chrisdrackett"><img src="https://avatars3.githubusercontent.com/u/4378?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Chris Drackett</b></sub></a><br /><a href="https://github.com/rpearce/react-expanding-textarea/issues?q=author%3Achrisdrackett" title="Bug reports">🐛</a></td>
   </tr>
 </table>
 

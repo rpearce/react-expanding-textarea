@@ -41,8 +41,19 @@ export const getHeight = (rows: number, el: HTMLTextAreaElement): number => {
 
 export const resize = (rows: number, el: HTMLTextAreaElement | null): void => {
   if (el) {
+    let overflowY = 'hidden'
+    const { maxHeight } = window.getComputedStyle(el)
+
+    if (maxHeight !== 'none') {
+      const maxHeightN = parseFloat(maxHeight)
+
+      if (maxHeightN < el.scrollHeight) {
+        overflowY = ''
+      }
+    }
+
     el.style.height = '0'
-    el.style.overflowY = 'hidden'
+    el.style.overflowY = overflowY
     el.style.height = `${getHeight(rows, el)}px`
   }
 }
