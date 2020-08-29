@@ -114,6 +114,15 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "markathomas",
+      "name": "Mark Thomas",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/488472?v=4",
+      "profile": "https://github.com/markathomas",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "commitConvention": "none"

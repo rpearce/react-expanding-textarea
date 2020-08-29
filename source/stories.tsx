@@ -1,19 +1,16 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import React, { useCallback, useEffect, useRef } from 'react'
-import { storiesOf } from '@storybook/react'
-import { number, text, withKnobs } from '@storybook/addon-knobs'
-import { withA11y } from '@storybook/addon-a11y'
+import React, { FC, useCallback, useEffect, useRef } from 'react'
+import { number, text } from '@storybook/addon-knobs'
 import '../.storybook/base.css'
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import Textarea from '../dist/esm'
+import Textarea from './'
 
-const stories = storiesOf('react-expanding-textarea', module)
+export default {
+  title: 'ExpandingTextarea',
+  component: Textarea,
+  parameters: {},
+}
 
-stories.addDecorator(withA11y)
-stories.addDecorator(withKnobs)
-
-stories.add('Fancy textarea', () => {
+export const FancyTextarea: FC = () => {
   const textareaRef = useRef<HTMLTextAreaElement>()
 
   const handleChange = useCallback((e) => {
@@ -42,9 +39,9 @@ stories.add('Fancy textarea', () => {
       />
     </main>
   )
-})
+}
 
-stories.add('Regular textarea', () => {
+export const RegularTextarea: FC = () => {
   const textareaRef = useRef<HTMLTextAreaElement>()
 
   const handleChange = useCallback((e) => {
@@ -71,9 +68,9 @@ stories.add('Regular textarea', () => {
       />
     </main>
   )
-})
+}
 
-stories.add('Regular textarea with minimum 3 rows', () => {
+export const WithMinimum3Rows: FC = () => {
   const textareaRef = useRef<HTMLTextAreaElement>()
 
   const handleChange = useCallback((e) => {
@@ -101,4 +98,4 @@ stories.add('Regular textarea with minimum 3 rows', () => {
       />
     </main>
   )
-})
+}
