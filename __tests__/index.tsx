@@ -6,7 +6,7 @@ import '@testing-library/jest-dom/extend-expect'
 import ExpandingTextarea, { getHeight, resize } from '../source'
 
 test('renders with a minimum number of rows', () => {
-  const wrapStyles: React.CSSProperties = {
+  const wrapStyles: CSSProperties = {
     boxSizing: 'border-box',
     maxWidth: '500px',
   }

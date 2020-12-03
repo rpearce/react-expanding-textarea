@@ -67,6 +67,8 @@ module.exports = {
     semi: ['error', 'never'],
     'space-in-parens': ['error', 'never'],
     'space-infix-ops': ['error'],
+    'no-use-before-define': 'off',
+    '@typescript-eslint/no-use-before-define': ['error'],
   },
   settings: {
     react: {

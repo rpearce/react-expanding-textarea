@@ -95,11 +95,14 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
   </tr>
   <tr>
     <td align="center"><a href="https://github.com/chrisdrackett"><img src="https://avatars3.githubusercontent.com/u/4378?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Chris Drackett</b></sub></a><br /><a href="https://github.com/rpearce/react-expanding-textarea/issues?q=author%3Achrisdrackett" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="http://simonsmith.io/"><img src="https://avatars0.githubusercontent.com/u/360703?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Simon Smith</b></sub></a><br /><a href="https://github.com/rpearce/react-expanding-textarea/issues?q=author%3Asimonsmith" title="Bug reports">🐛</a> <a href="#ideas-simonsmith" title="Ideas, Planning, & Feedback">🤔</a></td>
+    <td align="center"><a href="https://github.com/jordie23"><img src="https://avatars0.githubusercontent.com/u/712360?v=4?s=100" width="100px;" alt=""/><br /><sub><b>jordie23</b></sub></a><br /><a href="https://github.com/rpearce/react-expanding-textarea/issues?q=author%3Ajordie23" title="Bug reports">🐛</a> <a href="#ideas-jordie23" title="Ideas, Planning, & Feedback">🤔</a></td>
   </tr>
 </table>
 
 <!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!
