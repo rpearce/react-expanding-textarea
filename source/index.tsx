@@ -96,7 +96,7 @@ const ExpandingTextarea: FC<TextareaProps> = ({
     <textarea
       {...props}
       onInput={handleInput}
-      ref={forwardedRef || ref}
+      ref={ref}
       rows={rows}
     />
   )

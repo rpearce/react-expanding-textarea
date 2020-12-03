@@ -150,6 +150,26 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "simonsmith",
+      "name": "Simon Smith",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/360703?v=4",
+      "profile": "http://simonsmith.io/",
+      "contributions": [
+        "bug",
+        "ideas"
+      ]
+    },
+    {
+      "login": "jordie23",
+      "name": "jordie23",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/712360?v=4",
+      "profile": "https://github.com/jordie23",
+      "contributions": [
+        "bug",
+        "ideas"
+      ]
     }
   ],
   "commitConvention": "none"
