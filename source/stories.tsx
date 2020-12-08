@@ -113,7 +113,7 @@ export const WithMaxHeight: FC = () => {
 
   return (
     <main>
-      <h1>Minimalist textarea</h1>
+      <h1>Minimalist textarea with a max-height</h1>
       <label htmlFor="my-textarea">Please Enter Some Details:</label>
       <Textarea
         className="textarea"
@@ -160,7 +160,7 @@ class FunctionRef extends Component<FunctionRefProps, FunctionRefState> {
 
     return (
       <main>
-        <h1>Regular textarea</h1>
+        <h1>Textarea component that receiving a callback ref</h1>
         <label htmlFor="my-textarea">Please Enter Some Details:</label>
         <Textarea
           id="my-textarea"
