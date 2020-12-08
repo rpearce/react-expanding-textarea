@@ -1,11 +1,12 @@
 import React, {
   FC,
   FormEvent,
+  MutableRefObject,
   RefObject,
   TextareaHTMLAttributes,
-  createRef,
   useCallback,
   useEffect,
+  useRef,
 } from 'react'
 import withForwardedRef from 'react-with-forwarded-ref'
 
@@ -58,9 +59,11 @@ export const resize = (rows: number, el: HTMLTextAreaElement | null): void => {
   }
 }
 
+type RefFn = (node: HTMLTextAreaElement) => void
+
 export interface TextareaProps
   extends Omit<TextareaHTMLAttributes<HTMLTextAreaElement>, 'rows'> {
-  forwardedRef?: RefObject<HTMLTextAreaElement>
+  forwardedRef?: RefObject<HTMLTextAreaElement> | RefFn
   onChange?: (evt: FormEvent<HTMLTextAreaElement>) => void
   onInput?: (evt: FormEvent<HTMLTextAreaElement>) => void
   rows?: string | number | undefined
@@ -71,7 +74,11 @@ const ExpandingTextarea: FC<TextareaProps> = ({
   forwardedRef,
   ...props
 }: TextareaProps) => {
-  const ref = forwardedRef || createRef<HTMLTextAreaElement>()
+  const isForwardedRefFn = typeof forwardedRef === 'function'
+  const internalRef = useRef<HTMLTextAreaElement>()
+  const ref = (
+    isForwardedRefFn || !forwardedRef ? internalRef : forwardedRef
+  ) as MutableRefObject<HTMLTextAreaElement>
   const rows = props.rows ? parseInt('' + props.rows, 10) : 0
   const { onChange, onInput } = props
 
@@ -92,11 +99,22 @@ const ExpandingTextarea: FC<TextareaProps> = ({
     [onChange, onInput, ref, rows]
   )
 
+  const handleRef = useCallback(
+    (node) => {
+      ref.current = node
+
+      if (isForwardedRefFn) {
+        (forwardedRef as RefFn)(node)
+      }
+    },
+    [forwardedRef, isForwardedRefFn, ref]
+  )
+
   return (
     <textarea
       {...props}
       onInput={handleInput}
-      ref={ref}
+      ref={handleRef}
       rows={rows}
     />
   )

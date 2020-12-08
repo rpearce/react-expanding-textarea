@@ -130,3 +130,10 @@ test('accepts ref', () => {
   render(<ExpandingTextarea defaultValue="Some text" ref={ref} />)
   expect(ref.current?.tagName).toEqual('TEXTAREA')
 })
+
+test('accepts function ref', () => {
+  let el: HTMLTextAreaElement | { tagName: 'BROKEN' } = { tagName: 'BROKEN' }
+  const ref = (node: HTMLTextAreaElement) => { el = node }
+  render(<ExpandingTextarea defaultValue="Some text" ref={ref} />)
+  expect(el.tagName).toEqual('TEXTAREA')
+})
