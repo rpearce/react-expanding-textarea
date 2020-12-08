@@ -4,9 +4,9 @@ import React, {
   MutableRefObject,
   RefObject,
   TextareaHTMLAttributes,
+  createRef,
   useCallback,
   useEffect,
-  useRef,
 } from 'react'
 import withForwardedRef from 'react-with-forwarded-ref'
 
@@ -63,7 +63,7 @@ type RefFn = (node: HTMLTextAreaElement) => void
 
 export interface TextareaProps
   extends Omit<TextareaHTMLAttributes<HTMLTextAreaElement>, 'rows'> {
-  forwardedRef?: (RefObject<HTMLTextAreaElement> | RefFn)
+  forwardedRef?: RefObject<HTMLTextAreaElement> | RefFn
   onChange?: (evt: FormEvent<HTMLTextAreaElement>) => void
   onInput?: (evt: FormEvent<HTMLTextAreaElement>) => void
   rows?: string | number | undefined
@@ -75,9 +75,10 @@ const ExpandingTextarea: FC<TextareaProps> = ({
   ...props
 }: TextareaProps) => {
   const isForwardedRefFn = typeof forwardedRef === 'function'
-  const internalRef = useRef<HTMLTextAreaElement>()
   const ref = (
-    isForwardedRefFn || !forwardedRef ? internalRef : forwardedRef
+    isForwardedRefFn || !forwardedRef
+      ? createRef<HTMLTextAreaElement>()
+      : forwardedRef
   ) as MutableRefObject<HTMLTextAreaElement>
   const rows = props.rows ? parseInt('' + props.rows, 10) : 0
   const { onChange, onInput } = props
