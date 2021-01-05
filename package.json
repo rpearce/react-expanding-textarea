@@ -12,7 +12,9 @@
   "bugs": "https://github.com/rpearce/react-expanding-textarea/issues",
   "author": "Robert Pearce <me@robertwpearce.com> (http://robertwpearce.com)",
   "contributors": [
-    "Robert Pearce <me@robertwpearce.com> (https://robertwpearce.com)"
+    "Robert Pearce <me@robertwpearce.com> (https://robertwpearce.com)",
+    "Rauno Freiberg <freiberggg@gmail.com> (https://raunofreiberg.com)",
+    "Mat Sz <contact@matsz.dev> (https://matsz.dev)"
   ],
   "license": "BSD-3",
   "keywords": [
