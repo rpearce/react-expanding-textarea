@@ -1,4 +1,11 @@
-import React, { ChangeEvent, Component, FC, useCallback, useEffect, useRef } from 'react'
+import React, {
+  ChangeEvent,
+  Component,
+  FC,
+  useCallback,
+  useEffect,
+  useRef,
+} from 'react'
 import { number, text } from '@storybook/addon-knobs'
 import '../.storybook/base.css'
 
@@ -160,7 +167,7 @@ class FunctionRef extends Component<FunctionRefProps, FunctionRefState> {
 
     return (
       <main>
-        <h1>Textarea component that receiving a callback ref</h1>
+        <h1>Textarea component that receives a callback ref</h1>
         <label htmlFor="my-textarea">Please Enter Some Details:</label>
         <Textarea
           id="my-textarea"
@@ -179,4 +186,30 @@ class FunctionRef extends Component<FunctionRefProps, FunctionRefState> {
 
 export const WithFunctionRef: FC = () => {
   return <FunctionRef />
+}
+
+export const WithValueFromProps: FC = () => {
+  const textareaRef = useRef<HTMLTextAreaElement>()
+
+  useEffect(() => {
+    textareaRef.current?.focus()
+  }, [])
+
+  return (
+    <main>
+      <h1>Minimalist textarea</h1>
+      <label htmlFor="my-textarea">Please Enter Some Details:</label>
+      <Textarea
+        className="textarea"
+        id="my-textarea"
+        maxLength={number('maxLength', 3000)}
+        name="pet[notes]"
+        placeholder={text('placeholder', 'Enter details here...')}
+        ref={textareaRef}
+        rows={text('rows', '1')}
+        style={{ display: 'block', width: '350px' }}
+        value={text('value', 'Lorem ipsum dolor sit amet...')}
+      />
+    </main>
+  )
 }
