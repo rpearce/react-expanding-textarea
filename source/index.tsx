@@ -84,7 +84,7 @@ const ExpandingTextarea: FC<TextareaProps> = ({
 
   useEffect(() => {
     resize(rows, ref.current)
-  }, [ref, rows])
+  }, [ref, rows, props.value])
 
   const handleInput = useCallback(
     (e) => {
