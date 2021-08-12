@@ -6,5 +6,6 @@ module.exports = {
   moduleNameMapper: {},
   preset: 'ts-jest',
   setupFilesAfterEnv: [],
+  testEnvironment: 'jsdom',
   verbose: true,
 }
