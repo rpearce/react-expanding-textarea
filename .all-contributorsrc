@@ -181,6 +181,16 @@
         "bug",
         "code"
       ]
+    },
+    {
+      "login": "crtl",
+      "name": "crtl",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25827827?v=4",
+      "profile": "https://github.com/crtl",
+      "contributions": [
+        "bug",
+        "ideas"
+      ]
     }
   ],
   "commitConvention": "none"
