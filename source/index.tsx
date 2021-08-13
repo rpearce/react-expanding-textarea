@@ -1,6 +1,6 @@
 import React, {
+  ChangeEvent,
   FC,
-  FormEvent,
   MutableRefObject,
   RefObject,
   TextareaHTMLAttributes,
@@ -64,8 +64,8 @@ type RefFn = (node: HTMLTextAreaElement) => void
 export interface TextareaProps
   extends Omit<TextareaHTMLAttributes<HTMLTextAreaElement>, 'rows'> {
   forwardedRef?: RefObject<HTMLTextAreaElement> | RefFn
-  onChange?: (evt: FormEvent<HTMLTextAreaElement>) => void
-  onInput?: (evt: FormEvent<HTMLTextAreaElement>) => void
+  onChange?: (evt: ChangeEvent<HTMLTextAreaElement>) => void
+  onInput?: (evt: ChangeEvent<HTMLTextAreaElement>) => void
   rows?: string | number | undefined
   value?: string
 }
