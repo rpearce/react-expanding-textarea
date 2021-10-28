@@ -54,7 +54,7 @@
     "build:docs": "rm -rf docs/ && mkdir -p docs && build-storybook -o docs",
     "build:esm": "tsc -p tsconfig.esm.json",
     "build:umd": "tsc -p tsconfig.umd.json",
-    "ci": "run-p lint test build",
+    "ci": "run-p lint test build build:docs",
     "contributors:add": "all-contributors add",
     "contributors:generate": "all-contributors generate",
     "lint": "eslint .",
