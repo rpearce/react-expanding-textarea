@@ -80,7 +80,7 @@ const ExpandingTextarea: FC<TextareaProps> = ({
     isForwardedRefFn || !forwardedRef ? internalRef : forwardedRef
   ) as MutableRefObject<HTMLTextAreaElement>
   const rows = props.rows ? parseInt('' + props.rows, 10) : 0
-  const { onChange, onInput } = props
+  const { onChange, onInput, ...rest } = props
 
   useEffect(() => {
     resize(rows, ref.current)
@@ -112,7 +112,7 @@ const ExpandingTextarea: FC<TextareaProps> = ({
 
   return (
     <textarea
-      {...props}
+      {...rest}
       onInput={handleInput}
       ref={handleRef}
       rows={rows}
