@@ -94,7 +94,23 @@ const ExpandingTextarea: FC<TextareaProps> = ({
 
   useLayoutEffect(() => {
     resize(rows, ref.current)
-  }, [ref, rows, props.value])
+  }, [props.className, props.style, props.value, ref, rows])
+
+  useLayoutEffect(() => {
+    if (!window.ResizeObserver) {
+      return
+    }
+
+    const observer = new ResizeObserver(() => {
+      resize(rows, ref.current)
+    })
+
+    observer.observe(ref.current)
+
+    return () => {
+      observer.disconnect()
+    }
+  }, [ref, rows])
 
   const handleInput = useCallback(
     (e) => {
