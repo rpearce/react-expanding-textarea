@@ -41,7 +41,7 @@ export const FancyTextarea: FC = () => {
         onChange={handleChange}
         placeholder={text('placeholder', 'Enter details here...')}
         ref={textareaRef}
-        rows={text('rows', '1')}
+        rows="1"
         style={{ display: 'block', width: '350px' }}
       />
     </main>
@@ -100,7 +100,7 @@ export const WithMinimum3Rows: FC = () => {
         onChange={handleChange}
         placeholder={text('placeholder', 'Enter details here...')}
         ref={textareaRef}
-        rows={text('rows', '3')}
+        rows="3"
         style={{ display: 'block', width: '300px' }}
       />
     </main>
@@ -131,7 +131,7 @@ export const WithMaxHeight: FC = () => {
         onChange={handleChange}
         placeholder={text('placeholder', 'Enter details here...')}
         ref={textareaRef}
-        rows={text('rows', '1')}
+        rows="1"
         style={{ display: 'block', maxHeight: '100px', width: '350px' }}
       />
     </main>
@@ -206,7 +206,7 @@ export const WithValueFromProps: FC = () => {
         name="pet[notes]"
         placeholder={text('placeholder', 'Enter details here...')}
         ref={textareaRef}
-        rows={text('rows', '1')}
+        rows="1"
         style={{ display: 'block', width: '350px' }}
         value={text('value', 'Lorem ipsum dolor sit amet...')}
       />
