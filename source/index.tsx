@@ -5,7 +5,7 @@ import React, {
   RefObject,
   TextareaHTMLAttributes,
   useCallback,
-  useEffect,
+  useLayoutEffect,
   useRef,
 } from 'react'
 import withForwardedRef from 'react-with-forwarded-ref'
@@ -92,7 +92,7 @@ const ExpandingTextarea: FC<TextareaProps> = ({
   const rows = props.rows ? parseInt('' + props.rows, 10) : 0
   const { onChange, onInput, ...rest } = props
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     resize(rows, ref.current)
   }, [ref, rows, props.value])
 
