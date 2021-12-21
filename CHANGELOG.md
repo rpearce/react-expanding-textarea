@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [2.3.4] - 2021-12-21
+
+### Fixed
+
+* Fix onChange prop bug (#73)
+* Use useLayoutEffect instead of useEffect (#72)
+* Textarea does not automatically recalculate size if it's parent container
+  changes size (#71)
+
 ## [2.3.3] - 2021-10-28
 
 ### Fixed
