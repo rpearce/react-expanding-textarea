@@ -191,6 +191,16 @@
         "bug",
         "ideas"
       ]
+    },
+    {
+      "login": "jnthnwn",
+      "name": "Jonathan Wan",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4400604?v=4",
+      "profile": "https://github.com/jnthnwn",
+      "contributions": [
+        "bug",
+        "code"
+      ]
     }
   ],
   "commitConvention": "none"
