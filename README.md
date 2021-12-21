@@ -1,4 +1,5 @@
 # react-expanding-textarea
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-9-orange.svg?style=flat-square)](#contributors-) [![npm version](https://img.shields.io/npm/v/react-expanding-textarea.svg?style=flat-square)](https://www.npmjs.com/package/react-expanding-textarea) [![npm downloads](https://img.shields.io/npm/dm/react-expanding-textarea.svg?style=flat-square)](https://www.npmjs.com/package/react-expanding-textarea) [![bundlephobia size](https://flat.badgen.net/bundlephobia/minzip/react-expanding-textarea)](https://bundlephobia.com/result?p=react-expanding-textarea)
 
 React textarea component to automatically expand and contract your textareas.
@@ -6,27 +7,28 @@ React textarea component to automatically expand and contract your textareas.
 You can [view the demo here](http://rpearce.github.io/react-expanding-textarea/).
 
 ## Links
+
 * [Installation](#installation)
 * [Usage](#usage)
 * [Using The `rows` Prop](#using-the-rows-prop)
+* [Manually Calling `resize`](#manually-calling-resize)
 * [Changelog](./CHANGELOG.md)
 * [Contributing](./CONTRIBUTING.md)
 * [Code of Conduct](./CODE_OF_CONDUCT.md)
 
 ## Installation
-Install the package:
+
 ```
-$ npm i react-expanding-textarea
-```
-or
-```
-$ yarn add react-expanding-textarea
+npm i react-expanding-textarea
 ```
 
 ## Usage
+
 Use this exactly like you would a normal `<textarea>`; the only
-difference is that it is doing some simple expanding work behind the scenes for you!
-```js
+difference is that it is doing some simple expanding work behind the scenes for
+you!
+
+```javascript
 import React, { useCallback, useEffect, useRef } from 'react'
 import Textarea from 'react-expanding-textarea'
 
@@ -62,10 +64,38 @@ const MyTextarea = () => {
 ```
 
 ### Using The `rows` Prop
+
 If you pass a `rows` prop, then this component will perform a calculation based
 on computed `lineHeight`, `borderTopWidth`, `borderBottomWidth`, `paddingTop`
 and `paddingBottom` to deduce what the minimum height-in-rows the component
 should be.
+
+### Manually Calling `resize`
+
+If for some reason you need to manually resize a `<textarea>`, this package
+exports a `resize` function that has the following type:
+
+```typescript
+interface Resize {
+  (rows: number, el: HTMLTextAreaElement | null): void
+}
+```
+
+And you can use it like this:
+
+```javascript
+import { resize } from 'react-expanding-textarea'
+
+// resize based on 3 minimum rows
+// and using a React ref
+resize(3, refTextarea.current)
+
+// or
+
+// resize based on no minimum rows
+// and using a regular DOM Node
+resize(0, document.querySelector('textarea'))
+```
 
 ## Contributors
 

@@ -10,7 +10,11 @@ import React, {
 } from 'react'
 import withForwardedRef from 'react-with-forwarded-ref'
 
-export const getHeight = (rows: number, el: HTMLTextAreaElement): number => {
+export interface GetHeight {
+  (rows: number, el: HTMLTextAreaElement): number
+}
+
+export const getHeight: GetHeight = (rows, el) => {
   const {
     borderBottomWidth,
     borderTopWidth,
@@ -35,12 +39,18 @@ export const getHeight = (rows: number, el: HTMLTextAreaElement): number => {
         parseFloat(paddingTop)
 
   const scrollHeight =
-    el.scrollHeight + parseFloat(borderBottomWidth) + parseFloat(borderTopWidth)
+    el.scrollHeight +
+    parseFloat(borderBottomWidth) +
+    parseFloat(borderTopWidth)
 
   return Math.max(rowHeight, scrollHeight)
 }
 
-export const resize = (rows: number, el: HTMLTextAreaElement | null): void => {
+export interface Resize {
+  (rows: number, el: HTMLTextAreaElement | null): void
+}
+
+export const resize: Resize = (rows, el) => {
   if (el) {
     let overflowY = 'hidden'
     const { maxHeight } = window.getComputedStyle(el)
