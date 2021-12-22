@@ -92,6 +92,7 @@
     "react": "^16.8.0 || ^17.0.0"
   },
   "dependencies": {
+    "fast-shallow-equal": "^1.0.0",
     "react-with-forwarded-ref": "^0.3.3",
     "tslib": "^2.0.3"
   }

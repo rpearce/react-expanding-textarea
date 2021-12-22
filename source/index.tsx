@@ -9,6 +9,7 @@ import React, {
   useRef,
 } from 'react'
 import withForwardedRef from 'react-with-forwarded-ref'
+import { equal as isShallowEqual } from 'fast-shallow-equal'
 
 export interface GetHeight {
   (rows: number, el: HTMLTextAreaElement): number
@@ -85,6 +86,7 @@ const ExpandingTextarea: FC<TextareaProps> = ({
   ...props
 }: TextareaProps) => {
   const isForwardedRefFn = typeof forwardedRef === 'function'
+  const styleRef = useRef<CSSProperties>()
   const internalRef = useRef<HTMLTextAreaElement>()
   const ref = (
     isForwardedRefFn || !forwardedRef ? internalRef : forwardedRef
@@ -92,9 +94,15 @@ const ExpandingTextarea: FC<TextareaProps> = ({
   const rows = props.rows ? parseInt('' + props.rows, 10) : 0
   const { onChange, onInput, ...rest } = props
 
+  if (!styleRef.current || !isShallowEqual(props.style, styleRef.current)) {
+    styleRef.current = props.style
+  }
+
   useLayoutEffect(() => {
     resize(rows, ref.current)
-  }, [props.className, props.style, props.value, ref, rows])
+    // NOTE: disabling deps linting because of styleRef.current
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [props.className, styleRef.current, props.value, ref, rows])
 
   useLayoutEffect(() => {
     if (!window.ResizeObserver) {
