@@ -9,8 +9,12 @@
     "lib": ["es2020", "dom"],
     "moduleResolution": "node",
     "noImplicitAny": true,
+    "paths": {
+      "*": ["./source/types/*"]
+    },
     "sourceMap": false,
     "strict": true,
     "target": "es5"
-  }
+  },
+  "exclude": ["./source/types/*"]
 }

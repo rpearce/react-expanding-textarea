@@ -1,4 +1,5 @@
 import React, {
+  CSSProperties,
   ChangeEvent,
   FC,
   MutableRefObject,
