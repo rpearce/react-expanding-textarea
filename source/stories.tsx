@@ -5,6 +5,7 @@ import React, {
   useCallback,
   useEffect,
   useRef,
+  useState,
 } from 'react'
 import { number, text } from '@storybook/addon-knobs'
 import '../.storybook/base.css'
@@ -77,7 +78,7 @@ export const RegularTextarea: FC = () => {
   )
 }
 
-export const WithMinimum3Rows: FC = () => {
+export const Minimum3Rows: FC = () => {
   const textareaRef = useRef<HTMLTextAreaElement>()
 
   const handleChange = useCallback((e) => {
@@ -107,7 +108,7 @@ export const WithMinimum3Rows: FC = () => {
   )
 }
 
-export const WithMaxHeight: FC = () => {
+export const MaxHeight: FC = () => {
   const textareaRef = useRef<HTMLTextAreaElement>()
 
   const handleChange = useCallback((e) => {
@@ -144,7 +145,7 @@ interface FunctionRefState {
   value: string
 }
 
-class FunctionRef extends Component<FunctionRefProps, FunctionRefState> {
+class FunctionRefComp extends Component<FunctionRefProps, FunctionRefState> {
   el: HTMLTextAreaElement | null = null
 
   constructor(props: FunctionRefProps) {
@@ -184,11 +185,11 @@ class FunctionRef extends Component<FunctionRefProps, FunctionRefState> {
   }
 }
 
-export const WithFunctionRef: FC = () => {
-  return <FunctionRef />
+export const FunctionRef: FC = () => {
+  return <FunctionRefComp />
 }
 
-export const WithValueFromProps: FC = () => {
+export const ValueFromProps: FC = () => {
   const textareaRef = useRef<HTMLTextAreaElement>()
 
   useEffect(() => {
@@ -210,6 +211,44 @@ export const WithValueFromProps: FC = () => {
         style={{ display: 'block', width: '350px' }}
         value={text('value', 'Lorem ipsum dolor sit amet...')}
       />
+    </main>
+  )
+}
+
+export const ToggleWidth: FC = () => {
+  const [isWide, setIsWide] = useState(false)
+
+  const handleClickToggle = useCallback(() => {
+    setIsWide(x => !x)
+  }, [])
+
+  return (
+    <main>
+      <h1>Toggle the textarea&apos;s width</h1>
+      <p>
+        When it goes from smaller to larger, there should not be any extra
+        whitespace leftover at the bottom from its height when it was small.
+      </p>
+      <p>
+        This will only work if <code>ResizeObserver</code> is available in your
+        browser.
+      </p>
+      <button onClick={handleClickToggle} type="button">
+        Toggle textarea width
+      </button>
+      <div>
+        <label htmlFor="my-textarea">Please Enter Some Details:</label>
+        <div style={{ width: isWide ? 400 : 200 }}>
+          <Textarea
+            defaultValue="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dsa
+das
+d
+dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est labor"
+            id="my-textarea"
+            style={{ display: 'block', width: '100%' }}
+          />
+        </div>
+      </div>
     </main>
   )
 }
