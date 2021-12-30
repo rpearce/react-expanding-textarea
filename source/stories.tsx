@@ -218,6 +218,8 @@ export const ValueFromProps: FC = () => {
 export const StyleChanges: FC = () => {
   const [isWide0, setIsWide0] = useState(false)
   const [isWide1, setIsWide1] = useState(false)
+  const [, setCounter0] = useState(0)
+  const [, setCounter1] = useState(0)
 
   const handleClickToggle0 = useCallback(() => {
     setIsWide0(x => !x)
@@ -225,6 +227,14 @@ export const StyleChanges: FC = () => {
 
   const handleClickToggle1 = useCallback(() => {
     setIsWide1(x => !x)
+  }, [])
+
+  const handleClickCounter0 = useCallback(() => {
+    setCounter0(x => x + 1)
+  }, [])
+
+  const handleClickCounter1 = useCallback(() => {
+    setCounter0(x => x + 1)
   }, [])
 
   return (
@@ -240,6 +250,9 @@ export const StyleChanges: FC = () => {
         </p>
         <button onClick={handleClickToggle0} type="button">
           Toggle textarea parent&apos;s width
+        </button>
+        <button onClick={handleClickCounter0} type="button">
+          Force a state update (for testing)
         </button>
         <div>
           <label htmlFor="my-textarea0">Please Enter Some Details:</label>
@@ -259,6 +272,9 @@ dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla par
         <h2>Toggling the textarea&apos;s width</h2>
         <button onClick={handleClickToggle1} type="button">
           Toggle textarea width
+        </button>
+        <button onClick={handleClickCounter1} type="button">
+          Force a state update (for testing)
         </button>
         <div>
           <label htmlFor="my-textarea1">Please Enter Some Details:</label>
