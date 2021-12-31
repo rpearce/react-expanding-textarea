@@ -234,7 +234,7 @@ export const StyleChanges: FC = () => {
   }, [])
 
   const handleClickCounter1 = useCallback(() => {
-    setCounter0(x => x + 1)
+    setCounter1(x => x + 1)
   }, [])
 
   return (
