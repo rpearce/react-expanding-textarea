@@ -5,6 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [2.3.4] - 2022-02-03
+
+### Changed
+
+* "Use useLayoutEffect instead of useEffect" (#72)
+
+### Fixed
+
+* "Textarea does not automatically recalculate size if it's parent container
+  changes size" (#71). This adds a tiny dependency on
+  [`fast-shallow-equal`](https://www.npmjs.com/package/fast-shallow-equal) and
+  pairs it with a custom hook to be able to detect shallow changes to a `style`
+  object if it gets passed. We also are now resizing using a `ResizeObserver`,
+  if it's supported, as well as if a provided `className` changes.
+
 ## [2.3.3] - 2021-10-28
 
 ### Fixed
