@@ -43,7 +43,6 @@
     "react-component"
   ],
   "files": [
-    "AUTHORS",
     "LICENSE",
     "README.md",
     "dist/"
