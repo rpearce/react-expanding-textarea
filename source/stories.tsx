@@ -5,6 +5,7 @@ import React, {
   useCallback,
   useEffect,
   useRef,
+  useState,
 } from 'react'
 import { number, text } from '@storybook/addon-knobs'
 import '../.storybook/base.css'
@@ -77,7 +78,7 @@ export const RegularTextarea: FC = () => {
   )
 }
 
-export const WithMinimum3Rows: FC = () => {
+export const Minimum3Rows: FC = () => {
   const textareaRef = useRef<HTMLTextAreaElement>()
 
   const handleChange = useCallback((e) => {
@@ -107,7 +108,7 @@ export const WithMinimum3Rows: FC = () => {
   )
 }
 
-export const WithMaxHeight: FC = () => {
+export const MaxHeight: FC = () => {
   const textareaRef = useRef<HTMLTextAreaElement>()
 
   const handleChange = useCallback((e) => {
@@ -144,7 +145,7 @@ interface FunctionRefState {
   value: string
 }
 
-class FunctionRef extends Component<FunctionRefProps, FunctionRefState> {
+class FunctionRefComp extends Component<FunctionRefProps, FunctionRefState> {
   el: HTMLTextAreaElement | null = null
 
   constructor(props: FunctionRefProps) {
@@ -184,11 +185,11 @@ class FunctionRef extends Component<FunctionRefProps, FunctionRefState> {
   }
 }
 
-export const WithFunctionRef: FC = () => {
-  return <FunctionRef />
+export const FunctionRef: FC = () => {
+  return <FunctionRefComp />
 }
 
-export const WithValueFromProps: FC = () => {
+export const ValueFromProps: FC = () => {
   const textareaRef = useRef<HTMLTextAreaElement>()
 
   useEffect(() => {
@@ -210,6 +211,83 @@ export const WithValueFromProps: FC = () => {
         style={{ display: 'block', width: '350px' }}
         value={text('value', 'Lorem ipsum dolor sit amet...')}
       />
+    </main>
+  )
+}
+
+export const StyleChanges: FC = () => {
+  const [isWide0, setIsWide0] = useState(false)
+  const [isWide1, setIsWide1] = useState(false)
+  const [, setCounter0] = useState(0)
+  const [, setCounter1] = useState(0)
+
+  const handleClickToggle0 = useCallback(() => {
+    setIsWide0(x => !x)
+  }, [])
+
+  const handleClickToggle1 = useCallback(() => {
+    setIsWide1(x => !x)
+  }, [])
+
+  const handleClickCounter0 = useCallback(() => {
+    setCounter0(x => x + 1)
+  }, [])
+
+  const handleClickCounter1 = useCallback(() => {
+    setCounter1(x => x + 1)
+  }, [])
+
+  return (
+    <main>
+      <h1>Textarea&apos;s width / style changes</h1>
+      <section>
+        <h2>Toggling the parent&apos;s width</h2>
+        <p>
+          When it goes from smaller to larger, there should not be any extra
+          whitespace leftover at the bottom from its height when it was small.
+          This will only work if <code>ResizeObserver</code> is available in
+          your browser.
+        </p>
+        <button onClick={handleClickToggle0} type="button">
+          Toggle textarea parent&apos;s width
+        </button>
+        <button onClick={handleClickCounter0} type="button">
+          Force a state update (for testing)
+        </button>
+        <div>
+          <label htmlFor="my-textarea0">Please Enter Some Details:</label>
+          <div style={{ width: isWide0 ? 400 : 200 }}>
+            <Textarea
+              defaultValue="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dsa
+das
+d
+dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est labor"
+              id="my-textarea0"
+              style={{ display: 'block', width: '100%' }}
+            />
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>Toggling the textarea&apos;s width</h2>
+        <button onClick={handleClickToggle1} type="button">
+          Toggle textarea width
+        </button>
+        <button onClick={handleClickCounter1} type="button">
+          Force a state update (for testing)
+        </button>
+        <div>
+          <label htmlFor="my-textarea1">Please Enter Some Details:</label>
+          <Textarea
+            defaultValue="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dsa
+das
+d
+dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est labor"
+            id="my-textarea1"
+            style={{ display: 'block', width: isWide1 ? 400 : 200 }}
+          />
+        </div>
+      </section>
     </main>
   )
 }

@@ -1,4 +1,5 @@
 import React, {
+  CSSProperties,
   ChangeEvent,
   FC,
   MutableRefObject,
@@ -6,10 +7,13 @@ import React, {
   TextareaHTMLAttributes,
   useCallback,
   useLayoutEffect,
+  useMemo,
   useRef,
 } from 'react'
 import withForwardedRef from 'react-with-forwarded-ref'
+import { equal as isShallowEqual } from 'fast-shallow-equal'
 
+// =============================================================================
 export interface GetHeight {
   (rows: number, el: HTMLTextAreaElement): number
 }
@@ -46,6 +50,7 @@ export const getHeight: GetHeight = (rows, el) => {
   return Math.max(rowHeight, scrollHeight)
 }
 
+// =============================================================================
 export interface Resize {
   (rows: number, el: HTMLTextAreaElement | null): void
 }
@@ -69,6 +74,21 @@ export const resize: Resize = (rows, el) => {
   }
 }
 
+// =============================================================================
+const useShallowObjectMemo = <A,>(obj: A): A => {
+  const refObject  = useRef<A>(obj)
+  const refCounter = useRef(0)
+
+  if (!isShallowEqual(obj, refObject.current)) {
+    refObject.current   = obj
+    refCounter.current += 1
+  }
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  return useMemo(() => refObject.current, [refCounter.current])
+}
+
+// =============================================================================
 type RefFn = (node: HTMLTextAreaElement) => void
 
 export interface TextareaProps
@@ -85,6 +105,7 @@ const ExpandingTextarea: FC<TextareaProps> = ({
   ...props
 }: TextareaProps) => {
   const isForwardedRefFn = typeof forwardedRef === 'function'
+  const style = useShallowObjectMemo<CSSProperties | undefined>(props.style)
   const internalRef = useRef<HTMLTextAreaElement>()
   const ref = (
     isForwardedRefFn || !forwardedRef ? internalRef : forwardedRef
@@ -94,7 +115,23 @@ const ExpandingTextarea: FC<TextareaProps> = ({
 
   useLayoutEffect(() => {
     resize(rows, ref.current)
-  }, [ref, rows, props.value])
+  }, [props.className, props.value, ref, rows, style])
+
+  useLayoutEffect(() => {
+    if (!window.ResizeObserver) {
+      return
+    }
+
+    const observer = new ResizeObserver(() => {
+      resize(rows, ref.current)
+    })
+
+    observer.observe(ref.current)
+
+    return () => {
+      observer.disconnect()
+    }
+  }, [ref, rows])
 
   const handleInput = useCallback(
     (e) => {
