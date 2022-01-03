@@ -20,6 +20,7 @@ module.exports = {
     '@typescript-eslint',
     'react',
     'react-hooks',
+    'jest',
     'jsx-a11y',
   ],
   rules: {
