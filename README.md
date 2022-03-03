@@ -45,7 +45,7 @@ const MyTextarea = () => {
 
   return (
     <>
-      <label for="my-textarea">
+      <label htmlFor="my-textarea">
         Please Enter Some Details:
       </label>
       <Textarea
