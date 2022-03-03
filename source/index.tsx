@@ -89,6 +89,10 @@ const useShallowObjectMemo = <A,>(obj: A): A => {
 }
 
 // =============================================================================
+const useSSRLayoutEffect =
+  typeof window === 'undefined' ? Function.prototype : useLayoutEffect
+
+// =============================================================================
 type RefFn = (node: HTMLTextAreaElement) => void
 
 export interface TextareaProps
@@ -113,11 +117,11 @@ const ExpandingTextarea: FC<TextareaProps> = ({
   const rows = props.rows ? parseInt('' + props.rows, 10) : 0
   const { onChange, onInput, ...rest } = props
 
-  useLayoutEffect(() => {
+  useSSRLayoutEffect(() => {
     resize(rows, ref.current)
   }, [props.className, props.value, ref, rows, style])
 
-  useLayoutEffect(() => {
+  useSSRLayoutEffect(() => {
     if (!window.ResizeObserver) {
       return
     }
