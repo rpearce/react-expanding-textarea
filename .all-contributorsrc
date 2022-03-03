@@ -220,6 +220,15 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "magoz",
+      "name": "Magoz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9190753?v=4",
+      "profile": "https://magoz.studio/",
+      "contributions": [
+        "ideas"
+      ]
     }
   ],
   "commitConvention": "none"
