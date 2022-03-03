@@ -132,6 +132,9 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
     <td align="center"><a href="https://github.com/jnthnwn"><img src="https://avatars.githubusercontent.com/u/4400604?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Jonathan Wan</b></sub></a><br /><a href="https://github.com/rpearce/react-expanding-textarea/issues?q=author%3Ajnthnwn" title="Bug reports">🐛</a> <a href="https://github.com/rpearce/react-expanding-textarea/commits?author=jnthnwn" title="Code">💻</a></td>
     <td align="center"><a href="http://moss.io/"><img src="https://avatars.githubusercontent.com/u/629766?v=4?s=100" width="100px;" alt=""/><br /><sub><b>James Moss</b></sub></a><br /><a href="https://github.com/rpearce/react-expanding-textarea/issues?q=author%3Ajamesmoss" title="Bug reports">🐛</a> <a href="#ideas-jamesmoss" title="Ideas, Planning, & Feedback">🤔</a></td>
   </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/SunnyAureliusRichard"><img src="https://avatars.githubusercontent.com/u/100728856?v=4?s=100" width="100px;" alt=""/><br /><sub><b>SunnyAureliusRichard</b></sub></a><br /><a href="https://github.com/rpearce/react-expanding-textarea/issues?q=author%3ASunnyAureliusRichard" title="Bug reports">🐛</a></td>
+  </tr>
 </table>
 
 <!-- markdownlint-restore -->
