@@ -1,6 +1,6 @@
 # react-expanding-textarea
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-21-orange.svg?style=flat-square)](#contributors-) [![npm version](https://img.shields.io/npm/v/react-expanding-textarea.svg?style=flat-square)](https://www.npmjs.com/package/react-expanding-textarea) [![npm downloads](https://img.shields.io/npm/dm/react-expanding-textarea.svg?style=flat-square)](https://www.npmjs.com/package/react-expanding-textarea) [![bundlephobia size](https://flat.badgen.net/bundlephobia/minzip/react-expanding-textarea)](https://bundlephobia.com/result?p=react-expanding-textarea)
+[![All Contributors](https://img.shields.io/badge/all_contributors-24-orange.svg?style=flat-square)](#contributors-) [![npm version](https://img.shields.io/npm/v/react-expanding-textarea.svg?style=flat-square)](https://www.npmjs.com/package/react-expanding-textarea) [![npm downloads](https://img.shields.io/npm/dm/react-expanding-textarea.svg?style=flat-square)](https://www.npmjs.com/package/react-expanding-textarea) [![bundlephobia size](https://flat.badgen.net/bundlephobia/minzip/react-expanding-textarea)](https://bundlephobia.com/result?p=react-expanding-textarea)
 
 React textarea component to automatically expand and contract your textareas.
 
