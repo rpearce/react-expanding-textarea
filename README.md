@@ -135,6 +135,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
   <tr>
     <td align="center"><a href="https://github.com/SunnyAureliusRichard"><img src="https://avatars.githubusercontent.com/u/100728856?v=4?s=100" width="100px;" alt=""/><br /><sub><b>SunnyAureliusRichard</b></sub></a><br /><a href="https://github.com/rpearce/react-expanding-textarea/issues?q=author%3ASunnyAureliusRichard" title="Bug reports">🐛</a></td>
     <td align="center"><a href="https://magoz.studio/"><img src="https://avatars.githubusercontent.com/u/9190753?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Magoz</b></sub></a><br /><a href="#ideas-magoz" title="Ideas, Planning, & Feedback">🤔</a></td>
+    <td align="center"><a href="https://github.com/jeffreystorer"><img src="https://avatars.githubusercontent.com/u/13458609?v=4?s=100" width="100px;" alt=""/><br /><sub><b>jeffreystorer</b></sub></a><br /><a href="https://github.com/rpearce/react-expanding-textarea/issues?q=author%3Ajeffreystorer" title="Bug reports">🐛</a></td>
   </tr>
 </table>
 

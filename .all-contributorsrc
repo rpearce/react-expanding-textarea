@@ -229,6 +229,15 @@
       "contributions": [
         "ideas"
       ]
+    },
+    {
+      "login": "jeffreystorer",
+      "name": "jeffreystorer",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13458609?v=4",
+      "profile": "https://github.com/jeffreystorer",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "commitConvention": "none"
