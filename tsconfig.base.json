@@ -2,11 +2,13 @@
   "compilerOptions": {
     "allowJs": false,
     "allowSyntheticDefaultImports": true,
+    "allowUnreachableCode": false,
     "declaration": true,
     "esModuleInterop": true,
     "importHelpers": true,
     "jsx": "react",
-    "lib": ["es2020", "dom"],
+    "lib": ["esnext", "dom"],
+    "module": "esnext",
     "moduleResolution": "node",
     "noImplicitAny": true,
     "paths": {
@@ -16,5 +18,8 @@
     "strict": true,
     "target": "es5"
   },
-  "exclude": ["./source/types/*"]
+  "exclude": [
+    "node_modules/",
+    "./source/types/fast-shallow-equal.d.ts"
+  ]
 }

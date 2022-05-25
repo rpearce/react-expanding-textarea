@@ -1,16 +1,15 @@
 import React, {
   ChangeEvent,
   Component,
-  FC,
   useCallback,
   useEffect,
   useRef,
   useState,
 } from 'react'
-import { number, text } from '@storybook/addon-knobs'
-import '../.storybook/base.css'
 
-import Textarea from './'
+import Textarea from '../source/index'
+
+import './base.css'
 
 export default {
   title: 'ExpandingTextarea',
@@ -18,7 +17,12 @@ export default {
   parameters: {},
 }
 
-export const FancyTextarea: FC = () => {
+const defaultArgs = {
+  maxLength: 3000,
+  placeholder: 'Enter details here...',
+}
+
+export const FancyTextarea = ({ maxLength, placeholder }) => {
   const textareaRef = useRef<HTMLTextAreaElement>()
 
   const handleChange = useCallback((e) => {
@@ -37,10 +41,10 @@ export const FancyTextarea: FC = () => {
         className="textarea"
         defaultValue="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         id="my-textarea"
-        maxLength={number('maxLength', 3000)}
+        maxLength={maxLength}
         name="pet[notes]"
         onChange={handleChange}
-        placeholder={text('placeholder', 'Enter details here...')}
+        placeholder={placeholder}
         ref={textareaRef}
         rows="1"
         style={{ display: 'block', width: '350px' }}
@@ -49,7 +53,9 @@ export const FancyTextarea: FC = () => {
   )
 }
 
-export const RegularTextarea: FC = () => {
+FancyTextarea.args = defaultArgs
+
+export const RegularTextarea = ({ maxLength, placeholder }) => {
   const textareaRef = useRef<HTMLTextAreaElement>()
 
   const handleChange = useCallback((e) => {
@@ -67,10 +73,10 @@ export const RegularTextarea: FC = () => {
       <Textarea
         defaultValue="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         id="my-textarea"
-        maxLength={number('maxLength', 3000)}
+        maxLength={maxLength}
         name="pet[notes]"
         onChange={handleChange}
-        placeholder={text('placeholder', 'Enter details here...')}
+        placeholder={placeholder}
         ref={textareaRef}
         style={{ display: 'block', width: '300px' }}
       />
@@ -78,7 +84,9 @@ export const RegularTextarea: FC = () => {
   )
 }
 
-export const Minimum3Rows: FC = () => {
+RegularTextarea.args = defaultArgs
+
+export const Minimum3Rows = ({ maxLength, placeholder }) => {
   const textareaRef = useRef<HTMLTextAreaElement>()
 
   const handleChange = useCallback((e) => {
@@ -96,10 +104,10 @@ export const Minimum3Rows: FC = () => {
       <Textarea
         defaultValue="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         id="my-textarea"
-        maxLength={number('maxLength', 3000)}
+        maxLength={maxLength}
         name="pet[notes]"
         onChange={handleChange}
-        placeholder={text('placeholder', 'Enter details here...')}
+        placeholder={placeholder}
         ref={textareaRef}
         rows="3"
         style={{ display: 'block', width: '300px' }}
@@ -108,7 +116,9 @@ export const Minimum3Rows: FC = () => {
   )
 }
 
-export const MaxHeight: FC = () => {
+Minimum3Rows.args = defaultArgs
+
+export const MaxHeight = ({ maxLength, placeholder }) => {
   const textareaRef = useRef<HTMLTextAreaElement>()
 
   const handleChange = useCallback((e) => {
@@ -127,10 +137,10 @@ export const MaxHeight: FC = () => {
         className="textarea"
         defaultValue="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         id="my-textarea"
-        maxLength={number('maxLength', 3000)}
+        maxLength={maxLength}
         name="pet[notes]"
         onChange={handleChange}
-        placeholder={text('placeholder', 'Enter details here...')}
+        placeholder={placeholder}
         ref={textareaRef}
         rows="1"
         style={{ display: 'block', maxHeight: '100px', width: '350px' }}
@@ -139,7 +149,12 @@ export const MaxHeight: FC = () => {
   )
 }
 
-type FunctionRefProps = Record<string, never>
+MaxHeight.args = defaultArgs
+
+type FunctionRefProps = {
+  maxLength: number
+  placeholder: string
+}
 
 interface FunctionRefState {
   value: string
@@ -165,6 +180,7 @@ class FunctionRefComp extends Component<FunctionRefProps, FunctionRefState> {
 
   render() {
     console.log(this.el)
+    const { maxLength, placeholder } = this.props
 
     return (
       <main>
@@ -172,10 +188,10 @@ class FunctionRefComp extends Component<FunctionRefProps, FunctionRefState> {
         <label htmlFor="my-textarea">Please Enter Some Details:</label>
         <Textarea
           id="my-textarea"
-          maxLength={number('maxLength', 3000)}
+          maxLength={maxLength}
           name="pet[notes]"
           onChange={this.handleChange}
-          placeholder={text('placeholder', 'Enter details here...')}
+          placeholder={placeholder}
           ref={this.setRef}
           style={{ display: 'block', width: '300px' }}
           value={this.state.value}
@@ -185,11 +201,13 @@ class FunctionRefComp extends Component<FunctionRefProps, FunctionRefState> {
   }
 }
 
-export const FunctionRef: FC = () => {
-  return <FunctionRefComp />
+export const FunctionRef = ({ maxLength, placeholder }) => {
+  return <FunctionRefComp maxLength={maxLength} placeholder={placeholder} />
 }
 
-export const ValueFromProps: FC = () => {
+FunctionRef.args = defaultArgs
+
+export const ValueFromProps = ({ maxLength, placeholder, value }) => {
   const textareaRef = useRef<HTMLTextAreaElement>()
 
   useEffect(() => {
@@ -203,19 +221,21 @@ export const ValueFromProps: FC = () => {
       <Textarea
         className="textarea"
         id="my-textarea"
-        maxLength={number('maxLength', 3000)}
+        maxLength={maxLength}
         name="pet[notes]"
-        placeholder={text('placeholder', 'Enter details here...')}
+        placeholder={placeholder}
         ref={textareaRef}
         rows="1"
         style={{ display: 'block', width: '350px' }}
-        value={text('value', 'Lorem ipsum dolor sit amet...')}
+        value={value}
       />
     </main>
   )
 }
 
-export const StyleChanges: FC = () => {
+FunctionRef.args = { ...defaultArgs, value: 'Lorem ipsum dolor sit amet...' }
+
+export const StyleChanges = () => {
   const [isWide0, setIsWide0] = useState(false)
   const [isWide1, setIsWide1] = useState(false)
   const [, setCounter0] = useState(0)

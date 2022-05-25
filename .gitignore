@@ -1,5 +1,5 @@
 .DS_Store
-coverage
-dist
-docs
-node_modules
+coverage/
+dist/
+docs/
+node_modules/

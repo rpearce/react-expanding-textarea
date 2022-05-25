@@ -75,12 +75,12 @@ export const resize: Resize = (rows, el) => {
 }
 
 // =============================================================================
-const useShallowObjectMemo = <A,>(obj: A): A => {
-  const refObject  = useRef<A>(obj)
+const useShallowObjectMemo = <A, >(obj: A): A => {
+  const refObject = useRef<A>(obj)
   const refCounter = useRef(0)
 
   if (!isShallowEqual(obj, refObject.current)) {
-    refObject.current   = obj
+    refObject.current = obj
     refCounter.current += 1
   }
 
@@ -138,20 +138,16 @@ const ExpandingTextarea: FC<TextareaProps> = ({
   }, [ref, rows])
 
   const handleInput = useCallback(
-    (e) => {
-      if (onChange) {
-        onChange(e)
-      }
-      if (onInput) {
-        onInput(e)
-      }
+    (e: ChangeEvent<HTMLTextAreaElement>) => {
+      onChange?.(e)
+      onInput?.(e)
       resize(rows, ref.current)
     },
     [onChange, onInput, ref, rows]
   )
 
   const handleRef = useCallback(
-    (node) => {
+    (node: HTMLTextAreaElement) => {
       ref.current = node
 
       if (isForwardedRefFn) {

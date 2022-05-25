@@ -2,7 +2,6 @@ import React, { CSSProperties, createRef } from 'react'
 import { fireEvent, render } from '@testing-library/react'
 import '@testing-library/jest-dom/extend-expect'
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import ExpandingTextarea, { getHeight, resize } from '../source'
 
 test('renders with a minimum number of rows', () => {
