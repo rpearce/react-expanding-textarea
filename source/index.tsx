@@ -71,6 +71,15 @@ export const resize: Resize = (rows, el) => {
     el.style.height = '0'
     el.style.overflowY = overflowY
     el.style.height = `${getHeight(rows, el)}px`
+
+    if (document.activeElement === el) {
+      if (
+        el.getBoundingClientRect().bottom > window.innerHeight &&
+        el.selectionStart === el.value.length
+      ) {
+        window.scrollTo(el.scrollLeft, el.scrollTop + el.scrollHeight)
+      }
+    }
   }
 }
 
