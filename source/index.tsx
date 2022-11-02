@@ -1,170 +1,151 @@
-import React, {
-  CSSProperties,
-  ChangeEvent,
-  FC,
-  MutableRefObject,
-  RefObject,
-  TextareaHTMLAttributes,
-  useCallback,
-  useLayoutEffect,
-  useMemo,
-  useRef,
-} from 'react'
-import withForwardedRef from 'react-with-forwarded-ref'
-import { equal as isShallowEqual } from 'fast-shallow-equal'
+import React from 'react'
+import { createPortal } from 'react-dom'
 
 // =============================================================================
-export interface GetHeight {
+
+let elDialogContainer: HTMLDivElement
+
+if (typeof document !== 'undefined') {
+  elDialogContainer = document.createElement('div')
+  elDialogContainer.setAttribute('data-ret-portal', '')
+  document.body.appendChild(elDialogContainer)
+}
+
+// =============================================================================
+
+interface GetHeight {
   (rows: number, el: HTMLTextAreaElement): number
 }
 
-export const getHeight: GetHeight = (rows, el) => {
-  const {
-    borderBottomWidth,
-    borderTopWidth,
-    fontSize,
-    lineHeight,
-    paddingBottom,
-    paddingTop,
-  } = window.getComputedStyle(el)
+const getHeight: GetHeight = (rows, el) => {
+  const cs = window.getComputedStyle(el)
 
-  const lh =
-    lineHeight === 'normal'
-      ? parseFloat(fontSize) * 1.2
-      : parseFloat(lineHeight)
+  const lh = cs.lineHeight === 'normal'
+    ? parseFloat(cs.fontSize) * 1.2
+    : parseFloat(cs.lineHeight)
 
-  const rowHeight =
-    rows === 0
-      ? 0
-      : lh * rows +
-        parseFloat(borderBottomWidth) +
-        parseFloat(borderTopWidth) +
-        parseFloat(paddingBottom) +
-        parseFloat(paddingTop)
+  const rowHeight = rows === 0
+    ? 0
+    : lh * rows +
+      parseFloat(cs.borderBottomWidth) +
+      parseFloat(cs.borderTopWidth) +
+      parseFloat(cs.paddingBottom) +
+      parseFloat(cs.paddingTop)
 
   const scrollHeight =
     el.scrollHeight +
-    parseFloat(borderBottomWidth) +
-    parseFloat(borderTopWidth)
+    parseFloat(cs.borderBottomWidth) +
+    parseFloat(cs.borderTopWidth)
 
   return Math.max(rowHeight, scrollHeight)
 }
 
 // =============================================================================
-export interface Resize {
-  (rows: number, el: HTMLTextAreaElement | null): void
+
+type TextAreaRef =
+    React.RefObject<HTMLTextAreaElement>
+  | ((node: HTMLTextAreaElement) => void)
+  | null
+
+export interface TextAreaBaseProps extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {
+  forwardedRef: TextAreaRef
+  onChange?: (evt: React.ChangeEvent<HTMLTextAreaElement>) => void
+  onInput?: (evt: React.ChangeEvent<HTMLTextAreaElement>) => void
+  rows: number
 }
 
-export const resize: Resize = (rows, el) => {
-  if (el) {
-    let overflowY = 'hidden'
-    const { maxHeight } = window.getComputedStyle(el)
+interface TextAreaBaseState {
+  isMounted: boolean
+}
 
-    if (maxHeight !== 'none') {
-      const maxHeightN = parseFloat(maxHeight)
+class TextAreaBase extends React.Component<TextAreaBaseProps, TextAreaBaseState> {
+  private ref = React.createRef<HTMLTextAreaElement>() as React.MutableRefObject<HTMLTextAreaElement>
+  private refGhost = React.createRef<HTMLTextAreaElement>() as React.MutableRefObject<HTMLTextAreaElement>
+  // private resizeObserver?: ResizeObserver
+  state: TextAreaBaseState = { isMounted: false }
 
-      if (maxHeightN < el.scrollHeight) {
-        overflowY = ''
-      }
+  render() {
+    const { forwardedRef, rows, ...rest } = this.props // forwardedRef is discarded
+
+    return (
+      <>
+        <textarea
+          {...rest}
+          onInput={this.handleInput}
+          ref={this.handleRef}
+        />
+        {this.state.isMounted && elDialogContainer != null && createPortal(
+          <textarea
+            {...rest}
+            aria-hidden="true"
+            readOnly
+            ref={this.refGhost}
+            tabIndex={-1}
+            value=""
+          />
+        , elDialogContainer)}
+      </>
+    )
+  }
+
+  // ===========================================================================
+
+  componentDidMount() {
+    this.resize() 
+    this.setState({ isMounted: true })
+  }
+
+  componentDidUpdate(_prevProps: TextAreaBaseProps, prevState: TextAreaBaseState) {
+    if (!prevState.isMounted && this.state.isMounted) {
+      this.setup()
     }
 
-    el.style.height = '0'
-    el.style.overflowY = overflowY
-    el.style.height = `${getHeight(rows, el)}px`
+    this.resize() 
+  }
+
+  // ===========================================================================
+
+  handleInput = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+    this.resize()
+    this.props.onChange?.(e)
+    this.props.onInput?.(e)
+  }
+
+  handleRef = (node: HTMLTextAreaElement) => {
+    this.ref.current = node
+
+    if (typeof this.props.forwardedRef === 'function') {
+      this.props.forwardedRef(node)
+    }
+  }
+
+  resize = () => {
+    if (this.ref.current && this.refGhost.current) {
+      this.refGhost.current.value = this.ref.current.value
+      this.refGhost.current.style.setProperty('width', `${this.ref.current.offsetWidth}px`, 'important')
+      this.ref.current.style.setProperty('height', `${getHeight(this.props.rows, this.refGhost.current)}px`, 'important')
+    }
+  }
+
+  setup = () => {
+    if (this.ref.current && this.refGhost.current) {
+      this.ref.current.style.setProperty('overflow-y', 'hidden', 'important')
+      this.refGhost.current.style.setProperty('position', 'absolute', 'important')
+      this.refGhost.current.style.setProperty('visibility', 'hidden', 'important')
+      this.refGhost.current.style.setProperty('height', '0', 'important')
+      this.refGhost.current.style.setProperty('z-index', '-1', 'important')
+    }
   }
 }
 
 // =============================================================================
-const useShallowObjectMemo = <A, >(obj: A): A => {
-  const refObject = useRef<A>(obj)
-  const refCounter = useRef(0)
 
-  if (!isShallowEqual(obj, refObject.current)) {
-    refObject.current = obj
-    refCounter.current += 1
-  }
-
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  return useMemo(() => refObject.current, [refCounter.current])
+interface TextAreaProps extends Omit<TextAreaBaseProps, 'rows'> {
+  rows?: number | string
 }
 
-// =============================================================================
-const useSSRLayoutEffect =
-  typeof window === 'undefined' ? Function.prototype : useLayoutEffect
+const TextArea = React.forwardRef((props: TextAreaProps, ref: TextAreaRef) =>
+  <TextAreaBase {...props} forwardedRef={ref} rows={Number(props.rows) || 0} />
+)
 
-// =============================================================================
-type RefFn = (node: HTMLTextAreaElement) => void
-
-export interface TextareaProps
-  extends Omit<TextareaHTMLAttributes<HTMLTextAreaElement>, 'rows'> {
-  forwardedRef?: RefObject<HTMLTextAreaElement> | RefFn
-  onChange?: (evt: ChangeEvent<HTMLTextAreaElement>) => void
-  onInput?: (evt: ChangeEvent<HTMLTextAreaElement>) => void
-  rows?: string | number | undefined
-  value?: string
-}
-
-const ExpandingTextarea: FC<TextareaProps> = ({
-  forwardedRef,
-  ...props
-}: TextareaProps) => {
-  const isForwardedRefFn = typeof forwardedRef === 'function'
-  const style = useShallowObjectMemo<CSSProperties | undefined>(props.style)
-  const internalRef = useRef<HTMLTextAreaElement>()
-  const ref = (
-    isForwardedRefFn || !forwardedRef ? internalRef : forwardedRef
-  ) as MutableRefObject<HTMLTextAreaElement>
-  const rows = props.rows ? parseInt('' + props.rows, 10) : 0
-  const { onChange, onInput, ...rest } = props
-
-  useSSRLayoutEffect(() => {
-    resize(rows, ref.current)
-  }, [props.className, props.value, ref, rows, style])
-
-  useSSRLayoutEffect(() => {
-    if (!window.ResizeObserver) {
-      return
-    }
-
-    const observer = new ResizeObserver(() => {
-      resize(rows, ref.current)
-    })
-
-    observer.observe(ref.current)
-
-    return () => {
-      observer.disconnect()
-    }
-  }, [ref, rows])
-
-  const handleInput = useCallback(
-    (e: ChangeEvent<HTMLTextAreaElement>) => {
-      onChange?.(e)
-      onInput?.(e)
-      resize(rows, ref.current)
-    },
-    [onChange, onInput, ref, rows]
-  )
-
-  const handleRef = useCallback(
-    (node: HTMLTextAreaElement) => {
-      ref.current = node
-
-      if (isForwardedRefFn) {
-        (forwardedRef as RefFn)(node)
-      }
-    },
-    [forwardedRef, isForwardedRefFn, ref]
-  )
-
-  return (
-    <textarea
-      {...rest}
-      onInput={handleInput}
-      ref={handleRef}
-      rows={rows}
-    />
-  )
-}
-
-export default withForwardedRef(ExpandingTextarea)
+export default React.memo(TextArea)

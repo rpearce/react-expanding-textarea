@@ -1,7 +1,6 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
-  -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
 html,
@@ -24,14 +23,13 @@ input,
 button {
   -webkit-font-smoothing: antialiased;
 }
-.textarea {
-  width: 100%;
-  outline: 0;
-  margin: 1rem 0;
-  padding: 0.5rem 1rem;
-  border: none;
-  background-color: #FFF;
-  border-left: 4px solid #005C9A;
-  resize: none;
-  font: inherit;
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
 }

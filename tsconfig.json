@@ -1,4 +1,29 @@
 {
-  "extends": "./tsconfig.base.json",
-  "include": ["./source/index.tsx"]
+  "compilerOptions": {
+    "allowJs": false,
+    "allowSyntheticDefaultImports": true,
+    "allowUnreachableCode": false,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "react",
+    "lib": [
+      "esnext",
+      "dom"
+    ],
+    "module": "esnext",
+    "noImplicitAny": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "outDir": "./dist",
+    "removeComments": true,
+    "sourceMap": false,
+    "strict": true,
+    "target": "es2021"
+  },
+  "include": [
+    "./source/index.tsx"
+  ]
 }

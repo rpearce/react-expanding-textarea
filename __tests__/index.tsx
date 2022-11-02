@@ -2,7 +2,7 @@ import React, { CSSProperties, createRef } from 'react'
 import { fireEvent, render } from '@testing-library/react'
 import '@testing-library/jest-dom/extend-expect'
 
-import ExpandingTextarea, { getHeight, resize } from '../source'
+import ExpandingTextarea, { getHeight, resize } from '../source/index'
 
 test('renders with a minimum number of rows', () => {
   const wrapStyles: CSSProperties = {
